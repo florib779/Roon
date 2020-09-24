@@ -14,7 +14,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, , header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -92,7 +92,7 @@ p {
   margin: 10px 0 15px 0;
 }
 
-footer p {
+footer span {
   color: #f2f2f2;
 }
 
