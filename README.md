@@ -1,4 +1,4 @@
-On this website you'll find News, Articles, Links and more about Roon, "the music player for music lovers", by Roon Labs. Let me call this website a kind of Roon-fanpage, but I also keep writing about other music-related topics. Let's see what happens in the future.
+On this website you'll find News, [Articles](/articles/index.md), Links and more about Roon, "the music player for music lovers", by Roon Labs. Let me call this website a kind of Roon-fanpage, but I also keep writing about other music-related topics. Let's see what happens in the future.
 
 This website contains a lot of technical and nerdy stuff. Nevertheless, I hope that it will also be useful for the less technically interested people.
 
