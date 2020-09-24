@@ -2,3 +2,4 @@
 theme: jekyll-theme-slate
 #title: [The title of your site]
 description: [This page is about the music software roon]
+paginate: 5
