@@ -41,6 +41,8 @@ For this reason, it makes sense to use the `start_my_roon_instance.sh` script wh
 
 ### "This application could not be started" after updating wine
 
+![This application could not be started](/images/roon_wine_application_could_not_be_started.png)
+
 Just ignore this message and hit no (Nein).
 
 ### Roon won't start after updating wine
