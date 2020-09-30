@@ -1,6 +1,6 @@
 # Installing the Roon-Desktop-App on Linux with Wine
 
-![Roon on Wine screenshot](https://github.com/florib779/Roon/images/roon_on_wine_screenshot.jpg)
+![Roon on Wine screenshot](../images/roon_on_wine_screenshot.jpg)
 
 [Roon](https://roonlabs.com/) has no native Linux remote client yet, but I hope they will bring us one in the future. Nevertheless, there is a possibility to install it with the help of [Wine](https://www.winehq.org/) under Linux.
 
@@ -41,7 +41,7 @@ For this reason, it makes sense to use the `start_my_roon_instance.sh` script wh
 
 ### "This application could not be started" after updating wine
 
-![This application could not be started](https://github.com/florib779/Roon/images/roon_wine_application_could_not_be_started.png)
+![This application could not be started](../images/roon_wine_application_could_not_be_started.png)
 
 Just ignore this message and hit no (Nein).
 
