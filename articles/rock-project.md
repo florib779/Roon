@@ -61,13 +61,43 @@ As a Linux user I had problems with permissions. I was able to copy the codec, b
 1. `sudo mount -t cifs //rock/Data -o vers=1.0 /mnt/`
 2. `sudo cp ffmpeg /mnt/Codecs`
 
-A reboot should make the codec should be available.
-
 Then I immediately formatted the Internal Music Storage. [It’ll be EXT4](https://community.roonlabs.com/t/ext4fs-internal-drive-not-recognized/114963/4).
 
 ![ROCK format internal storage](../images/rock_format_internal_storage.png)
 
 ![ROCK formating internal storage](../images/rock_formating_internal_storage.png)
+
+
+After a reboot the web UI should look like this:
+![ROCK installation finished](../images/rock_installation_finished.png)
+
+## Restore the database
+
+I create my database backups next to Dropbox on a USB stick for quick restoration.
+I simply plugged this USB stick with the existing backups of my old Roon Core into the ROCK-NUC and restored the last backup.
+
+## Transfer the music files
+
+If you want to import music, connect to Roon OS's `/Data/Storage` directory, and copy your music over. Then, you can set up your watched folder by following [these instructions](https://kb.roonlabs.com/FAQ:_How_do_I_import_music?).
+
+[Fastest way to transfer music to Rock](https://community.roonlabs.com/t/fastest-way-to-transfer-music-to-rock/115035)
+
+## Fanless case
+
+After some weeks I decided to buy the Akasa - Plato X8 UCFF fanless case.
+
+## HTTP commands
+
+* Stop Core: [http://rock.local/1/stopsoftware](http://rock.local/1/stopsoftware)
+* Start or Reboot Core: [http://rock.local/1/restartsoftware](http://rock.local/1/restartsoftware)
+* Power-off ROCK: [http://rock.local/1/poweroff](http://rock.local/1/poweroff)
+* Reboot ROCK: [http://rock.local/1/reboot](http://rock.local/1/reboot)
+
+[https://community.roonlabs.com/t/start-stop-command-from-windows10/92890/2](https://community.roonlabs.com/t/start-stop-command-from-windows10/92890/2)
+
+## Additional Information
+
+ROCK currently runs with the Linux kernel version 4, but in a future version of ROCK it will run with the Linux kernel version 5, as [mentioned here](https://community.roonlabs.com/t/linux-kernel-version-for-current-rock-release/115797/6).
 
 ## Images
 ![NUC Kit boxed](../images/nuc_kit_boxed.jpg)
@@ -77,3 +107,15 @@ Then I immediately formatted the Internal Music Storage. [It’ll be EXT4](https
 ![NUC Kit disassambled](../images/nuc_kit_disassembled.jpg)
 
 ![NUC Kit disassambled with ram and drive](../images/nuc_kit_disassembled_ram_hds.jpg)
+
+## Links
+
+* [Roon Installation ROCK in deutscher Sprache (German)](https://community.roonlabs.com/t/roon-installation-rock-in-deutscher-sprache/69610)
+* [Roon Rock on NUC8i3BEH - General Guidance and Comments](https://community.roonlabs.com/t/roon-rock-on-nuc8i3beh-general-guidance-and-comments/74252)
+* [Newbie start-up essential tips](https://community.roonlabs.com/t/newbie-start-up-essential-tips/113126)
+* [NUC auto-on after power loss](https://community.roonlabs.com/t/nuc-auto-on-after-power-loss/105702/3)
+* [Roon Server power consumption](https://community.roonlabs.com/t/roon-server-power-consumption/104629/8)
+* [ROON ROCK with a linear power supply?](https://community.roonlabs.com/t/roon-rock-with-a-linear-power-supply/29838)
+* [Roon Rock with Linear Power Supply, does it make sense?](https://community.roonlabs.com/t/roon-rock-with-linear-power-supply-does-it-make-sense/42209)
+* [Linear Power Supply for NUC 8th Generation](https://community.roonlabs.com/t/linear-power-supply-for-nuc-8th-generation/96155)
+
