@@ -133,6 +133,7 @@ The following instructions are for Ubuntu based distributions only (Debian could
   * `env WINEPREFIX=~/WinRoon wine ~/WinRoon/drive_c/users/user/Local\ Settings/Application\ Data/Roon/Application/Roon.exe`
 12. After installation you should create or edit the start menu entry. The shortcut created by the first installation of Roon will not work after future updates of Roon.
   * `~/.local/share/applications/wine/Programs/Roon.desktop` (should be right for Ubuntu based distributions):
+     
      ```
     [Desktop Entry]
 
