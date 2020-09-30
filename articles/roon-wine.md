@@ -52,3 +52,46 @@ Maybe you will be able to downgrade to an older version of wine.
 In my case on Manjaro/Arch Linux I was able to do this by executing the following line in a terminal:
 
 ```sudo pacman -U /var/cache/pacman/pkg/package-old_version.pkg.tar.xz```
+
+## Manual installation
+
+This instructions were tested under the following distributions:
+
+* Arch Linux LXDE desktop / Manjaro KDE desktop (32 bit)
+* Debian Buster XFCE 4.12 desktop
+* Fedora 27 Gnome desktop
+* Ubuntu/Linux Mint 18.3 Cinnamon desktop (Roon 64 bit)
+* Ubuntu/Linux Mint 18.3 Cinnamon desktop (Roon 32 bit)
+* OpenSuse (Roon 32/64 bit)
+
+## General notes
+
+* Thanks to evand who added the Arch Linux instructions (which I adjusted a bit to make the document more consistent).
+* Roon requires OpenGL 3.0 to run the remote ui. Maybe you have to install some graphic drivers.
+* `~` is your user (home) directory. All code lines (except those to start the program and the menu entry) in this document should work without any modifications. If not replace `~` with `/home/user`, while "user" stands for your username.
+* Uninstall all previous versions of Wine and any packages depend on it. Also delete or rename your wine folder if exists: `~/.wine` (should not be really necessary, because you will create a new wine folder).
+
+Optionally you can add a scalefactor for high resolution screens:
+
+```
+#!/bin/bash
+
+PREFIX=/home/user/my_roon_instance
+
+env WINEPREFIX=/home/user/my_roon_instance wine /home/user/my_roon_instance/'drive_c/users/user/Local Settings/Application Data/Roon/Application/Roon.exe' -scalefactor=2
+```
+
+## Instructions for Arch based distributions
+
+1. Ensure 32 bit libraries are enabled:
+   * [https://wiki.archlinux.org/index.php/multilib](https://wiki.archlinux.org/index.php/multilib)
+2. Create the Wine instance:
+   * `env WINEPREFIX=~/WinRoon WINEARCH=win32 wine wineboot`
+3. Set the Windows version to Windows 7:
+   * `env WINEPREFIX=~/WinRoon winecfg`
+4. Install .Net 4.5:
+   * `env WINEPREFIX=~/WinRoon winetricks dotnet45`
+5. Install Roon (previously downloaded)
+   * `env WINEPREFIX=~/WinRoon wine ~/Downloads/RoonInstaller.exe`
+6. To run it use the following (replace user with your user name)
+   * `env WINEPREFIX=~/WinRoon/ wine ~/WinRoon/drive_c/users/user/Local\ Settings/Application\ Data/Roon/Application/Roon.exe`
