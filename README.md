@@ -1,6 +1,8 @@
+**This site is now on [GitHub Pages](https://florib779.github.io/Roon/).**
+
 On this pages you'll find News, [Articles](https://florib779.github.io/Roon/articles/), Links and more about Roon, "the music player for music lovers", by [Roon Labs](https://roonlabs.com). Let me call this website a kind of Roon-fanpage, but I also keep writing about other music-related topics. Let's see what happens in the future.
 
-**I am currently porting the content of a homepage project that I am (probably) giving up due to lack of time. Much of the information is therefore still incomplete and some links may not work.**
+I am currently porting the content of a homepage project that I am (probably) giving up due to lack of time. Much of the information is therefore still incomplete and some links may not work.
 
 This pages contains a lot of technical and nerdy stuff. Nevertheless, I hope that it will also be useful for the less technically interested people.
 
