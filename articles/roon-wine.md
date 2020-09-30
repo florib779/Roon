@@ -64,7 +64,7 @@ This instructions were tested under the following distributions:
 * Ubuntu/Linux Mint 18.3 Cinnamon desktop (Roon 32 bit)
 * OpenSuse (Roon 32/64 bit)
 
-## General notes
+### General notes
 
 * Thanks to evand who added the Arch Linux instructions (which I adjusted a bit to make the document more consistent).
 * Roon requires OpenGL 3.0 to run the remote ui. Maybe you have to install some graphic drivers.
@@ -81,17 +81,127 @@ PREFIX=/home/user/my_roon_instance
 env WINEPREFIX=/home/user/my_roon_instance wine /home/user/my_roon_instance/'drive_c/users/user/Local Settings/Application Data/Roon/Application/Roon.exe' -scalefactor=2
 ```
 
-## Instructions for Arch based distributions
+### Instructions for Arch based distributions
 
 1. Ensure 32 bit libraries are enabled:
-   * [https://wiki.archlinux.org/index.php/multilib](https://wiki.archlinux.org/index.php/multilib)
+  * [https://wiki.archlinux.org/index.php/multilib](https://wiki.archlinux.org/index.php/multilib)
 2. Create the Wine instance:
-   * `env WINEPREFIX=~/WinRoon WINEARCH=win32 wine wineboot`
+  * `env WINEPREFIX=~/WinRoon WINEARCH=win32 wine wineboot`
 3. Set the Windows version to Windows 7:
-   * `env WINEPREFIX=~/WinRoon winecfg`
+  * `env WINEPREFIX=~/WinRoon winecfg`
 4. Install .Net 4.5:
-   * `env WINEPREFIX=~/WinRoon winetricks dotnet45`
+  * `env WINEPREFIX=~/WinRoon winetricks dotnet45`
 5. Install Roon (previously downloaded)
-   * `env WINEPREFIX=~/WinRoon wine ~/Downloads/RoonInstaller.exe`
+  * `env WINEPREFIX=~/WinRoon wine ~/Downloads/RoonInstaller.exe`
 6. To run it use the following (replace user with your user name)
-   * `env WINEPREFIX=~/WinRoon/ wine ~/WinRoon/drive_c/users/user/Local\ Settings/Application\ Data/Roon/Application/Roon.exe`
+  * `env WINEPREFIX=~/WinRoon/ wine ~/WinRoon/drive_c/users/user/Local\ Settings/Application\ Data/Roon/Application/Roon.exe`
+
+To launch it via Roon's desktop icon right click on it and paste in the above line in the Command entry dialogue (see screenshot below):
+
+![Menu editor on arch linux](../images/menu_edit_arch_linux.png)
+
+### Instructions for Ubuntu based distributions (Roon 64 bit)
+
+The following instructions are for Ubuntu based distributions only (Debian could be working too).
+
+1. If your system is 64 bit, enable 32 bit architecture:
+  * `sudo dpkg --add-architecture i386`
+2. Install the Wine repository:
+  1. `wget -nc https://dl.winehq.org/wine-builds/Release.key`
+  2. `sudo apt-key add Release.key`
+  3. `sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'`
+     * “xenial” is the Ubuntu distribution release. Could be something else. Here is a list of other releases: [https://wiki.ubuntu.com/Releases](https://wiki.ubuntu.com/Releases)
+3. Refresh your package cache:
+  * `sudo apt update`
+4. Install [Wine](https://www.winehq.org/) and [Winetricks](https://github.com/Winetricks/winetricks):
+ 1. `sudo apt-get install --install-recommends winehq-devel`
+ 2. `sudo wget http://winetricks.org/winetricks -O /usr/bin/winetricks`
+  * This command will overwrite your existing Winetricks. Most distributions provide an older version of Winetricks, which will not work. If you update Winetricks with your package manager in the future, this update will overwrite your manually added Winetricks.
+5. Create a new Wine directory (especially for Roon):
+  * `env WINEPREFIX=~/WinRoon WINEARCH=win64 wine wineboot`
+6. Open the configuration of Wine and choose “Windows 7”:
+  * `env WINEPREFIX=~/WinRoon winecfg`
+7. [Download](https://roonlabs.com/downloads) Roon for Windows 64 bit.
+8. Choose your created Wine environment and install Roon from your Download-Folder:
+  * `env WINEPREFIX=~/WinRoon wine ~/Downloads/RoonInstaller64.exe`
+9. Install .net from Microsoft (a dependency of Roon):
+  * `env WINEPREFIX=~/WinRoon winetricks dotnet45`
+    * There will be asked some questions about registration keys - I always answered “yes”, but I think it doesn’t really matter.
+10. Set your Windows version again to “Windows 7” (changed through the installation process of dotnet):
+  * `env WINEPREFIX=~/WinRoon winecfg`
+11. Start your fresh installed Roon (replace user with your user name):
+  * `env WINEPREFIX=~/WinRoon wine ~/WinRoon/drive_c/users/user/Local\ Settings/Application\ Data/Roon/Application/Roon.exe`
+12. After installation you should create or edit the start menu entry. The shortcut created by the first installation of Roon will not work after future updates of Roon.
+  * `~/.local/share/applications/wine/Programs/Roon.desktop` (should be right for Ubuntu based distributions):
+     ```
+    [Desktop Entry]
+
+    Name=Roon
+
+    Exec=env WINEPREFIX="/home/user/WinRoon" wine C:\\\\windows\\\\command\\\\start.exe /Unix ~/WinRoon/dosdevices/c:/users/user/Start\\ Menu/Programs/Roon.lnk
+
+    Type=Application
+
+    StartupNotify=true
+
+    Path=/home/user/WinRoon/dosdevices/c:/users/user/Local Settings/Application Data/Roon/Application
+
+    Icon=93CE_Roon.0
+
+    StartupWMClass=roon.exe
+    ```
+
+### Instructions for Ubuntu based distributions (Roon 32 bit)
+
+The following instructions are for Ubuntu based distributions only (Debian could be working too).
+
+1. If your system is 64 bit, enable 32 bit architecture:
+  * `sudo dpkg --add-architecture i386`
+2. Install the Wine repository:
+  * `wget -nc https://dl.winehq.org/wine-builds/Release.key`
+  * `sudo apt-key add Release.key`
+  * `sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'`
+  * “xenial” is the distribution release. Could be something else. Here is a list of other releases: [https://wiki.ubuntu.com/Releases](https://wiki.ubuntu.com/Releases)
+3. Refresh your package cache:
+  * `sudo apt update`
+4. Install Wine and Winetricks:
+  * `sudo apt-get install --install-recommends winehq-stable`
+5. Create a new wine directory (especially for Roon):
+  * `env WINEPREFIX=~/WinRoon WINEARCH=win32 wine wineboot`
+6. Open the configuration of Wine and choose “Windows 7”:
+  * `env WINEPREFIX=~/WinRoon winecfg`
+7. [Download](https://roonlabs.com/downloads) Roon for Windows 32 bit.
+8. Choose your created Wine environment and install Roon from your Download-Folder:
+  * `env WINEPREFIX=~/WinRoon wine ~/Downloads/RoonInstaller.exe`
+9. Install .net from Microsoft (a dependency of Roon):
+  * `env WINEPREFIX=~/WinRoon winetricks dotnet45`
+    * There will be asked some questions about registration keys - I always answered “yes”, but I think it doesn’t really matter.
+    * Installation process will take a while and there will be installed a lot of things. I had to restart the installation after manually downloading some dependencies to the wine temp-folder.
+10. Start your Roon installation (replace user with your user name):
+  * `env WINEPREFIX=~/WinRoon wine ~/WinRoon/drive_c/users/user/Local\ Settings/Application\ Data/Roon/Application/Roon.exe`
+11.  After installation you should create or edit the start menu entry. The shortcut created by the first installation of Roon will not work after future updates of Roon.
+  * `~/.local/share/applications/wine/Programs/Roon.desktop` (should be right for Ubuntu based distributions):
+
+    ```
+    [Desktop Entry]
+
+    Name=Roon
+
+    Exec=env WINEPREFIX="/home/user/WinRoon" wine C:\\\\windows\\\\command\\\\start.exe /Unix ~/WinRoon/dosdevices/c:/users/user/Start\\ Menu/Programs/Roon.lnk
+
+    Type=Application
+
+    StartupNotify=true
+
+    Path=/home/user/WinRoon/dosdevices/c:/users/user/Local Settings/Application Data/Roon/Application
+
+    Icon=93CE_Roon.0
+
+    StartupWMClass=roon.exe
+    ```
+
+## Links
+* [Running Roon via Wine on Linux](https://community.roonlabs.com/t/running-roon-via-wine-on-linux/41709)
+* [Ubuntu 17.10 64bit RoonServer with Roon on WINE](https://community.roonlabs.com/t/ubuntu-17-10-64bit-roonserver-with-roon-on-wine/37520)
+* [Linux Roon Control GUI Please](https://community.roonlabs.com/t/linux-roon-control-gui-please/23081)
+* [Roon control GUI working on Linux using Wine](https://community.roonlabs.com/t/roon-control-gui-working-on-linux-using-wine/46640/37)
