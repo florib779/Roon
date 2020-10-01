@@ -95,6 +95,12 @@ After some weeks I decided to buy the Akasa - Plato X8 UCFF fanless case.
 
 [https://community.roonlabs.com/t/start-stop-command-from-windows10/92890/2](https://community.roonlabs.com/t/start-stop-command-from-windows10/92890/2)
 
+## Network reset on ROCK
+
+Connect a USB keyboard and monitor to the HDMI of ROCK and type `resetnetwork`.
+  
+[https://community.roonlabs.com/t/howto-set-roon-rock-to-another-ip-range/122748/4](https://community.roonlabs.com/t/howto-set-roon-rock-to-another-ip-range/122748/4)
+
 ## Additional Information
 
 ROCK currently runs with the Linux kernel version 4, but in a future version of ROCK it will run with the Linux kernel version 5, as [mentioned here](https://community.roonlabs.com/t/linux-kernel-version-for-current-rock-release/115797/6).
