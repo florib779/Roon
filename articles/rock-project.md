@@ -13,7 +13,7 @@ At the time I've planned my ROCK NUC my library was looking like this:
 So I followed the recommendations in the Knowledge Base: [ROCK For Small to Medium Sized Libraries](https://help.roonlabs.com/portal/en/kb/articles/roon-optimized-core-kit#ROCK_For_Small_to_Medium-Sized_Libraries) (actually it's an Intel NUC 10 in the "old" Knowledge Base).
 
 1. NUC8i3BEH
-2. GB RAM
+2. 8 GB RAM
 3. 128GB M.2 SSD
 4. Additionally a 1TB SSD-drive for the music files
 
