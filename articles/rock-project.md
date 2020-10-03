@@ -2,11 +2,9 @@
 
 ![Rock Akasa case front](../images/rock_akasa_case_front.jpg)
 
-[What is ROCK?](https://help.roonlabs.com/portal/en/kb/articles/roon-optimized-core-kit)
-
 ## Hardware
 
-At the time I've planned my ROCK NUC my library was looking like this:
+At the time I've planned my [ROCK](https://help.roonlabs.com/portal/en/kb/articles/roon-optimized-core-kit) NUC my library was looking like this:
 
 ![Roon overview library stats](../images/roon_overview_library_stats.png)
 
