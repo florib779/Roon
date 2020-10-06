@@ -64,7 +64,7 @@ There's already an almost complete [List of available Roon Extensions](https://g
     This is now an [official part of the Home Assistant core](https://github.com/home-assistant/core/tree/dev/homeassistant/components/roon).
 * [roon-remote](https://github.com/varunrandery/roon-remote)
   * A tiny Node.js webserver to handle and forward RESTful calls for Roon's API.
-* roon-remote-denon
+* [roon-remote-denon](https://github.com/musicfan145/roon-remote-denon)
   * The attempt is to create an extension that will allow Roon to control a Denon AVR through IP commands.
 * [roon-web-controller](https://github.com/pluggemi/roon-web-controller)
   * This is an extension for the Roon music player that provides a web based remote.
