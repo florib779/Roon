@@ -21,7 +21,7 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Roon extension for controlling volume on a denon/marantz AVR via the Roon application.
 * [roon-extension-denon-telnet-docker](https://github.com/ascl00/roon-extension-denon-telnet-docker)
   * This is a docker config you can use to run the roon-extension-denon-telnet node.js app on a QNAP NAS via Container Station.
-* [roon-extension-harmony]()https://github.com/docbobo/roon-extension-harmony
+* [roon-extension-harmony](https://github.com/docbobo/roon-extension-harmony)
   * Controlling Logitech Harmony from Roon.
 * [roon-extension-http-api](https://github.com/st0g1e/roon-extension-http-api)
   * These APIs are run by http calls. There is a list below with examples that calls these APIs.
