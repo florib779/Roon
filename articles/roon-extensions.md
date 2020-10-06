@@ -13,12 +13,16 @@ There's already an almost complete [List of available Roon Extensions](https://g
 * [roon-extension-cd-ripper](https://github.com/TheAppgineer/roon-extension-cd-ripper)
   * Extension that adds a CD ripper to your Roon system.
   * ROCK has already an [integrated CD ripper](https://help.roonlabs.com/portal/en/kb/articles/roon-os-cdrom).
+* [roon-extension-deep-harmony-release](https://github.com/Khazul/roon-extension-deep-harmony-release)
+  * Deep Harmony is an extension for the Roon media system from Roon Labs LLC that provides integration with Logitech's Harmony Hub remote control system to provide activity detection and selection by and for Roon and provide volume/mute control from with the Roon UI. Additionally it includes a media device emulator that allows for transport control and other functions from a Harmony Hub remote control over WiFi.
 * [roon-extension-denon](https://github.com/docbobo/roon-extension-denon)
   * Roon Volume Control Extension to control Denon & Marantz receivers.
 * [roon-extension-denon-telnet](https://github.com/ascl00/roon-extension-denon-telnet)
   * Roon extension for controlling volume on a denon/marantz AVR via the Roon application.
 * [roon-extension-denon-telnet-docker](https://github.com/ascl00/roon-extension-denon-telnet-docker)
   * This is a docker config you can use to run the roon-extension-denon-telnet node.js app on a QNAP NAS via Container Station.
+* [roon-extension-harmony]()https://github.com/docbobo/roon-extension-harmony
+  * Controlling Logitech Harmony from Roon.
 * [roon-extension-http-api](https://github.com/st0g1e/roon-extension-http-api)
   * These APIs are run by http calls. There is a list below with examples that calls these APIs.
 * [roon-extension-iport-sm-buttons](https://github.com/RoonLabs/roon-extension-iport-sm-buttons)
@@ -27,8 +31,12 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Roon Extension for Android App it'roXs.
 * [roon-extension-manager](https://github.com/TheAppgineer/roon-extension-manager)
   * Roon Extension for managing Roon Extensions.
+    * [roon-extension-repository](https://github.com/TheAppgineer/roon-extension-repository)
+      * Repository of (community developed) Roon Extensions.
 * [roon-extension-mqtt](https://github.com/fjgalesloot/roon-extension-mqtt)
   * Extension for Roon that publishes status to a MQTT broker.
+* [roon-extension-onkyo](https://github.com/marcelveldt/roon-extension-onkyo)
+  * This project provides a Roon Volume/Source Control extension that allows you to control volume and mute from within Roon.
 * [roon-extension-queue-bot](https://github.com/TheAppgineer/roon-extension-queue-bot)
   * Roon Extension that lets the queue take action.
 * [roon-extension-rotel](https://github.com/bsc101/roon-extension-rotel)
@@ -60,3 +68,5 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * JSDoc Documentation: [https://roonlabs.github.io/node-roon-api/](https://roonlabs.github.io/node-roon-api/)
 * [pyroon](https://github.com/pavoni/pyroon)
    * A Python library to interface with the Roon API
+* [Roon-Display-tvOS](https://github.com/MattTW/Roon-Display-tvOS)
+  * A simple Roon Display App for Apple TV.
