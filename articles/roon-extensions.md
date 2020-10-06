@@ -69,7 +69,6 @@ There's already an almost complete [List of available Roon Extensions](https://g
 * [roon-web-controller](https://github.com/pluggemi/roon-web-controller)
   * This is an extension for the Roon music player that provides a web based remote.
   * There already exists [Roon Web Controller 2.0.0 ALPHA](https://community.roonlabs.com/t/roon-web-controller-2-0-0-alpha-now-available/110504).
-* [roon-extension-web-testapp](https://github.com/RoonLabs/roon-extension-web-testapp)
 
 ## Other
 
@@ -95,5 +94,6 @@ There's already an almost complete [List of available Roon Extensions](https://g
    * A Python library to interface with the Roon API
 * [Roon-Display-tvOS](https://github.com/MattTW/Roon-Display-tvOS)
   * A simple Roon Display App for Apple TV.
+* [roon-extension-web-testapp](https://github.com/RoonLabs/roon-extension-web-testapp)
 * [RoonQuasar](https://github.com/wwwizzarrdry/RoonQuasar)
   * Roon controller using Quasar and Electron.
