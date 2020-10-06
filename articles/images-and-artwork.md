@@ -16,11 +16,11 @@ Setpoints of the images to take advantage of the full width of the display:
 
 
 * resolution examples
-  * 1900 x 1000 or larger in the same aspect ratio
-  * 1728 x 1080
-  * 1600 x 1000
-  * 1280 x 720
-* [at least 960px and aspect ratio greater than 1.55](https://community.roonlabs.com/t/artist-images-size-and-scale-and-cropping-is-unpredictable/10018/7)
+  * `1900 x 1000 px` or larger in the same aspect ratio
+  * `1728 x 1080 px`
+  * `1600 x 1000 px`
+  * `1280 x 720 px`
+* [at least `960 px` and aspect ratio greater than `1.55`](https://community.roonlabs.com/t/artist-images-size-and-scale-and-cropping-is-unpredictable/10018/7)
 
 ## Sources for images
 
