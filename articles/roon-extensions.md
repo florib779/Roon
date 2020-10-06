@@ -57,6 +57,6 @@ There's already an almost complete [List of available Roon Extensions](https://g
 * [node-roon-api](https://github.com/RoonLabs/node-roon-api)
   * Javascript Roon API
 * [node-roon-api-transport](https://github.com/RoonLabs/node-roon-api-transport)
-  * JSDoc Documentation: https://roonlabs.github.io/node-roon-api/
+  * JSDoc Documentation: [https://roonlabs.github.io/node-roon-api/](https://roonlabs.github.io/node-roon-api/)
 * [pyroon](https://github.com/pavoni/pyroon)
    * A Python library to interface with the Roon API
