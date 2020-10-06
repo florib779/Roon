@@ -6,11 +6,13 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Roon CEC Controller Extension should allow you to control Roon Core (previous_track_button, rewind, arrow_forward, play_or_pause_button, pause_button, stop_button, fast_forward, next_track_button) from your audio amplifier remote control, having your amplifier connected to a Roon Bridge via HDMI using CEC protocol.
 * [roon-discord-rp](https://github.com/jamesxsc/roon-discord-rp)
   * Roon Integration for Discord Rich Presence.
+* [roon-entrypoints](https://github.com/TheAppgineer/roon-entrypoints)
+  * Entrypoints is a collection of Roon extensions that act as an input to your Roon system. Music from input devices like turntables, cd players and phones can be streamed to Roon zones and can use the Roon specific features like DSP.
 * [roon-extension-alarm-clock](https://github.com/TheAppgineer/roon-extension-alarm-clock)
   * Roon Extension to start or stop playback on a specific zone at a specific time.
 * [roon-extension-arcam](https://github.com/docbobo/roon-extension-arcam)
   * Roon Volume Control Extension to control Arcam receivers.
-* [roon-extension-cd-player](https://github.com/TheAppgineer/roon-extension-cd-player)
+* [roon-extension-cd-player](https://github.com/TheAppgineer/roon-extension-cd-player) [obsolete, upgrade to roon-entrypoints]
   * Extension that adds a CD player to your Roon system.
 * [roon-extension-cd-ripper](https://github.com/TheAppgineer/roon-extension-cd-ripper)
   * Extension that adds a CD ripper to your Roon system.
