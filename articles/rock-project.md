@@ -122,4 +122,5 @@ ROCK currently runs with the Linux kernel version 4, but in a future version of 
 * [ROON ROCK with a linear power supply?](https://community.roonlabs.com/t/roon-rock-with-a-linear-power-supply/29838)
 * [Roon Rock with Linear Power Supply, does it make sense?](https://community.roonlabs.com/t/roon-rock-with-linear-power-supply-does-it-make-sense/42209)
 * [Linear Power Supply for NUC 8th Generation](https://community.roonlabs.com/t/linear-power-supply-for-nuc-8th-generation/96155)
+* [Does ROCK use TRIM on USB SSDs?](https://community.roonlabs.com/t/does-rock-use-trim-on-usb-ssds/123452/3)
 
