@@ -79,6 +79,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Roon Extension that lets the queue take action.
 * [roon-extension-random-radio](https://github.com/TheAppgineer/roon-extension-random-radio)
   * Roon Extension to play random tracks or albums.
+* [roon-extension-roonbridge-remote](https://github.com/danward79/roon-extension-roonbridge-remote)
+  * Infrared Remote Control Roon Bridge with Linux System Events. This extension is a modification/fork of the original [https://github.com/naepflin/roon-extension-linuxkeyboardremote](roon-extension-linuxkeyboardremote).
 * [roon-extension-rotel](https://github.com/bsc101/roon-extension-rotel)
   * Control your Rotel amp from within Roon.
 * [roon-extension-sleep-timer](https://github.com/bancofan/roon-extension-sleep-timer)
@@ -105,6 +107,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
 * [roon-web-controller](https://github.com/pluggemi/roon-web-controller)
   * This is an extension for the Roon music player that provides a web based remote.
   * There already exists [Roon Web Controller 2.0.0 ALPHA](https://community.roonlabs.com/t/roon-web-controller-2-0-0-alpha-now-available/110504).
+* [roon-yamaha](https://github.com/statesofpop/roon-yamaha)
+  * A roon extension to control yamaha's network-enabled av receivers.
 
 ## Other
 
