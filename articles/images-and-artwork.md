@@ -24,13 +24,16 @@ Setpoints of the images to take advantage of the full width of the display:
 
 ## Sources for images
 
-* Cover
+### Cover
+  * [Allmusic](https://www.allmusic.com/)
+    * Front-Cover, Back-Cover
   * [Coveralia](https://www.coveralia.com/)
   * [Discogs](https://www.discogs.com/)
   * [Fanart.tv](https://fanart.tv/)
     * Front-Cover, CD
     * There is a [Plugin for MusicBrainz Picard]() available. To use this an API key for Fanart.tv must be entered.
-* Band/Artist-Fotos
+  * [MusibBrainz](https://musicbrainz.org/)
+### Band/Artist-Fotos
   * [Fanart.tv](https://fanart.tv/)
   * [Wikipedia](https://wikipedia.org/)
   
