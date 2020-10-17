@@ -121,6 +121,7 @@ Roon Bridge is now installed and running.
 5. Create the kiosk.sh script
   1. `nano /root/kiosk.sh`
 6. Paste the following code as content:
+
 ```
 #######################################
 #
