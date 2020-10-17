@@ -10,7 +10,7 @@ To prevent the screen from shutting off after a while, I use the app [Fully Kios
 
 ## My Modified Version
 
-[My modified version of /opt/RoonServer/Appliance/webroot/display_ui.html](https://github.com/florib779/Modified-Roon-Web-Display).
+[My modified version of /opt/RoonServer/Appliance/webroot/display_ui.html](https://github.com/florib779/Modified-Roon-Web-Display/blob/main/opt/RoonServer/Appliance/webroot/display_ui.html).
 
 If you are using [ROCK](https://help.roonlabs.com/portal/en/kb/articles/roon-optimized-core-kit) it is not possible to modify this file.
 
