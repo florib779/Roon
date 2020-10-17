@@ -40,4 +40,4 @@
   - [x] Show info
 - [x] Cooking Timer
 
-You can find some of my Home Assistant configuration files [here](../../../homeassistant-config).
+You can find some of my Home Assistant configuration files [here](https://github.com/florib779/homeassistant-config).
