@@ -1,5 +1,7 @@
 # My Smart Home project with Home Assistant
 
+You can find some of my Home Assistant configuration files [here](https://github.com/florib779/homeassistant-config).
+
 ## Home Assistant Dashboard
 ![Home Assistant Dashboard](../images/home-assistant-dashboard.png)
 
@@ -45,5 +47,39 @@
 - [x] Cooking Timer
 - [ ] Report the amount of unread emails - [IMAP](https://www.home-assistant.io/integrations/imap/)
 
+## Hardware
 
-You can find some of my Home Assistant configuration files [here](https://github.com/florib779/homeassistant-config).
+Raspberry Pi 3 Model B with [DietPi](https://github.com/MichaIng/DietPi) including [Roon Bridge](https://kb.roonlabs.com/RoonBridge), [Roon-Extension-Manager](https://github.com/TheAppgineer/roon-extension-manager), [Home Assistant](https://github.com/home-assistant) and display for Home Assistant.
+
+## Installation
+
+### Dietpi
+
+Diet-Pi-Installation-Extension-Manager
+
+After initial bootup, login through ssh.
+
+Dietpi will update itself.
+
+In my configuration I had to turn the display 180 degrees:
+
+Dietpi-Config --> Display Options --> Rotation (LCD)
+
+Additionally I dim the display a little bit:
+
+Dietpi-Config --> Display Options -->Display Brightness
+
+...
+
+### Home Assistant
+
+Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided on a Docker image.
+
+<https://www.home-assistant.io/docs/installation/docker/>
+
+`docker run --init -d --name="home-assistant" -e "TZ=Europe/Berlin" -v /mnt/dietpi_userdata/homeassistant/:/config --net=host --restart=always homeassist
+ant/raspberrypi3-homeassistant:stable`
+
+### Updating the Docker image
+
+`sudo docker pull homeassistant/home-assistant`
