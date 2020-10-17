@@ -1,5 +1,11 @@
 # My Smart Home project with Home Assistant
 
+## Home Assistant Dashboard
+![Home Assistant Dashboard](../images/home-assistant-dashboard.png)
+
+## Integrated Roon Web Controller
+![Integrated Roon Web Controller](../images/home-assistant-roon-web-controller.png)
+
 ## Goal
 
 * Sonos
