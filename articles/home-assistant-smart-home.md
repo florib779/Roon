@@ -111,10 +111,10 @@ Roon Bridge is now installed and running.
 1. Modify the custom.sh startup script
   1. `nano /var/lib/dietpi/dietpi-autostart/custom.sh`
 2. Add this to the bottom of the file:
-  ```
-  # Run the custom kiosk script
-  xinit /root/kiosk.sh -- -nocursor
-  ```
+```
+# Run the custom kiosk script
+xinit /root/kiosk.sh -- -nocursor
+```
 3. Save and exit
 4. Make the custom.sh script executable
   1. `chmod +x /var/lib/dietpi/dietpi-autostart/custom.sh`
