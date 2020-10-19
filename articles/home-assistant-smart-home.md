@@ -155,9 +155,8 @@ Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided 
 
 <https://www.home-assistant.io/docs/installation/docker/>
 
-`docker run --init -d --name="home-assistant" -e "TZ=Europe/Berlin" -v /mnt/dietpi_userdata/homeassistant/:/config --net=host --restart=always homeassist
-ant/raspberrypi3-homeassistant:stable`
+`docker run --init -d --name="home-assistant" -e "TZ=Europe/Berlin" -v /mnt/dietpi_userdata/homeassistant/:/config --net=host --restart=always homeassistant/raspberrypi3-homeassistant:stable`
 
 #### Updating the Docker image
 
-`sudo docker pull homeassistant/home-assistant`
+`docker pull homeassistant/raspberrypi3-homeassistant:stable`
