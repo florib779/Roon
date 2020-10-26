@@ -86,6 +86,8 @@ If you want to import music, connect to Roon OS's `/Data/Storage` directory, and
 
 After some weeks I decided to buy the Akasa - Plato X8 UCFF fanless case.
 
+<img src="../images/akasa_parts.jpg" height="100" /> <img src="../images/akasa_mainboard.jpg" height="100" /> <img src="../images/akasa_mainboard+hdd+ram.jpg" height="100" /> <img src="../images/akasa_complete.jpg" height="100" />
+
 ## HTTP commands
 
 * Stop Core: [http://rock.local/1/stopsoftware](http://rock.local/1/stopsoftware)
