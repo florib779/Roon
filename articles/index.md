@@ -6,6 +6,7 @@
 * [My Roon ROCK project](rock-project.md)
 * [Roon Web Display](roon-web-display.md)
 * [Images and Artwork in Roon](images-and-artwork.md)
+* [Local Files](local-files.md)
 * [Music-Streaming](music-streaming.md)
 
 ## Smart Home
