@@ -15,6 +15,8 @@ So I followed the recommendations in the Knowledge Base: [ROCK For Small to Medi
 3. 128GB M.2 SSD
 4. Additionally a 1TB SSD-drive for the music files
 
+<img src="../images/nuc_kit_boxed.jpg" height="100" /> <img src="../images/nuc_kit_unboxed.jpg" height="100" /> <img src="../images/nuc_kit_disassembled.jpg" height="100" /> <img src="../images/nuc_kit_disassembled_ram_hds.jpg" height="100" />
+
 ## Installation
 ### Update the BIOS
 
@@ -102,15 +104,6 @@ Connect a USB keyboard and monitor to the HDMI of ROCK and type `resetnetwork`.
 ## Additional Information
 
 ROCK currently runs with the Linux kernel version 4, but in a future version of ROCK it will run with the Linux kernel version 5, as [mentioned here](https://community.roonlabs.com/t/linux-kernel-version-for-current-rock-release/115797/6).
-
-## Images
-![NUC Kit boxed](../images/nuc_kit_boxed.jpg)
-
-![NUC Kit unboxed](../images/nuc_kit_unboxed.jpg)
-
-![NUC Kit disassambled](../images/nuc_kit_disassembled.jpg)
-
-![NUC Kit disassambled with ram and drive](../images/nuc_kit_disassembled_ram_hds.jpg)
 
 ## Links
 
