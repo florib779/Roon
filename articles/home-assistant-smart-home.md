@@ -160,3 +160,9 @@ Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided 
 #### Updating the Docker image
 
 `docker pull homeassistant/raspberrypi3-homeassistant:stable`
+
+## Links
+
+* [DietPi installation](https://dietpi.com/phpbb/viewtopic.php?p=9#p9)
+* [Installation of roon-extension-manager on DietPi](https://github.com/pluggemi/roon-web-controller/wiki/Diet-Pi-Installation-Extension-Manager)
+* [Measurements: A look & listen to Roon Bridge](http://archimago.blogspot.com/2017/02/measurements-look-listen-to-roon-bridge.html)
