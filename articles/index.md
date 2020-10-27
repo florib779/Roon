@@ -13,7 +13,7 @@
 * [Music-Streaming](music-streaming.md)
 * [Local Files](local-files.md)
 * [Sources for downloadable audio files](sources-for-downloadable-audio-files.md)
-* [Physical Media](physical-media)
+* [Physical Media](physical-media.md)
 
 ## Smart Home
 * [My Smart Home project with Home Assistant](home-assistant-smart-home.md)
