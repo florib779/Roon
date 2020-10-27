@@ -1,6 +1,8 @@
+# Audio Material
+
 By default, Roon plays the highest-quality version of albums/tracks in your library, but to get Tidal albums/tracks in your library you need to favor them in Tidal or add them to Roon.
 
-## Sampling rate
+## Sampling Rate
 
 High sampling rates not only increase the maximum displayable frequency, but also make it easier to digitally edit the audio material: if the available sample rate is higher than what is needed, digital audio effects can use more samples for the calculation.
 
