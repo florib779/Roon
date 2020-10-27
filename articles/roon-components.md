@@ -59,4 +59,4 @@ In general, it does not hurt if the device (core and bridge) is turned on around
 
 * Playback of Roon via Bluetooth possible.
 * Echo 3-Band Equalizer.
-  * Can be controlled by voice command too.
+  * Can be controlled by [voice command](voice-commands-sonos-roon.md) too.
