@@ -10,6 +10,7 @@
 * [Audio Material](audio-material.md)
 * [Local Files](local-files.md)
 * [Music-Streaming](music-streaming.md)
+* [RoonServer and roon-extension-manager on LibreElec (Kodi)](roon-server-extension-manager-libreelec.md)
 
 ## Smart Home
 * [My Smart Home project with Home Assistant](home-assistant-smart-home.md)
