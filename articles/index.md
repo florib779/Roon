@@ -7,6 +7,7 @@
 * [My Roon ROCK project](rock-project.md)
 * [Roon Web Display](roon-web-display.md)
 * [Images and Artwork in Roon](images-and-artwork.md)
+* [Alexa Commands with Sonos-Roon combination](alexa-commands-sonos-roon.md)
 * [RoonServer and roon-extension-manager on LibreElec (Kodi)](roon-server-extension-manager-libreelec.md)
 
 ## Music
