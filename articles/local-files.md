@@ -1,3 +1,5 @@
+# Local Files
+
 Local Roon files have some special features over streamed content:
 
 * You have a nice looking waveform.
