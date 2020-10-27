@@ -1,3 +1,5 @@
+# Music Streaming
+
 ## General
 
 If you have problems with [TIDAL](https://tidal.com/) and/or [Qobuz](https://www.qobuz.com), disable your account and activate it again.
