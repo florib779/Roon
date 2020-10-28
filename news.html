@@ -6,9 +6,9 @@ title: News
 
 <ul>
   {% for post in site.posts %}
-    <li>
-      <h2>{{ post.date | date_to_string }}</h2>
+    <p>
+      <b>{{ post.date | date_to_string }}</b><br>
       {{ post.content }}
-    </li>
+    </p>
   {% endfor %}
 </ul>
