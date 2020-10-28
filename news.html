@@ -1,0 +1,10 @@
+<h1>News</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <b>{{ page.date | date_to_string }}</b>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
