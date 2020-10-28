@@ -30,7 +30,16 @@
         </header>
     </div>
 
-    <div id="main_content_wrap" class="outer"> 
+    <div id="main_content_wrap" class="outer">
+      <aside style="float: right; width: 12em;">
+         <ul>
+          {% for post in site.posts %}
+          <li>
+            {{ post.title }}
+          </li>
+          {% endfor %}
+         </ul>
+      </aside>  
       <section id="main_content" class="inner">
         {{ content }}
       </section>
