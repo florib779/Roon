@@ -30,18 +30,7 @@
         </header>
     </div>
 
-    <div id="main_content_wrap" class="outer">
-      <aside style="float: right; width: 12em;">
-        <h2>News</h2>
-         <ul>
-          {% for post in site.posts %}
-          <li>
-            <b>{{ post.date | date_to_string }}</b>
-            {{ post.excerpt }}
-          </li>
-          {% endfor %}
-         </ul>
-      </aside>  
+    <div id="main_content_wrap" class="outer"> 
       <section id="main_content" class="inner">
         {{ content }}
       </section>
