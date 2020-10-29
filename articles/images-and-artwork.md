@@ -35,6 +35,7 @@ Setpoints of the images to take advantage of the full width of the display:
   * [MusibBrainz](https://musicbrainz.org/)
 ### Band/Artist-Fotos
   * [Fanart.tv](https://fanart.tv/)
+    * [Roon contributes to them and use some of their data.](https://community.roonlabs.com/t/a-database-of-artists-pictures/83593/13)
   * [Wikipedia](https://wikipedia.org/)
   
 ## Clear TIDAL Image Cache
