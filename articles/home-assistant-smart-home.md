@@ -155,11 +155,17 @@ Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided 
 
 <https://www.home-assistant.io/docs/installation/docker/>
 
-`docker run --init -d --name="home-assistant" -e "TZ=Europe/Berlin" -v /mnt/dietpi_userdata/homeassistant/:/config --net=host --restart=always homeassistant/raspberrypi3-homeassistant:stable`
+`docker run --init -d --name="home-assistant" -v /mnt/dietpi_userdata/homeassistant/:/config -v /etc/localtime:/etc/localtime:ro --net=host --restart=always homeassistant/raspberrypi3-homeassistant:stable`
 
 #### Updating the Docker image
 
-`docker pull homeassistant/raspberrypi3-homeassistant:stable`
+`docker pull homeassistant/raspberrypi3-homeassistant:stable`  # if this returns "Image is up to date" then you can stop here
+
+`docker stop home-assistant`  # stop the running container
+
+`docker rm home-assistant`  # remove it from Docker's list of containers
+
+`docker run --init -d --name="home-assistant" -v /mnt/dietpi_userdata/homeassistant/:/config -v /etc/localtime:/etc/localtime:ro --net=host --restart=always homeassistant/raspberrypi3-homeassistant:stable`  # finally, start a new one
 
 ## Links
 
