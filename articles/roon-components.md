@@ -38,8 +38,9 @@ In general, it does not hurt if the device (core and bridge) is turned on around
 
 * Always use Ethernet between core and output.
   * Roon offers comprehensive and robust support for WiFi, but the sound quality is often not the same. For your highest quality rooms, plan for wired Gigabit Ethernet connections between the core and the outputs.
-* [Electrically Isolate Your Networked Audio](https://www.audiostream.com/content/electrically-isolate-your-networked-audio)
+* Electrically Isolate Your Networked Audio
   * Therefore, do not state as a categorical fact that Ethernet cables do not make a difference: you can, but not to the degree that you envisioned, and longer cables could accommodate more RF. This does not mean that you have to spend a fortune to solve the problem - far from it - but well-made and double-shielded (shielded twisted-pair plus shielded sheath) Ethernet cables are worth considering.
+  * https://community.roonlabs.com/t/ethernet-to-fiber-media-converters/27171
 
 ### RaspberryPi
 
