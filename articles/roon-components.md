@@ -25,7 +25,7 @@ In general, it does not hurt if the device (core and bridge) is turned on around
   * To counter such limitations, it is best to connect the external storage directly to the core.
 
 ### External Storage
-#### ROCK: Storage Basics</p>
+#### ROCK: Storage Basics
 
 * In the case of a drive failure easy to replace.
 * Easy to update at a later date.
