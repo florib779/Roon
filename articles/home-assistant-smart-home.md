@@ -169,6 +169,10 @@ Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided 
 
 `docker run --init -d --name="home-assistant" -v /mnt/dietpi_userdata/homeassistant/:/config -v /etc/localtime:/etc/localtime:ro --net=host --restart=always homeassistant/raspberrypi3-homeassistant:stable`  # finally, start a new one
 
+#### Cleanup disc space
+
+`docker system prune`  # this will remove all stopped containers, networks not used by at least one container, dangling images, build cache
+
 ## Links
 
 * [DietPi installation](https://dietpi.com/phpbb/viewtopic.php?p=9#p9)
