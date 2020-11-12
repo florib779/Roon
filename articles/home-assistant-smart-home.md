@@ -14,7 +14,7 @@ You can find some of my Home Assistant configuration files [here](https://github
   - [x] Night mode (does not work when playing music via roon)
   - [x] Speech enhancement (does not work when playing music via roon)
   - [x] Speaker group management - [Mini Media Player](https://github.com/kalkih/mini-media-player) (Customizable media player card for Home Assistant Lovelace UI)
-  - [ ] Control of subwoofer volume level
+  - [ ] Control subwoofer volume level
 * Roon
   - [x] Control/Show info
     - [x] [RoonLabs music player](https://www.home-assistant.io/integrations/roon/) (Home Assistant integration)
@@ -37,6 +37,7 @@ You can find some of my Home Assistant configuration files [here](https://github
       - Actually not implemented in Home Assistant
   * Show info
     - [x] Comet DECT (radiator control)
+    - [x] Deutsche Telekom/Eurotronic 40318684 (door/window contact)
     - [x] FRITZ!DECT 200 (smart plug)
     - [x] FRITZ!DECT 210 (smart plug)
     - [x] FRITZ!DECT 300 (radiator control)
@@ -45,6 +46,7 @@ You can find some of my Home Assistant configuration files [here](https://github
   - [x] Control
   - [x] Show info
 - [x] Cooking Timer
+- [ ] Alarm Clock
 - [ ] Report the amount of unread emails - [IMAP](https://www.home-assistant.io/integrations/imap/)
 
 ## Hardware
