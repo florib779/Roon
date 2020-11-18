@@ -27,6 +27,10 @@ You can find some of my Home Assistant configuration files [here](https://github
     - [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/)
     - [Android TV](https://www.home-assistant.io/integrations/androidtv/)
   - [ ] [Notifications for Android TV / FireTV ](https://www.home-assistant.io/integrations/nfandroidtv/)
+* AVM FRITZ!Box
+  - [x] Sensor for internet connectivity (with external IP and uptime attributes)
+  - [x] Turn on/off wifi and guest wifi
+  * https://github.com/mammuth/ha-fritzbox-tools
 * AVM FRITZ!DECT devices
   * Control
     - [x] Comet DECT (radiator control)
