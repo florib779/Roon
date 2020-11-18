@@ -30,7 +30,7 @@ You can find some of my Home Assistant configuration files [here](https://github
 * AVM FRITZ!Box
   - [x] Sensor for internet connectivity (with external IP and uptime attributes)
   - [x] Turn on/off wifi and guest wifi
-  * https://github.com/mammuth/ha-fritzbox-tools
+  * [FRITZ!Box Tools](https://github.com/mammuth/ha-fritzbox-tools)
 * AVM FRITZ!DECT devices
   * Control
     - [x] Comet DECT (radiator control)
