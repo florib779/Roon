@@ -54,4 +54,5 @@ Free software for editing audio files (for most plattforms):
   
 ## Links
 
+* [Streaming vs ripping](https://community.roonlabs.com/t/streaming-vs-ripping/128331)
 * [Music on local storage versus music on Qobuz/Tidal](https://community.roonlabs.com/t/music-on-local-storage-versus-music-on-qobuz-tidal/78834)
