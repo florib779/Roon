@@ -44,3 +44,6 @@ Setpoints of the images to take advantage of the full width of the display:
 2. Find and open your [Roon or RoonServer folder](https://kb.roonlabs.com/Database_Location)
 3. Locate and delete only the cache folder (Roon/Cache)
 4. Restart Roon
+
+## Links
+* [Good album cover sites](https://community.roonlabs.com/t/good-album-cover-sites/127998)
