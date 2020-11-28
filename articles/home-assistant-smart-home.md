@@ -51,6 +51,7 @@ You can find some of my Home Assistant configuration files [here](https://github
   - [x] Show info
 - [x] Cooking Timer
 - [ ] Alarm Clock
+  * [Hass-Custom-Alarm](https://github.com/akasma74/hass-custom-alarm)
 - [ ] Report the amount of unread emails - [IMAP](https://www.home-assistant.io/integrations/imap/)
 
 ## Hardware
@@ -183,3 +184,4 @@ Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided 
 * [Installation of roon-extension-manager on DietPi](https://github.com/pluggemi/roon-web-controller/wiki/Diet-Pi-Installation-Extension-Manager)
 * [Measurements: A look & listen to Roon Bridge](http://archimago.blogspot.com/2017/02/measurements-look-listen-to-roon-bridge.html)
 * [Awesome Home Assistant](https://www.awesome-ha.com)
+* [HACS Repositories](https://hacs-repositories.web.app/)
