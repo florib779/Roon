@@ -77,6 +77,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * If you can not find your powermate, try switching your HID driver type and restartig this extension.
 * [roon-extension-queue-bot](https://github.com/TheAppgineer/roon-extension-queue-bot)
   * Roon Extension that lets the queue take action.
+* [roon-extension-radio-presets-api](https://github.com/imgrant/roon-extension-radio-presets-api)
+  * A Roon extension to play radio presets via an API trigger.
 * [roon-extension-random-radio](https://github.com/TheAppgineer/roon-extension-random-radio)
   * Roon Extension to play random tracks or albums.
 * [roon-extension-roonbridge-remote](https://github.com/danward79/roon-extension-roonbridge-remote)
