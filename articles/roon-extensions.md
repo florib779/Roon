@@ -155,6 +155,7 @@ There's already an almost complete [List of available Roon Extensions](https://g
 * [roon-extension-web-testapp](https://github.com/RoonLabs/roon-extension-web-testapp)
 * [Roon-FLAC-restreamer](https://github.com/lfontanel/Roon-FLAC-restreamer)
   * Python script to stream any file at any URL to your Roon server.
+* [roon-ir-remote](https://github.com/smangels/roon-ir-remote)
 * [roon-media-system-driver](https://github.com/ancient-geek/roon-media-system-driver)
   * Control driver for Morcom's Media System.
 * [roon-mouse](https://github.com/keesma/roon-mouse)
@@ -169,3 +170,4 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Roon Remote Experiment
 * [TVRemote](https://github.com/RussellValiant/TVRemote)
   * Apple TV Extension for Roon.
+* [Use-roon-with-Microsoft-Surface-Dial](https://github.com/DrCWO/Use-roon-with-Microsoft-Surface-Dial)
