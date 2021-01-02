@@ -17,6 +17,7 @@
 * [Sources for downloadable audio files](sources-for-downloadable-audio-files.md)
 * [Physical Media](physical-media.md)
 * [My procedure of grooming my music collection](grooming-music-collection.md)
+* [Lyrics in Roon](roon-lyrics.md)
 
 ## Smart Home
 * [My Smart Home project with Home Assistant](home-assistant-smart-home.md)
