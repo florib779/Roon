@@ -32,3 +32,7 @@ You can find more screenshots at the link above. I would like to limit myself he
   [00:35.67]First line of verse
   ```
 * If you want to test your synchronized lyrics within Karaoke Lyrics Editor, you have to insert temporary endmarks, which you have to remove before inserting the text into the file tags of your audio file.
+
+## Other Tools
+
+* [gImageReader](https://github.com/manisandro/gImageReader/) - A simple Gtk/Qt front-end to tesseract-ocr
