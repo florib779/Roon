@@ -1,6 +1,6 @@
 # Installing the Roon-Desktop-App on Linux with Wine
 
-![Roon on Wine screenshot](../images/roon_on_wine_screenshot.jpg)
+![Roon on Wine screenshot](../images/roon1.8-wine-screenshot.png)
 
 [Roon](https://roonlabs.com/) has no native Linux remote client yet, but I hope they will bring us one in the future. Nevertheless, there is a possibility to install it with the help of [Wine](https://www.winehq.org/) under Linux.
 
