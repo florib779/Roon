@@ -178,6 +178,10 @@ Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided 
 
 `docker system prune`  # this will remove all stopped containers, networks not used by at least one container, dangling images, build cache
 
+## ToDo
+* Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
+* Automatic update of home assistant (docker image)
+
 ## Links
 
 * [DietPi installation](https://dietpi.com/phpbb/viewtopic.php?p=9#p9)
