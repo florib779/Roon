@@ -14,6 +14,7 @@ You can find some of my Home Assistant configuration files [here](https://github
   - [x] Night mode (does not work when playing music via roon)
   - [x] Speech enhancement (does not work when playing music via roon)
   - [x] Speaker group management - [Mini Media Player](https://github.com/kalkih/mini-media-player) (Customizable media player card for Home Assistant Lovelace UI)
+  - [ ]  Bass/Treble/Loudness
   - [ ] Control subwoofer [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api), [Node-Sonos-HTTP-API Installation](https://www.mkshb.de/howto-node-sonos-http-api-installation/), [Sonos Dashboard](https://community.home-assistant.io/t/sonos-dashboard/18843)
     - [ ] On/Off
     - [ ] Volume level
