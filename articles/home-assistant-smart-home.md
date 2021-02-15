@@ -15,7 +15,7 @@ You can find some of my Home Assistant configuration files [here](https://github
   - [x] Speech enhancement (does not work when playing music via roon)
   - [x] Speaker group management - [Mini Media Player](https://github.com/kalkih/mini-media-player) (Customizable media player card for Home Assistant Lovelace UI)
   - [ ]  Bass/Treble/Loudness
-  - [ ] Control subwoofer [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api), [Node-Sonos-HTTP-API Installation](https://www.mkshb.de/howto-node-sonos-http-api-installation/), [Sonos Dashboard](https://community.home-assistant.io/t/sonos-dashboard/18843)
+  - [ ] Control subwoofer
     - [ ] On/Off
     - [ ] Volume level
     - [ ] Crossover frequency
@@ -182,6 +182,44 @@ Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided 
 #### Cleanup disc space
 
 `docker system prune`  # this will remove all stopped containers, networks not used by at least one container, dangling images, build cache
+
+### node-sonos-http-api
+
+#### Install
+
+`wget https://github.com/jishi/node-sonos-http-api/archive/master.zip`
+`unzip master.zip`
+`cd node-sonos-http-api-master`
+`npm install --production`
+
+#### Autostart
+
+`nano /etc/systemd/system/sonosapi.service`
+
+```
+[Unit]
+Description=Sonos HTTP API Daemon
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /root/node-sonos-http-api-master/server.js
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+`systemctl enable sonosapi.service`
+
+`systemctl start sonosapi.service`
+
+#### Links
+
+* [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api)
+* [Node-Sonos-HTTP-API Installation](https://www.mkshb.de/howto-node-sonos-http-api-installation/)
+* [Sonos Dashboard](https://community.home-assistant.io/t/sonos-dashboard/18843)
 
 ## ToDo
 * Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
