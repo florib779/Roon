@@ -188,8 +188,11 @@ Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided 
 #### Install
 
 `wget https://github.com/jishi/node-sonos-http-api/archive/master.zip`
+
 `unzip master.zip`
+
 `cd node-sonos-http-api-master`
+
 `npm install --production`
 
 #### Autostart
