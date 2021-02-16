@@ -16,10 +16,10 @@ You can find some of my Home Assistant configuration files [here](https://github
   - [x] Speaker group management - [Mini Media Player](https://github.com/kalkih/mini-media-player) (Customizable media player card for Home Assistant Lovelace UI)
   - [ ]  Bass/Treble/Loudness
   - [ ] Control subwoofer
-    - [ ] On/Off
-    - [ ] Volume level
-    - [ ] Crossover frequency
-    - [ ] Polarity
+    - [x] On/Off
+    - [x] Volume level
+    - [ ] Crossover frequency (possible, but not testet yet)
+    - [ ] Polarity (possible, but not testet yet)
 * Roon
   - [x] Control/Show info
     - [x] [RoonLabs music player](https://www.home-assistant.io/integrations/roon/) (Home Assistant integration)
@@ -206,7 +206,7 @@ After=syslog.target network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/node /root/node-sonos-http-api-master/server.js
+ExecStart=node /root/node-sonos-http-api-master/server.js
 Restart=always
 RestartSec=10
 
