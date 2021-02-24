@@ -107,6 +107,10 @@ Connect a USB keyboard and monitor to the HDMI of ROCK and type `resetnetwork`.
 
 ROCK currently runs with the Linux kernel version 4, but in a future version of ROCK it will run with the Linux kernel version 5, as [mentioned here](https://community.roonlabs.com/t/linux-kernel-version-for-current-rock-release/115797/6).
 
+## Tips
+
+If you don't want to see the unused audio outputs of the Roon server anymore, simply disable them in the BIOS.
+
 ## Links
 
 * [Roon Installation ROCK in deutscher Sprache (German)](https://community.roonlabs.com/t/roon-installation-rock-in-deutscher-sprache/69610)
