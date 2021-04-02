@@ -59,6 +59,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Roon Extension to control playback via keypresses, and hence via any remote control that can generate a keypress.
 * [roon-extension-linuxkeyboardremote](https://github.com/naepflin/roon-extension-linuxkeyboardremote)
   * Program your Linux keyboard to act as a Roon remote. It supports play / pause, volume control and convenience switch.
+* [roon-extension-loop-test](https://github.com/RoonLabs/roon-extension-loop-test)
+  * This is a simple extension to force an output in Roon to always be playing.
 * [roon-extension-manager](https://github.com/TheAppgineer/roon-extension-manager)
   * Roon Extension for managing Roon Extensions.
     * [roon-extension-repository](https://github.com/TheAppgineer/roon-extension-repository)
@@ -97,6 +99,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
 * [roon-hass](https://github.com/marcelveldt/roon-hass)
   * Roon component for [Home Assistant](https://www.home-assistant.io/).
     This is now an [official part of the Home Assistant core](https://github.com/home-assistant/core/tree/dev/homeassistant/components/roon).
+* [roon-mpris](https://github.com/brucejcooper/roon-mpris)
+  * A script that allows you to control roon from your MPRIS based linux desktop.
 * [roon-musicscanner](https://github.com/rasuni/roon-musicscanner)
 * [roon-onkyo](https://github.com/kosmikkosmik/roon-onkyo)
   * Control Onkyo receiver from Roon.
@@ -152,6 +156,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Adds support to Indigo Home Automation to control Roon music player.
 * [Roon-Display-tvOS](https://github.com/MattTW/Roon-Display-tvOS)
   * A simple Roon Display App for Apple TV.
+* [rooExtend](https://rooextend.com/)
+  * rooDial is a software developed to allow you to control Roon with an off the shelf Microsoft Surface Dial, a minimal, simple well designed product that fits in with any home.
 * [roon-extension-web-testapp](https://github.com/RoonLabs/roon-extension-web-testapp)
 * [Roon-FLAC-restreamer](https://github.com/lfontanel/Roon-FLAC-restreamer)
   * Python script to stream any file at any URL to your Roon server.
