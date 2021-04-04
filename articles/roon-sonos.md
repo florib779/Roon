@@ -1,6 +1,7 @@
-Roon and Sonos
+# Roon and Sonos
 
-[Roon Knowledge Base](https://help.roonlabs.com/portal/en/kb/articles/sonos)
+* [Roon Knowledge Base](https://help.roonlabs.com/portal/en/kb/articles/sonos)
+* [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api)
 
 ## HTTP Commands
 
