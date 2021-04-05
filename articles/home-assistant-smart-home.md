@@ -168,27 +168,26 @@ xset dpms 60 60 60 &
 
 I am currently trying to get Home Assistant running on an Intel NUC. On the one hand to be able to use [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/) to control Roon with my remote control. On the other hand because the RaspberryPi 3 is a bit sluggish.
 
+[Install Home Assistant Core](https://www.home-assistant.io/installation/nuc#install-home-assistant-core)
+
+1. `sudo useradd -rm homeassistant`
+2. `sudo mkdir /srv/homeassistant`
+3. `sudo chown homeassistant:homeassistant /srv/homeassistant`
+4. `sudo -u homeassistant -H -s`
+5. `cd /srv/homeassistant`
+6. `python3.9 -m venv .`
+7. `source bin/activate`
+8. `python3 -m pip install wheel`
+9. `pip3 install homeassistant`
+10. `hass`
+
 #### HDMI-CEC
 
+`configuration.yaml`:
 ```
-Logger: homeassistant.setup
-Source: deps/lib/python3.9/site-packages/pycec/cec.py:20
-First occurred: 10:28:29 (1 occurrences)
-Last logged: 10:28:29
-Error during setup of component hdmi_cec
-
-Traceback (most recent call last):
-  File "/usr/lib/python3.9/site-packages/homeassistant/setup.py", line 213, in _async_setup_component
-    result = await task
-  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
-    result = self.fn(*self.args, **self.kwargs)
-  File "/usr/lib/python3.9/site-packages/homeassistant/components/hdmi_cec/__init__.py", line 214, in setup
-    adapter = CecAdapter(name=display_name[:12], activate_source=False)
-  File "/root/.homeassistant/deps/lib/python3.9/site-packages/pycec/cec.py", line 20, in __init__
-    import cec
-ModuleNotFoundError: No module named 'cec'
+hdmi_cec:
+  platform: media_player
 ```
-To avoid this error message I appended `sys.path.append(’/user/.homeassistant/deps/lib/python3.9/site-packages/’)` in line 20, just before `import cec`.
 
 ---
 
