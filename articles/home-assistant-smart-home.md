@@ -44,6 +44,8 @@ You can find some of my Home Assistant configuration files [here](https://github
     - [x] FRITZ!DECT 300 (radiator control)
     - [ ] FRITZ!DECT 500 (LED light)
       - Actually not implemented in Home Assistant
+    - [ ] Rademacher RolloTron DECT 1213 (shutter)
+      - [ ] Close shutter when TV is turned on.
   * Show info
     - [x] Comet DECT (radiator control)
     - [x] Deutsche Telekom/Eurotronic 40318684 (door/window contact)
@@ -51,6 +53,7 @@ You can find some of my Home Assistant configuration files [here](https://github
     - [x] FRITZ!DECT 210 (smart plug)
     - [x] FRITZ!DECT 300 (radiator control)
     - [x] FRITZ!DECT 440 (switch with temperature sensor)
+    - [x] Rademacher RolloTron DECT 1213 (shutter)
 * Ecovacs Deebot
   - [x] Control
   - [x] Show info
@@ -163,6 +166,31 @@ xset dpms 60 60 60 &
 
 ### Home Assistant
 
+I am currently trying to get Home Assistant running on an Intel NUC. On the one hand to be able to use [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/) to control Roon with my remote control. On the other hand because the RaspberryPi 3 is a bit sluggish.
+
+#### HDMI-CEC
+
+```
+Logger: homeassistant.setup
+Source: deps/lib/python3.9/site-packages/pycec/cec.py:20
+First occurred: 10:28:29 (1 occurrences)
+Last logged: 10:28:29
+Error during setup of component hdmi_cec
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/setup.py", line 213, in _async_setup_component
+    result = await task
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/hdmi_cec/__init__.py", line 214, in setup
+    adapter = CecAdapter(name=display_name[:12], activate_source=False)
+  File "/root/.homeassistant/deps/lib/python3.9/site-packages/pycec/cec.py", line 20, in __init__
+    import cec
+ModuleNotFoundError: No module named 'cec'
+```
+
+---
+
 Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided on a Docker image.
 
 <https://www.home-assistant.io/docs/installation/docker/>
@@ -182,6 +210,7 @@ Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided 
 #### Cleanup disc space
 
 `docker system prune`  # this will remove all stopped containers, networks not used by at least one container, dangling images, build cache
+~
 
 ### node-sonos-http-api
 
