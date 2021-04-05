@@ -166,20 +166,20 @@ xset dpms 60 60 60 &
 
 ### Home Assistant
 
-I am currently trying to get Home Assistant running on an Intel NUC. On the one hand to be able to use [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/) to control Roon with my remote control. On the other hand because the RaspberryPi 3 is a bit sluggish.
+I am currently trying to get Home Assistant Supervised running on an Intel NUC with Manjaro. On the one hand to be able to use [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/) to control Roon with my remote control. On the other hand because the RaspberryPi 3 is a bit sluggish.
 
-[Install Home Assistant Core](https://www.home-assistant.io/installation/nuc#install-home-assistant-core)
+1. sudo usermod -aG docker user # Add our linux user to the Docker group
+2. docker --version # Check if Docker is running
+3. sudo curl -Lo installer.sh https://raw.githubusercontent.com/home-assistant/supervised-installer/master/installer.sh
+4. sudo bash installer.sh --machine qemux86-64
 
-1. `sudo useradd -rm homeassistant`
-2. `sudo mkdir /srv/homeassistant`
-3. `sudo chown homeassistant:homeassistant /srv/homeassistant`
-4. `sudo -u homeassistant -H -s`
-5. `cd /srv/homeassistant`
-6. `python3.9 -m venv .`
-7. `source bin/activate`
-8. `python3 -m pip install wheel`
-9. `pip3 install homeassistant`
-10. `hass`
+After a while, the script will ask the following question:
+
+`Do you want to proceed with overwriting the /etc/network/interfaces file? [N/y]`
+
+In my case I simply pressed return (No).
+
+[Source](https://peyanski.com/how-to-install-home-assistant-supervised-official-way/#Home_Assistant_Supervised_method)
 
 #### HDMI-CEC
 
@@ -190,6 +190,7 @@ hdmi_cec:
 ```
 
 ---
+No longer current:
 
 Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided on a Docker image.
 
@@ -210,7 +211,8 @@ Unfortunately, I had no luck installing Home Assistant via DietPi, so I decided 
 #### Cleanup disc space
 
 `docker system prune`  # this will remove all stopped containers, networks not used by at least one container, dangling images, build cache
-~
+
+---
 
 ### node-sonos-http-api
 
