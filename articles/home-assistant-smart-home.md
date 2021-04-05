@@ -188,6 +188,7 @@ Traceback (most recent call last):
     import cec
 ModuleNotFoundError: No module named 'cec'
 ```
+To avoid this error message I appended `sys.path.append(’/user/.homeassistant/deps/lib/python3.9/site-packages/’)` in line 20, just before `import cec`.
 
 ---
 
