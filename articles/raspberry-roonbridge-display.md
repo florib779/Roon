@@ -2,13 +2,11 @@
 
 ## Hardware
 
-Raspberry Pi 3 Model B with [DietPi](https://github.com/MichaIng/DietPi) including [Roon Bridge](https://kb.roonlabs.com/RoonBridge), [Roon-Extension-Manager](https://github.com/TheAppgineer/roon-extension-manager) and display for Home Assistant.
+Raspberry Pi 3 Model B with [DietPi](https://github.com/MichaIng/DietPi) including [Roon Bridge](https://kb.roonlabs.com/RoonBridge), [Roon-Extension-Manager v1.0](https://community.roonlabs.com/t/roon-extension-manager-v1-0-beta-program/151438) and display for [my Home Assistant installation](home-assistant-smart-home.md).
 
 ## Installation
 
 ### Dietpi
-
-[Diet-Pi-Installation-Extension-Manager](https://github.com/pluggemi/roon-web-controller/wiki/Diet-Pi-Installation-Extension-Manager)
 
 After initial bootup, login through ssh.
 
@@ -41,9 +39,10 @@ Dietpi-Config --> Display Options -->Display Brightness
 
 1. As root, run the software configuration
   1. `dietpi-software`
-2. Select Chromium and Roon Bridge
+2. Select Software
   1. Software Optimized -> Chromium
   2. Software Optimized -> Roon Bridge
+  3. Software Optimized -> Docker
 3. Install the software, Dietpi-Config --> Install, then exit. The Raspberry Pi will reboot at this point.
 
 ![DietPi GPU Memory](../images/dietpi_gpu_memory.png)
@@ -55,7 +54,7 @@ Roon Bridge is now installed and running.
 #### Console boot up
 
 1. As root, run the autostart configuration:
-  1.`dietpi-autostart`
+  1. `dietpi-autostart`
 2. Select Custom - `/var/lib/dietpi/dietpi-autostart/custom.sh`
 3. Save and exit
 
@@ -95,13 +94,17 @@ xset dpms 60 60 60 &
 # start full screen web app
 # change the URL if Roon Web Controller is running on a different system
 #/usr/bin/chromium-browser --kiosk http://ip-of-the-homeassistant-server:8123
-sleep 180s && /usr/bin/chromium-browser --start-fullscreen http://ip-of-the-homeassistant-server:8123 #--kiosk
+/usr/bin/chromium-browser --start-fullscreen http://ip-of-the-homeassistant-server:8123 #--kiosk
 ```
 
 7. Save and exit
 8. Make the kiosk.sh executable
   1. `chmod +x /root/kiosk.sh`
 9. Reboot
+
+### Roon Extension Manager
+
+https://community.roonlabs.com/t/roon-extension-manager-v1-0-beta-program/151438
 
 ### node-sonos-http-api
 
