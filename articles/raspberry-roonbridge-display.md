@@ -94,7 +94,8 @@ xset dpms 60 60 60 &
 
 # start full screen web app
 # change the URL if Roon Web Controller is running on a different system
-/usr/bin/chromium-browser --kiosk http://ip-of-the-homeassistant-server:8123
+#/usr/bin/chromium-browser --kiosk http://ip-of-the-homeassistant-server:8123
+sleep 180s && /usr/bin/chromium-browser --start-fullscreen http://ip-of-the-homeassistant-server:8123 #--kiosk
 ```
 
 7. Save and exit
