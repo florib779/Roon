@@ -80,21 +80,34 @@ In my case I simply pressed return (No).
 
 #### HDMI-CEC
 
+##### Log in to your Docker container
+
+`sudo docker exec -ti homeassistant /bin/bash`
+
+##### Get CEC version
+
+`sudo cec-client -l`
+
+##### Test your installation
+
+`sudo echo scan | cec-client -s -d 1`
+
+##### Get available CEC commands
+
+`sudo echo h | cec-client -s -d 1 # d 1 = device 1`
+
 `configuration.yaml`:
 ```
 hdmi_cec:
-  platform: media_player
+  devices:
+    TV: 0.0.0.0
+    PulseEight: 3.0.0.0
 ```
 
 ## ToDo
-* Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
 * Automatic update of home assistant (docker image)
 
 ## Links
-
-* [DietPi installation](https://dietpi.com/phpbb/viewtopic.php?p=9#p9)
-* [Installation of roon-extension-manager on DietPi](https://github.com/pluggemi/roon-web-controller/wiki/Diet-Pi-Installation-Extension-Manager)
-* [Measurements: A look & listen to Roon Bridge](http://archimago.blogspot.com/2017/02/measurements-look-listen-to-roon-bridge.html)
 * [Awesome Home Assistant](https://www.awesome-ha.com)
 * [HACS Repositories](https://hacs-repositories.web.app/)
 * [Sonos Dashboard](https://community.home-assistant.io/t/sonos-dashboard/18843)
