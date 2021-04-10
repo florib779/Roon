@@ -53,6 +53,8 @@ In my case on Manjaro/Arch Linux I was able to do this by executing the followin
 
 ```sudo pacman -U /var/cache/pacman/pkg/package-old_version.pkg.tar.xz```
 
+https://forum.winehq.org/viewtopic.php?f=8&t=34234
+
 ## Manual installation
 
 This instructions were tested under the following distributions:
