@@ -27,8 +27,9 @@ Nevertheless I show you the manual installation and possible problems.
 
 This process can take 30 minutes or longer (depending on your system).
 
-There was already the idea to create a Snap or Flatpak file to simplify the installation even more. See [Roon UI on Wine as Linux snap?](https://community.roonlabs.com/t/roon-ui-on-wine-as-linux-snap/69425) So far there are no results in this area.
-See also: https://github.com/RoPieee/roon-in-flatpak
+There was already the [idea to create a Snap or Flatpak file](https://community.roonlabs.com/t/roon-ui-on-wine-as-linux-snap/69425) to simplify the installation even more.
+
+Also take a look at this experimental flatpak file: https://github.com/RoPieee/roon-in-flatpak
 
 ## Common Problems
 
@@ -38,7 +39,7 @@ See also: https://github.com/RoPieee/roon-in-flatpak
 It often happens that the program shortcuts on the Linux desktop no longer work after an update and therefore roon can no longer be started.
 For this reason, it makes sense to use the `start_my_roon_instance.sh` script which was created during installation in your home folder or modify your shortcut as follows:
 
-```env WINEPREFIX="/home/user/my_roon_instance" wine /home/user/my_roon_instance/drive_c/users/user/Local Settings/Application Data/Roon/Application/Roon.exe```
+```env WINEPREFIX="~/my_roon_instance" wine ~/my_roon_instance/drive_c/users/user/Local Settings/Application Data/Roon/Application/Roon.exe```
 
 ### "This application could not be started" after updating wine
 
@@ -54,7 +55,7 @@ In my case on Manjaro/Arch Linux I was able to do this by executing the followin
 
 ```sudo pacman -U /var/cache/pacman/pkg/package-old_version.pkg.tar.xz```
 
-https://forum.winehq.org/viewtopic.php?f=8&t=34234
+See also: https://forum.winehq.org/viewtopic.php?f=8&t=34234
 
 ## Manual installation
 
@@ -79,9 +80,9 @@ Optionally you can add a scalefactor for high resolution screens:
 ```
 #!/bin/bash
 
-PREFIX=/home/user/my_roon_instance
+PREFIX=~/my_roon_instance
 
-env WINEPREFIX=/home/user/my_roon_instance wine /home/user/my_roon_instance/'drive_c/users/user/Local Settings/Application Data/Roon/Application/Roon.exe' -scalefactor=2
+env WINEPREFIX=~/my_roon_instance wine ~/my_roon_instance/'drive_c/users/user/Local Settings/Application Data/Roon/Application/Roon.exe' -scalefactor=2
 ```
 
 ### Instructions for Arch based distributions
@@ -142,13 +143,13 @@ The following instructions are for Ubuntu based distributions only (Debian could
 
     Name=Roon
 
-    Exec=env WINEPREFIX="/home/user/WinRoon" wine C:\\\\windows\\\\command\\\\start.exe /Unix ~/WinRoon/dosdevices/c:/users/user/Start\\ Menu/Programs/Roon.lnk
+    Exec=env WINEPREFIX="~/WinRoon" wine C:\\\\windows\\\\command\\\\start.exe /Unix ~/WinRoon/dosdevices/c:/users/user/Start\\ Menu/Programs/Roon.lnk
 
     Type=Application
 
     StartupNotify=true
 
-    Path=/home/user/WinRoon/dosdevices/c:/users/user/Local Settings/Application Data/Roon/Application
+    Path=~/WinRoon/dosdevices/c:/users/user/Local Settings/Application Data/Roon/Application
 
     Icon=93CE_Roon.0
 
@@ -191,13 +192,13 @@ The following instructions are for Ubuntu based distributions only (Debian could
 
     Name=Roon
 
-    Exec=env WINEPREFIX="/home/user/WinRoon" wine C:\\\\windows\\\\command\\\\start.exe /Unix ~/WinRoon/dosdevices/c:/users/user/Start\\ Menu/Programs/Roon.lnk
+    Exec=env WINEPREFIX="~/WinRoon" wine C:\\\\windows\\\\command\\\\start.exe /Unix ~/WinRoon/dosdevices/c:/users/user/Start\\ Menu/Programs/Roon.lnk
 
     Type=Application
 
     StartupNotify=true
 
-    Path=/home/user/WinRoon/dosdevices/c:/users/user/Local Settings/Application Data/Roon/Application
+    Path=~/WinRoon/dosdevices/c:/users/user/Local Settings/Application Data/Roon/Application
 
     Icon=93CE_Roon.0
 
