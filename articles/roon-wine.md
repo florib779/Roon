@@ -28,6 +28,7 @@ Nevertheless I show you the manual installation and possible problems.
 This process can take 30 minutes or longer (depending on your system).
 
 There was already the idea to create a Snap or Flatpak file to simplify the installation even more. See [Roon UI on Wine as Linux snap?](https://community.roonlabs.com/t/roon-ui-on-wine-as-linux-snap/69425) So far there are no results in this area.
+See also: https://github.com/RoPieee/roon-in-flatpak
 
 ## Common Problems
 
