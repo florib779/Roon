@@ -44,6 +44,7 @@ You can find some of my Home Assistant configuration files [here](https://github
     - [ ] FRITZ!DECT 500 (LED light)
       - Actually not implemented in Home Assistant
     - [ ] Rademacher RolloTron DECT 1213 (shutter)
+      - Actually not implemented in Home Assistant
       - [ ] Close shutter when TV is turned on.
   * Show info
     - [x] Comet DECT (radiator control)
@@ -78,25 +79,18 @@ In my case I simply pressed return (No).
 
 [Source](https://peyanski.com/how-to-install-home-assistant-supervised-official-way/#Home_Assistant_Supervised_method)
 
-#### HDMI-CEC
-
-##### Log in to your Docker container
+### Install HACS
 
 `sudo docker exec -ti homeassistant /bin/bash`
 
-##### Get CEC version
+`wget -q -O - https://install.hacs.xyz | bash -`
 
-`sudo cec-client -l`
+[Source](https://hacs.xyz/docs/installation/installation/)
 
-##### Test your installation
-
-`sudo echo scan | cec-client -s -d 1`
-
-##### Get available CEC commands
-
-`sudo echo h | cec-client -s -d 1 # d 1 = device 1`
+### HDMI-CEC
 
 `configuration.yaml`:
+
 ```
 hdmi_cec:
   devices:
@@ -104,8 +98,32 @@ hdmi_cec:
     PulseEight: 3.0.0.0
 ```
 
-## ToDo
-* Automatic update of home assistant (docker image)
+#### Log in to your Docker container
+
+`sudo docker exec -ti homeassistant /bin/bash`
+
+#### Get CEC version
+
+`sudo cec-client -l`
+
+#### Test your installation
+
+`sudo echo scan | cec-client -s -d 1`
+
+#### Get available CEC commands
+
+`sudo echo h | cec-client -s -d 1 # d 1 = device 1`
+
+#### Change volume on TV
+
+`sudo echo 'volup' | cec-client -s -d 1`
+
+`sudo echo 'voldown' | cec-client -s -d 1`
+
+`sudo echo 'mute' | cec-client -s -d 1`
+
+#### Links
+* https://www.cec-o-matic.com/
 
 ## Links
 * [Awesome Home Assistant](https://www.awesome-ha.com)
