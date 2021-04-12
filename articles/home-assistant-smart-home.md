@@ -66,10 +66,10 @@ You can find some of my Home Assistant configuration files [here](https://github
 
 I am currently running Home Assistant Supervised on an Intel NUC with Manjaro. On the one hand to be able to use [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/) to control Roon with my remote control (which is still in the works). On the other hand because the RaspberryPi 3 is a bit sluggish.
 
-1. sudo usermod -aG docker user # Add our linux user to the Docker group
-2. docker --version # Check if Docker is running
-3. sudo curl -Lo installer.sh https://raw.githubusercontent.com/home-assistant/supervised-installer/master/installer.sh
-4. sudo bash installer.sh --machine qemux86-64
+1. `sudo usermod -aG docker user # Add our linux user to the Docker group`
+2. `docker --version # Check if Docker is running`
+3. `sudo curl -Lo installer.sh https://raw.githubusercontent.com/home-assistant/supervised-installer/master/installer.sh`
+4. `sudo bash installer.sh --machine qemux86-64`
 
 After a while, the script will ask the following question:
 
@@ -104,23 +104,23 @@ hdmi_cec:
 
 #### Get CEC version
 
-`sudo cec-client -l`
+`cec-client -l`
 
 #### Test your installation
 
-`sudo echo scan | cec-client -s -d 1`
+`echo scan | cec-client -s -d 1`
 
 #### Get available CEC commands
 
-`sudo echo h | cec-client -s -d 1 # d 1 = device 1`
+`echo h | cec-client -s -d 1 # d 1 = device 1`
 
 #### Change volume on TV
 
-`sudo echo 'volup' | cec-client -s -d 1`
+`echo 'volup' | cec-client -s -d 1`
 
-`sudo echo 'voldown' | cec-client -s -d 1`
+`echo 'voldown' | cec-client -s -d 1`
 
-`sudo echo 'mute' | cec-client -s -d 1`
+`echo 'mute' | cec-client -s -d 1`
 
 #### Links
 * https://www.cec-o-matic.com/
