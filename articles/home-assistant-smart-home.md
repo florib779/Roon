@@ -112,7 +112,7 @@ hdmi_cec:
 
 #### Get available CEC commands
 
-`echo h | cec-client -s -d 1 # d 1 = device 1`
+`echo h | cec-client -s -d 1`
 
 #### Change volume on TV
 
