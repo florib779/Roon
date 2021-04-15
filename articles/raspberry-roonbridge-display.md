@@ -58,6 +58,7 @@ There's a way to configure DietPi to boot into a Chromium window. But with the f
 * No cursor
 * No scroll bar
 * Turn your screen off after a given time
+  * `rm 98-dietpi-disable_dpms.conf`
 
 1. As root, run the autostart configuration:
   1. `dietpi-autostart`
