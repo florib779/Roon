@@ -170,4 +170,4 @@ hdmi_cec:
 * [Awesome Home Assistant](https://www.awesome-ha.com)
 * [HACS Repositories](https://hacs-repositories.web.app/)
 * [Sonos Dashboard](https://community.home-assistant.io/t/sonos-dashboard/18843)
-* [https://github.com/vmcosco/HA-Sonos](HA-Sonos)
+* [HA-Sonos](https://github.com/vmcosco/HA-Sonos)
