@@ -98,56 +98,10 @@ xset dpms 60 60 60 &
   1. `chmod +x /root/kiosk.sh`
 9. Reboot
 
-### Roon Extension Manager
-
-https://community.roonlabs.com/t/roon-extension-manager-v1-0-beta-program/151438
-
-### node-sonos-http-api
-
-#### Install
-
-`wget https://github.com/jishi/node-sonos-http-api/archive/master.zip`
-
-`unzip master.zip`
-
-`cd node-sonos-http-api-master`
-
-`npm install --production`
-
-#### Autostart
-
-`nano /etc/systemd/system/sonosapi.service`
-
-```
-[Unit]
-Description=Sonos HTTP API Daemon
-After=syslog.target network.target
-
-[Service]
-Type=simple
-ExecStart=node /root/node-sonos-http-api-master/server.js
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-```
-
-`systemctl enable sonosapi.service`
-
-`systemctl start sonosapi.service`
-
-#### Links
-
-* [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api)
-* [Node-Sonos-HTTP-API Installation](https://www.mkshb.de/howto-node-sonos-http-api-installation/)
-* [Sonos Dashboard](https://community.home-assistant.io/t/sonos-dashboard/18843)
-
 ## ToDo
 * Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
 
 ## Links
 
 * [DietPi installation](https://dietpi.com/phpbb/viewtopic.php?p=9#p9)
-* [Installation of roon-extension-manager on DietPi](https://github.com/pluggemi/roon-web-controller/wiki/Diet-Pi-Installation-Extension-Manager)
 * [Measurements: A look & listen to Roon Bridge](http://archimago.blogspot.com/2017/02/measurements-look-listen-to-roon-bridge.html)
