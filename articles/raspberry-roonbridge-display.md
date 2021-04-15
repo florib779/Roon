@@ -35,7 +35,7 @@ After confirmation Dietpi will update itself.
 
 ![DietPi Software Final](../images/dietpi_software_final.png)
 
-Roon Bridge is now installed and running.
+Chromium and Roon Bridge are now installed and running.
 
 #### Turn the display
 
