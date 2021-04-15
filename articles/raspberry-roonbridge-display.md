@@ -115,6 +115,7 @@ xset dpms 60 60 60 &
 * Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
 * Auto login and save the Home Assistant screen settings
 * Keep LEDs off
+* Add virtual keyboard
 
 ## Links
 
