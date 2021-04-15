@@ -53,6 +53,12 @@ Dietpi-Config -> Display Options -> Rotation (LCD)
 
 #### Console boot up
 
+There's a way to configure DietPi to boot into a Chromium window. But with the following procedure you will get the following advantages:
+
+* No cursor
+* No scroll bar
+* Turn your screen off after a given time
+
 1. As root, run the autostart configuration:
   1. `dietpi-autostart`
 2. Select Custom - `/var/lib/dietpi/dietpi-autostart/custom.sh`
@@ -106,7 +112,7 @@ xset dpms 60 60 60 &
 
 ## ToDo
 * Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
-* Auto login
+* Auto login and save the Home Assistant screen settings
 * Keep LEDs off
 
 ## Links
