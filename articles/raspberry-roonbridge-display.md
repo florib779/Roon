@@ -2,25 +2,42 @@
 
 ## Hardware
 
-Raspberry Pi 3 Model B with [DietPi](https://github.com/MichaIng/DietPi) including [Roon Bridge](https://kb.roonlabs.com/RoonBridge), [Roon-Extension-Manager v1.0](https://community.roonlabs.com/t/roon-extension-manager-v1-0-beta-program/151438) and display for [my Home Assistant installation](home-assistant-smart-home.md).
+Raspberry Pi 3 Model B with [DietPi](https://github.com/MichaIng/DietPi) including [Roon Bridge](https://kb.roonlabs.com/RoonBridge) and display for [my Home Assistant installation](home-assistant-smart-home.md).
 
 ## Installation
 
 ### Dietpi
 
-After initial bootup, login through ssh.
+After initial bootup, login through ssh: `ssh root@dietpi`
+
+Password: `dietpi`
 
 ![DietPi Initial](../images/dietpi_initial.png)
 
-![DietPi Survey](../images/dietpi_survey.png)
+After confirmation Dietpi will update itself.
 
-![DietPi Serial Console](../images/dietpi_serial_console.png)
-
-![DietPi Password](../images/dietpi_password.png)
+![DietPi-Set Software](../images/dietpi-set_software.png)
 
 ![DietPi Unix Password](../images/dietpi_unix_password.png)
 
-Dietpi will update itself.
+![DietPi Serial Console](../images/dietpi_serial_console.png)
+
+![DietPi Software](../images/dietpi_software.png)
+
+![DietPi Software Install](../images/dietpi_software_install.png)
+
+1. Select Software
+  1. Software Optimized -> Chromium
+  2. Software Optimized -> Roon Bridge
+2. Install the software, Dietpi-Config --> Install, then exit. The Raspberry Pi will reboot at this point.
+
+![DietPi GPU Memory](../images/dietpi_gpu_memory.png)
+
+![DietPi Software Final](../images/dietpi_software_final.png)
+
+Roon Bridge is now installed and running.
+
+#### Turn the display
 
 In my configuration I had to turn the display 180 degrees:
 
@@ -29,27 +46,6 @@ Dietpi-Config --> Display Options --> Rotation (LCD)
 Additionally I dim the display a little bit:
 
 Dietpi-Config --> Display Options -->Display Brightness
-
-#### Additional software
-
-![DietPi Software](../images/dietpi_software.png)
-
-![DietPi Software Install](../images/dietpi_software_install.png)
-
-
-1. As root, run the software configuration
-  1. `dietpi-software`
-2. Select Software
-  1. Software Optimized -> Chromium
-  2. Software Optimized -> Roon Bridge
-  3. Software Optimized -> Docker
-3. Install the software, Dietpi-Config --> Install, then exit. The Raspberry Pi will reboot at this point.
-
-![DietPi GPU Memory](../images/dietpi_gpu_memory.png)
-
-![DietPi Software Final](../images/dietpi_software_final.png)
-
-Roon Bridge is now installed and running.
 
 #### Console boot up
 
