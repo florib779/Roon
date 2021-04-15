@@ -1,6 +1,6 @@
 # My Smart Home project with Home Assistant
 
-You can find some of my Home Assistant configuration files [here](https://github.com/florib779/homeassistant-config).
+You can find some of my Home Assistant configuration files [here](https://github.com/florib779/homeassistant-config) (which are not always up to date yet).
 
 ## Home Assistant Dashboard
 ![Home Assistant Dashboard](../images/home-assistant-dashboard.png)
@@ -86,6 +86,47 @@ In my case I simply pressed return (No).
 `wget -q -O - https://install.hacs.xyz | bash -`
 
 [Source](https://hacs.xyz/docs/installation/installation/)
+
+### node-sonos-http-api
+
+#### Install
+
+`wget https://github.com/jishi/node-sonos-http-api/archive/master.zip`
+
+`unzip master.zip`
+
+`cd node-sonos-http-api-master`
+
+`npm install --production`
+
+#### Autostart
+
+`nano /etc/systemd/system/sonosapi.service`
+
+```
+[Unit]
+Description=Sonos HTTP API Daemon
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=node /root/node-sonos-http-api-master/server.js
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+`systemctl enable sonosapi.service`
+
+`systemctl start sonosapi.service`
+
+#### Links
+
+* [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api)
+* [Node-Sonos-HTTP-API Installation](https://www.mkshb.de/howto-node-sonos-http-api-installation/)
+* [Sonos Dashboard](https://community.home-assistant.io/t/sonos-dashboard/18843)
 
 ### HDMI-CEC
 
