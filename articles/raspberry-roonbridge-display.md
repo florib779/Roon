@@ -24,12 +24,12 @@ After confirmation Dietpi will update itself.
 
 ![DietPi Software](../images/dietpi_software.png)
 
-![DietPi Software Install](../images/dietpi_software_install.png)
-
 1. Select Software
   1. Software Optimized -> Chromium
   2. Software Optimized -> Roon Bridge
 2. Install the software, Dietpi-Config --> Install, then exit. The Raspberry Pi will reboot at this point.
+
+![DietPi Software Install](../images/dietpi_software_install.png)
 
 ![DietPi GPU Memory](../images/dietpi_gpu_memory.png)
 
