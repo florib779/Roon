@@ -27,25 +27,29 @@ After confirmation Dietpi will update itself.
 1. Select Software
   1. Software Optimized -> Chromium
   2. Software Optimized -> Roon Bridge
-2. Install the software, Dietpi-Config --> Install, then exit. The Raspberry Pi will reboot at this point.
+2. Install the software
 
 ![DietPi Software Install](../images/dietpi_software_install.png)
 
 ![DietPi GPU Memory](../images/dietpi_gpu_memory.png)
 
+![DietPi GPU Memory](../images/dietpi_survey.png)
+
 ![DietPi Software Final](../images/dietpi_software_final.png)
 
-Chromium and Roon Bridge are now installed and running.
+#### Configure Sound Card
+
+`dietpi-config`
+
+Audio -> Soundcard -> hifiberry-digi
+
+![DietPi Software Final](../images/dietpi-config_soundcard.png)
 
 #### Turn the display
 
 In my configuration I had to turn the display 180 degrees:
 
 Dietpi-Config --> Display Options --> Rotation (LCD)
-
-Additionally I dim the display a little bit:
-
-Dietpi-Config --> Display Options -->Display Brightness
 
 #### Console boot up
 
