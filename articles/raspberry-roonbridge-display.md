@@ -43,13 +43,13 @@ After confirmation Dietpi will update itself.
 
 Audio -> Soundcard -> hifiberry-digi
 
-![DietPi Software Final](../images/dietpi-config_soundcard.png)
+![DietPi Software Configure Soundcard](../images/dietpi-config_soundcard.png)
 
-#### Turn the display
+#### Rotate the display
 
-In my configuration I had to turn the display 180 degrees:
+In my configuration I had to rotate the display 180 degrees:
 
-Dietpi-Config --> Display Options --> Rotation (LCD)
+Dietpi-Config -> Display Options -> Rotation (LCD)
 
 #### Console boot up
 
@@ -98,12 +98,16 @@ xset dpms 60 60 60 &
 ```
 
 7. Save and exit
-8. Make the kiosk.sh executable
+8. Make the `kiosk.sh` executable
   1. `chmod +x /root/kiosk.sh`
-9. Reboot
+9. `reboot`
+
+[Source](https://github.com/pluggemi/roon-web-controller/wiki/Diet-Pi-Installation-Extension-Manager)
 
 ## ToDo
 * Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
+* Auto login
+* Keep LEDs off
 
 ## Links
 
