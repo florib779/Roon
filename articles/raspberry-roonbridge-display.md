@@ -26,6 +26,8 @@ After confirmation Dietpi will update itself.
 
 ![DietPi Software Install](../images/dietpi_software_install.png)
 
+![DietPi Software Install](../images/dietpi_software_additional.png)
+
 1. Select Software
   1. Software Optimized -> Chromium
   2. Software Optimized -> Roon Bridge
