@@ -67,7 +67,7 @@ There's a way to configure DietPi to boot into a Chromium window. But with the f
 
 #### System configuration
 
-1. Modify the custom.sh startup script
+1. Modify the `custom.sh` startup script
   1. `nano /var/lib/dietpi/dietpi-autostart/custom.sh`
 2. Add this to the bottom of the file:
 ```
@@ -75,9 +75,9 @@ There's a way to configure DietPi to boot into a Chromium window. But with the f
 xinit /root/kiosk.sh -- -nocursor
 ```
 3. Save and exit
-4. Make the custom.sh script executable
+4. Make the `custom.sh` script executable
   1. `chmod +x /var/lib/dietpi/dietpi-autostart/custom.sh`
-5. Create the kiosk.sh script
+5. Create the `kiosk.sh` script
   1. `nano /root/kiosk.sh`
 6. Paste the following code as content:
 
@@ -100,8 +100,7 @@ xset dpms 60 60 60 &
 
 # start full screen web app
 # change the URL if Roon Web Controller is running on a different system
-#/usr/bin/chromium-browser --kiosk http://ip-of-the-homeassistant-server:8123
-/usr/bin/chromium-browser --start-fullscreen http://ip-of-the-homeassistant-server:8123 #--kiosk
+/usr/bin/chromium-browser --kiosk http://ip-of-the-homeassistant-server:8123
 ```
 
 7. Save and exit
