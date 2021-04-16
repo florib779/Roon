@@ -82,6 +82,8 @@ xinit /root/kiosk.sh -- -nocursor
 6. Paste the following code as content:
 
 ```
+#!/bin/sh
+
 #######################################
 #
 # Start up script for running the
