@@ -14,10 +14,10 @@ You can find some of my Home Assistant configuration files [here](https://github
   - [x] Night mode (does not work when playing music via roon)
   - [x] Speech enhancement (does not work when playing music via roon)
   - [x] Speaker group management - [Mini Media Player](https://github.com/kalkih/mini-media-player) (Customizable media player card for Home Assistant Lovelace UI)
-  - [ ]  Bass/Treble/Loudness
+  - [ ] Bass/Treble/Loudness
   - [ ] Control subwoofer
     - [x] On/Off
-    - [x] Volume level
+    - [ ] Volume level
     - [ ] Crossover frequency (possible, but not testet yet)
     - [ ] Polarity (possible, but not testet yet)
 * Roon
@@ -29,7 +29,7 @@ You can find some of my Home Assistant configuration files [here](https://github
   - [x] Turn TV on [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/)
   - [x] Turn TV off [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/)
   - [ ] Control TV
-    - [Android TV](https://www.home-assistant.io/integrations/androidtv/)
+    - [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/) or [Android TV](https://www.home-assistant.io/integrations/androidtv/)
   - [ ] [Notifications for Android TV / FireTV ](https://www.home-assistant.io/integrations/nfandroidtv/)
 * AVM FRITZ!Box
   - [x] Sensor for internet connectivity (with external IP and uptime attributes)
@@ -46,6 +46,7 @@ You can find some of my Home Assistant configuration files [here](https://github
     - [ ] Rademacher RolloTron DECT 1213 (shutter)
       - Actually not implemented in Home Assistant
       - [ ] Close shutter when TV is turned on.
+      - [ ] Go to favorite position at a given time
   * Show info
     - [x] Comet DECT (radiator control)
     - [x] Deutsche Telekom/Eurotronic 40318684 (door/window contact)
@@ -54,7 +55,7 @@ You can find some of my Home Assistant configuration files [here](https://github
     - [x] FRITZ!DECT 300 (radiator control)
     - [x] FRITZ!DECT 440 (switch with temperature sensor)
     - [x] Rademacher RolloTron DECT 1213 (shutter)
-* Ecovacs Deebot
+* Ecovacs Deebot [lovelace-xiaomi-vacuum-card](https://github.com/benct/lovelace-xiaomi-vacuum-card)
   - [x] Control
   - [x] Show info
 - [x] Cooking Timer
@@ -75,7 +76,7 @@ After a while, the script will ask the following question:
 
 `Do you want to proceed with overwriting the /etc/network/interfaces file? [N/y]`
 
-In my case I simply pressed return (No).
+In my case I simply pressed return (No), although it's recommended to press "Yes".
 
 [Source](https://peyanski.com/how-to-install-home-assistant-supervised-official-way/#Home_Assistant_Supervised_method)
 
