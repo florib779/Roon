@@ -21,7 +21,6 @@ You can find some of my Home Assistant configuration files [here](https://github
   - [x] Control/Show info
     - [x] [RoonLabs music player](https://www.home-assistant.io/integrations/roon/) (Home Assistant integration)
       - [ ] Transfer zones
-    ~- [x] [Roon Web Controller](https://github.com/pluggemi/roon-web-controller) (Roon-Extension)~ Although this is a great Roon extension I removed it because I never actually used it.
     - [x] [Mini Media Player](https://github.com/kalkih/mini-media-player) (Customizable media player card for Home Assistant Lovelace UI)
 * TV
   - [x] Turn TV on [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/)
