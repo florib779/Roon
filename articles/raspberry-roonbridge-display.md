@@ -115,6 +115,17 @@ xset dpms 60 60 60 &
 * Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
 * Auto login and save the Home Assistant screen settings
 * Keep LEDs off
+  * `nano /boot/config.txt`
+    ```
+    #--------Onboard LEDs--------
+    # Disable the ACT LED
+    dtparam=act_led_trigger=none
+    dtparam=act_led_activelow=off
+    
+    # Disable the PWR LED
+    dtparam=pwr_led_trigger=none
+    dtparam=pwr_led_activelow=off
+    ```
 * Add virtual keyboard
 
 ## Links
