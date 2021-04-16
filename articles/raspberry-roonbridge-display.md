@@ -100,7 +100,8 @@ xset dpms 60 60 60 &
 
 # start full screen web app
 # change the URL if Roon Web Controller is running on a different system
-/usr/bin/chromium-browser --kiosk http://ip-of-the-homeassistant-server:8123
+# set --user-data-dir to restore your login and Home Assistant settings
+/usr/bin/chromium-browser --kiosk --user-data-dir=/root/.config/chromium http://ip-or-hostname:8123
 ```
 
 7. Save and exit
@@ -112,7 +113,6 @@ xset dpms 60 60 60 &
 
 ## ToDo
 * Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
-* Auto login and save the Home Assistant screen settings
 * Keep LEDs off
   * `nano /boot/config.txt`
     ```
