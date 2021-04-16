@@ -5,9 +5,6 @@ You can find some of my Home Assistant configuration files [here](https://github
 ## Home Assistant Dashboard
 ![Home Assistant Dashboard](../images/home-assistant-dashboard.png)
 
-## Integrated Roon Web Controller
-![Integrated Roon Web Controller](../images/home-assistant-roon-web-controller.png)
-
 ## Goal
 
 * Sonos
@@ -23,7 +20,8 @@ You can find some of my Home Assistant configuration files [here](https://github
 * Roon
   - [x] Control/Show info
     - [x] [RoonLabs music player](https://www.home-assistant.io/integrations/roon/) (Home Assistant integration)
-    - [x] [Roon Web Controller](https://github.com/pluggemi/roon-web-controller) (Roon-Extension)
+      - [ ] Transfer zones
+    ~- [x] [Roon Web Controller](https://github.com/pluggemi/roon-web-controller) (Roon-Extension)~ Although this is a great Roon extension I removed it because I never actually used it.
     - [x] [Mini Media Player](https://github.com/kalkih/mini-media-player) (Customizable media player card for Home Assistant Lovelace UI)
 * TV
   - [x] Turn TV on [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/)
