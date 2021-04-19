@@ -130,7 +130,11 @@ WantedBy=multi-user.target
 
 `sudo groupadd dialout`
 
-`sudo usermod -a -G dialout user`
+`sudo gpasswd -a USER dialout`
+
+`sudo usermod -a -G dialout USER`
+
+`sudo chmod a+rw /dev/ttyACM0`
 
 `configuration.yaml`:
 
