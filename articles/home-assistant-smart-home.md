@@ -128,13 +128,17 @@ WantedBy=multi-user.target
 
 ### HDMI-CEC
 
+`sudo groupadd dialout`
+
+`sudo usermod -a -G dialout user`
+
 `configuration.yaml`:
 
 ```
 hdmi_cec:
-  devices:
-    TV: 0.0.0.0
-    PulseEight: 3.0.0.0
+#  devices:
+#    TV: 0.0.0.0
+#    PulseEight: 3.0.0.0
 ```
 
 #### Log in to your Docker container
