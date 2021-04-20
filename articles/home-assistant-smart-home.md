@@ -22,16 +22,22 @@ You can find some of my Home Assistant configuration files [here](https://github
     - [x] [RoonLabs music player](https://www.home-assistant.io/integrations/roon/) (Home Assistant integration)
       - [ ] Transfer zones
     - [x] [Mini Media Player](https://github.com/kalkih/mini-media-player) (Customizable media player card for Home Assistant Lovelace UI)
+    - [ ] Remote control with [roon-cec-controller-extension](https://github.com/benjaminbellamy/roon-cec-controller-extension)
+      - [x] Start/pause
+      - [ ] ~Forward~ (my remote control does not send a command for this)
+      - [ ] ~Backward~ (my remote control does not send a command for this)
+      - [ ] Fast forward (has to be modified)
+      - [x] Rewind
+      - [ ] Volume
 * TV
   - [x] Turn TV on [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/)
   - [x] Turn TV off [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/)
   - [ ] Control TV
-    - [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/) or [Android TV](https://www.home-assistant.io/integrations/androidtv/)
+    - ~[HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/) or~ (my TV only sends a little few CEC commands) [Android TV](https://www.home-assistant.io/integrations/androidtv/)
   - [ ] [Notifications for Android TV / FireTV ](https://www.home-assistant.io/integrations/nfandroidtv/)
 * AVM FRITZ!Box
-  - [x] Sensor for internet connectivity (with external IP and uptime attributes)
-  - [x] Turn on/off wifi and guest wifi
-  * [FRITZ!Box Tools](https://github.com/mammuth/ha-fritzbox-tools)
+  - [x] Sensor for internet connectivity (with external IP and uptime attributes) [FRITZ!Box Tools](https://github.com/mammuth/ha-fritzbox-tools)
+  - [x] Turn on/off wifi and guest wifi [FRITZ!Box Tools](https://github.com/mammuth/ha-fritzbox-tools)
 * AVM FRITZ!DECT devices
   * Control
     - [x] Comet DECT (radiator control)
