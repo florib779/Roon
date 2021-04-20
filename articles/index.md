@@ -1,8 +1,5 @@
 # Articles
 
-* TOC
-{:toc}
-
 ## Roon
 * [Roon Components](roon-components.md)
 * [Roon-Extensions](roon-extensions.md)
