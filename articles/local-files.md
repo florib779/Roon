@@ -30,7 +30,9 @@ See also <a href="https://kb.roonlabs.com/File_Tag_Best_Practice">File Tag Best 
 
 ### DTS wav to other lossless formats
 
-If necessary simply replace .wav with another file format: `for file in *.wav; do name=$(echo $file | sed "s/\\.wav//g"); ffmpeg -acodec dts -i "$name".wav -vn -sn -acodec flac "$name".flac; done`
+If necessary simply replace .wav with another file format:
+
+`for file in *.wav; do name=$(echo $file | sed "s/\\.wav//g"); ffmpeg -acodec dts -i "$name".wav -vn -sn -acodec flac "$name".flac; done`
 
 ## Grouping tracks in Roon
 
