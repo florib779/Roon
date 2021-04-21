@@ -93,6 +93,8 @@ In my case I simply pressed return (No), although it's recommended to press "Yes
 
 ### node-sonos-http-api
 
+All commands as `root`
+
 #### Install
 
 `wget https://github.com/jishi/node-sonos-http-api/archive/master.zip`
