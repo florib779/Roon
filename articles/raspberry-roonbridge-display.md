@@ -6,7 +6,7 @@ Raspberry Pi 3 Model B with [DietPi](https://github.com/MichaIng/DietPi) includi
 
 ## Installation
 
-### Dietpi
+### DietPi
 
 After initial bootup, login through ssh: `ssh root@dietpi`
 
@@ -14,7 +14,7 @@ Password: `dietpi`
 
 ![DietPi Initial](../images/dietpi_initial.png)
 
-After confirmation Dietpi will update itself.
+After confirmation DietPi will update itself.
 
 ![DietPi-Set Software](../images/dietpi-set_software.png)
 
@@ -49,7 +49,7 @@ Audio -> Soundcard -> hifiberry-digi
 
 In my configuration I had to rotate the display 180 degrees:
 
-Dietpi-Config -> Display Options -> Rotation (LCD)
+DietPi-Config -> Display Options -> Rotation (LCD)
 
 #### Console boot up
 
@@ -58,7 +58,7 @@ There's a way to configure DietPi to boot into a Chromium window. But with the f
 * No cursor
 * No scroll bar
 * Turn your screen off after a given time
-  * `rm /etc/X11/xorg.conf.d/98-dietpi-disable_dpms.conf`
+  * DietPi has disabled `dpms` by default. So you'll have to remove `/etc/X11/xorg.conf.d/98-dietpi-disable_dpms.conf`.
 
 1. As root, run the autostart configuration:
   1. `dietpi-autostart`
