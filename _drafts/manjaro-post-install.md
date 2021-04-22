@@ -30,6 +30,11 @@ PasswordAuthentication yes
 
 `sudo systemctl restart sshd`
 
+## Enable AUR repository
+
+`sudo pacman -S pacaur`
+
 ## Links
 
 * https://manjaro.site/enable-ssh-root-login-arch-linux-2017/
+* https://manjaro.site/how-to-install-docker-on-manjaro-18-0/
