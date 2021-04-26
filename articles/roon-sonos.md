@@ -1,8 +1,5 @@
 # Roon and Sonos
 
-* [Roon Knowledge Base](https://help.roonlabs.com/portal/en/kb/articles/sonos)
-* [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api)
-
 ## HTTP Commands
 
 HTTP Command                                             | Description
@@ -45,3 +42,9 @@ English Command | German Command                                     | Descripti
 ## Other Commands
 
 Echo 3-Band Equalizer
+
+## Links
+
+* [Roon Knowledge Base](https://help.roonlabs.com/portal/en/kb/articles/sonos)
+* [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api)
+* https://freetime.mikeconnelly.com/archives/tag/sonos
