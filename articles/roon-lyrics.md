@@ -13,12 +13,17 @@ For editing and synchronizing lyrics I decided to use [Karaoke Lyrics Editor](ht
 You can find more screenshots at the link above. I would like to limit myself here to more or less Roon-specific settings.
 
 ### New Project
+
 ![Select Lyrics Type](../images/karlyriceditor-select_lyrics_type.png)
 
 ### Settings
+
 ![Settings - Text Editor](../images/karlyriceditor-settings-texteditor.png)
+
 ![Settings - Timing Marks](../images/karlyriceditor-settings-timing_marks.png)
+
 ![Settings - Preview Window](../images/karlyriceditor-settings-preview_window.png)
+
 ![Settings - Advanced](../images/karlyriceditor-settings-advanced.png)
 
 ### Tips
