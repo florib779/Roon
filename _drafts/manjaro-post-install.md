@@ -34,6 +34,16 @@ PasswordAuthentication yes
 
 `sudo pacman -S pacaur`
 
+## Software
+
+* Audacity
+* Home Assistant (Docker)
+* node-sonos-http-api
+* Karaoke Lyric Editor (karlyric)
+* MusicBrainz Picard
+* Roon
+* Songkong
+
 ## Links
 
 * https://manjaro.site/enable-ssh-root-login-arch-linux-2017/
