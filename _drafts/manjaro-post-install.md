@@ -37,6 +37,7 @@ PasswordAuthentication yes
 ## Software
 
 * Audacity
+* Back In Time
 * Home Assistant (Docker)
 * node-sonos-http-api
 * Karaoke Lyric Editor (karlyric)
