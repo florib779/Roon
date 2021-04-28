@@ -158,6 +158,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * A simple Roon Display App for Apple TV.
 * [rooExtend](https://rooextend.com/)
   * rooDial is a software developed to allow you to control Roon with an off the shelf Microsoft Surface Dial, a minimal, simple well designed product that fits in with any home.
+* [RoonCommandLine](https://gitlab.com/doctorfree/RoonCommandLine)
+  * The Roon Command Line project provides Bash and Python scripts to enable command line control of the Roon audio system over a local network.
 * [roon-extension-web-testapp](https://github.com/RoonLabs/roon-extension-web-testapp)
 * [Roon-FLAC-restreamer](https://github.com/lfontanel/Roon-FLAC-restreamer)
   * Python script to stream any file at any URL to your Roon server.
