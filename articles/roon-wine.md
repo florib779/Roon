@@ -210,3 +210,4 @@ The following instructions are for Ubuntu based distributions only (Debian could
 * [Ubuntu 17.10 64bit RoonServer with Roon on WINE](https://community.roonlabs.com/t/ubuntu-17-10-64bit-roonserver-with-roon-on-wine/37520)
 * [Linux Roon Control GUI Please](https://community.roonlabs.com/t/linux-roon-control-gui-please/23081)
 * [Roon control GUI working on Linux using Wine](https://community.roonlabs.com/t/roon-control-gui-working-on-linux-using-wine/46640/37)
+* [Roon Desktop & Wine](https://community.roonlabs.com/t/roon-desktop-wine/154060/1)
