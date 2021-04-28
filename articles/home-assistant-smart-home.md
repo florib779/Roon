@@ -3,7 +3,12 @@
 You can find some of my Home Assistant configuration files [here](https://github.com/florib779/homeassistant-config) (which are not always up to date yet).
 
 ## Home Assistant Dashboard
+
 ![Home Assistant Dashboard](../images/home-assistant-dashboard.png)
+
+![Home Assistant Roon Web Display](../images/home-assistant_roon-display.png)
+
+![Home Assistant ROCK](../images/home-assistant_roon-rock.png)
 
 ## Goal
 
