@@ -40,7 +40,7 @@ For this reason, it makes sense to use the `start_my_roon_instance.sh` script wh
 
 `sh ~/start_my_roon_instance.sh`
 
-My complete `~/local/share/applications/Roon.desktop` shortcut:
+My complete `~/local/share/applications/` respectively `~/local/share/applications/wine/Programs` `Roon.desktop` shortcut:
 
 ```
 [Desktop Entry]
