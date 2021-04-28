@@ -33,23 +33,58 @@ Also take a look at this experimental flatpak file: https://github.com/RoPieee/r
 
 ## Common Problems
 
-
 ### Roon no longer starts after an update of the roon app
 
 It often happens that the program shortcuts on the Linux desktop no longer work after an update and therefore roon can no longer be started.
 For this reason, it makes sense to use the `start_my_roon_instance.sh` script which was created during installation in your home folder or modify your shortcut as follows:
 
-```env WINEPREFIX="~/my_roon_instance" wine ~/my_roon_instance/drive_c/users/user/Local Settings/Application Data/Roon/Application/Roon.exe```
+`sh ~/start_my_roon_instance.sh`
 
-### "This application could not be started" after updating wine
+My complete `~/local/share/applications/Roon.desktop` shortcut:
+
+```
+[Desktop Entry]
+Comment=
+Exec=sh ~/start_my_roon_instance.sh
+Icon=93CE_Roon.0
+Name=Roon
+NoDisplay=false
+Path[$e]=
+StartupNotify=false
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+```
+
+### "Your screen resolution is too small to run Roon. Please try to run maximized or full screen"
+
+I had to experiment a bit with the `scalefactor` in the `start_my_roon_instance.sh` script. In order for it to finally work for me, I had to comment out some lines (**not** `#!/bin/bash`!):
+
+```
+#!/bin/bash
+
+#SET_SCALEFACTOR=1
+
+PREFIX=/home/flori/my_roon_instance
+#if [ 1 -eq 1 ]
+#then
+#   env WINEPREFIX=/home/flori/my_roon_instance wine /home/flori/my_roon_instance/'drive_c/users/flori/Local Settings/Application Data/Roon/Application/Roon.exe' -scalefactor=2
+#else
+   env WINEPREFIX=/home/flori/my_roon_instance wine /home/flori/my_roon_instance/'drive_c/users/flori/Local Settings/Application Data/Roon/Application/Roon.exe'
+fi
+```
+
+### "This application could not be started" after updating Wine
 
 ![This application could not be started](../images/roon_wine_application_could_not_be_started.png)
 
 Just ignore this message and hit no (Nein).
 
-### Roon won't start after updating wine
+### Roon won't start after updating Wine
 
-Maybe you will be able to downgrade to an older version of wine.
+Maybe you will be able to downgrade to an older version of Wine.
 
 In my case on Manjaro/Arch Linux I was able to do this by executing the following line in a terminal:
 
@@ -73,17 +108,7 @@ This instructions were tested under the following distributions:
 * Thanks to evand who added the Arch Linux instructions (which I adjusted a bit to make the document more consistent).
 * Roon requires OpenGL 3.0 to run the remote ui. Maybe you have to install some graphic drivers.
 * `~` is your user (home) directory. All code lines (except those to start the program and the menu entry) in this document should work without any modifications. If not replace `~` with `/home/user`, while "user" stands for your username.
-* Uninstall all previous versions of Wine and any packages depend on it. Also delete or rename your wine folder if exists: `~/.wine` (should not be really necessary, because you will create a new wine folder).
-
-Optionally you can add a scalefactor for high resolution screens:
-
-```
-#!/bin/bash
-
-PREFIX=~/my_roon_instance
-
-env WINEPREFIX=~/my_roon_instance wine ~/my_roon_instance/'drive_c/users/user/Local Settings/Application Data/Roon/Application/Roon.exe' -scalefactor=2
-```
+* Uninstall all previous versions of Wine and any packages depend on it. Also delete or rename your Wine folder (in the following text "bottle") if exists: `~/.wine` (should not be really necessary, because you will create a new Wine bottle).
 
 ### Instructions for Arch based distributions
 
@@ -114,7 +139,7 @@ The following instructions are for Ubuntu based distributions only (Debian could
   1. `wget -nc https://dl.winehq.org/wine-builds/Release.key`
   2. `sudo apt-key add Release.key`
   3. `sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'`
-     * “xenial” is the Ubuntu distribution release. Could be something else. Here is a list of other releases: [https://wiki.ubuntu.com/Releases](https://wiki.ubuntu.com/Releases)
+     * "xenial" is the Ubuntu distribution release. Could be something else. Here is a list of other releases: [https://wiki.ubuntu.com/Releases](https://wiki.ubuntu.com/Releases)
 3. Refresh your package cache:
   * `sudo apt update`
 4. Install [Wine](https://www.winehq.org/) and [Winetricks](https://github.com/Winetricks/winetricks):
@@ -123,15 +148,15 @@ The following instructions are for Ubuntu based distributions only (Debian could
   * This command will overwrite your existing Winetricks. Most distributions provide an older version of Winetricks, which will not work. If you update Winetricks with your package manager in the future, this update will overwrite your manually added Winetricks.
 5. Create a new Wine directory (especially for Roon):
   * `env WINEPREFIX=~/WinRoon WINEARCH=win64 wine wineboot`
-6. Open the configuration of Wine and choose “Windows 7”:
+6. Open the configuration of Wine and choose "Windows 7":
   * `env WINEPREFIX=~/WinRoon winecfg`
 7. [Download](https://roonlabs.com/downloads) Roon for Windows 64 bit.
-8. Choose your created Wine environment and install Roon from your Download-Folder:
+8. Choose your created Wine environment and install Roon from your download folder:
   * `env WINEPREFIX=~/WinRoon wine ~/Downloads/RoonInstaller64.exe`
 9. Install .net from Microsoft (a dependency of Roon):
   * `env WINEPREFIX=~/WinRoon winetricks dotnet45`
-    * There will be asked some questions about registration keys - I always answered “yes”, but I think it doesn’t really matter.
-10. Set your Windows version again to “Windows 7” (changed through the installation process of dotnet):
+    * There will be asked some questions about registration keys - I always answered "yes", but I think it doesn’t really matter.
+10. Set your Windows version again to "Windows 7" (changed through the installation process of dotnet):
   * `env WINEPREFIX=~/WinRoon winecfg`
 11. Start your fresh installed Roon (replace user with your user name):
   * `env WINEPREFIX=~/WinRoon wine ~/WinRoon/drive_c/users/user/Local\ Settings/Application\ Data/Roon/Application/Roon.exe`
@@ -166,22 +191,22 @@ The following instructions are for Ubuntu based distributions only (Debian could
   * `wget -nc https://dl.winehq.org/wine-builds/Release.key`
   * `sudo apt-key add Release.key`
   * `sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'`
-  * “xenial” is the distribution release. Could be something else. Here is a list of other releases: [https://wiki.ubuntu.com/Releases](https://wiki.ubuntu.com/Releases)
+  * "xenial" is the distribution release. Could be something else. Here is a list of other releases: [https://wiki.ubuntu.com/Releases](https://wiki.ubuntu.com/Releases)
 3. Refresh your package cache:
   * `sudo apt update`
 4. Install Wine and Winetricks:
   * `sudo apt-get install --install-recommends winehq-stable`
-5. Create a new wine directory (especially for Roon):
+5. Create a new Wine directory (especially for Roon):
   * `env WINEPREFIX=~/WinRoon WINEARCH=win32 wine wineboot`
-6. Open the configuration of Wine and choose “Windows 7”:
+6. Open the configuration of Wine and choose "Windows 7":
   * `env WINEPREFIX=~/WinRoon winecfg`
 7. [Download](https://roonlabs.com/downloads) Roon for Windows 32 bit.
-8. Choose your created Wine environment and install Roon from your Download-Folder:
+8. Choose your created Wine environment and install Roon from your download folder:
   * `env WINEPREFIX=~/WinRoon wine ~/Downloads/RoonInstaller.exe`
 9. Install .net from Microsoft (a dependency of Roon):
   * `env WINEPREFIX=~/WinRoon winetricks dotnet45`
-    * There will be asked some questions about registration keys - I always answered “yes”, but I think it doesn’t really matter.
-    * Installation process will take a while and there will be installed a lot of things. I had to restart the installation after manually downloading some dependencies to the wine temp-folder.
+    * There will be asked some questions about registration keys - I always answered "yes", but I think it doesn’t really matter.
+    * Installation process will take a while and there will be installed a lot of things. I had to restart the installation after manually downloading some dependencies to the Wine `temp` folder.
 10. Start your Roon installation (replace user with your user name):
   * `env WINEPREFIX=~/WinRoon wine ~/WinRoon/drive_c/users/user/Local\ Settings/Application\ Data/Roon/Application/Roon.exe`
 11.  After installation you should create or edit the start menu entry. The shortcut created by the first installation of Roon will not work after future updates of Roon.
