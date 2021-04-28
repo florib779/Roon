@@ -118,6 +118,7 @@ If you don't want to see the unused audio outputs of the Roon server anymore, si
 * [Newbie start-up essential tips](https://community.roonlabs.com/t/newbie-start-up-essential-tips/113126)
 * [NUC auto-on after power loss](https://community.roonlabs.com/t/nuc-auto-on-after-power-loss/105702/3)
 * [Roon Server power consumption](https://community.roonlabs.com/t/roon-server-power-consumption/104629/8)
+* [What is a linear power supply and what is it used for/advantages?](https://community.roonlabs.com/t/what-is-a-linear-power-supply-and-what-is-it-used-for-advantages/156916/20)
 * [ROON ROCK with a linear power supply?](https://community.roonlabs.com/t/roon-rock-with-a-linear-power-supply/29838)
 * [Roon Rock with Linear Power Supply, does it make sense?](https://community.roonlabs.com/t/roon-rock-with-linear-power-supply-does-it-make-sense/42209)
 * [Linear Power Supply for NUC 8th Generation](https://community.roonlabs.com/t/linear-power-supply-for-nuc-8th-generation/96155)
