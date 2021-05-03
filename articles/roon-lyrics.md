@@ -41,3 +41,7 @@ You can find more screenshots at the link above. I would like to limit myself he
 ## Other Tools
 
 * [gImageReader](https://github.com/manisandro/gImageReader/) - A simple Gtk/Qt front-end to tesseract-ocr
+
+## Links
+
+* [How to report Incorrect lyrics?](https://community.roonlabs.com/t/how-to-report-incorrect-lyrics/65057)
