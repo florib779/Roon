@@ -16,6 +16,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Uses the Discord Presence API to show what you're listening to on Roon.
 * [roon-discord-rp](https://github.com/jamesxsc/roon-discord-rp)
   * Roon Integration for Discord Rich Presence.
+* [roon-display](https://github.com/CatalinMustata/roon-display)
+  * A lightweight extension for displaying what’s currently playing in a specific zone.
 * [roon-entrypoints](https://github.com/TheAppgineer/roon-entrypoints)
   * Entrypoints is a collection of Roon extensions that act as an input to your Roon system. Music from input devices like turntables, cd players and phones can be streamed to Roon zones and can use the Roon specific features like DSP.
 * [roon-extension-alarm-clock](https://github.com/TheAppgineer/roon-extension-alarm-clock)
