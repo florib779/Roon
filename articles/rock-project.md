@@ -105,7 +105,7 @@ Connect a USB keyboard and monitor to the HDMI of ROCK and type `resetnetwork`.
 
 ## Additional Information
 
-ROCK currently runs with the Linux kernel version 4, but in a future version of ROCK it will run with the Linux kernel version 5, as [mentioned here](https://community.roonlabs.com/t/linux-kernel-version-for-current-rock-release/115797/6).
+ROCK currently seems to run with the Linux kernel version 5, as [mentioned here](https://community.roonlabs.com/t/linux-kernel-version-for-current-rock-release/115797/6).
 
 ## Tips
 
