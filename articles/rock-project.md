@@ -8,12 +8,12 @@ At the time I've planned my [ROCK](https://help.roonlabs.com/portal/en/kb/articl
 
 ![Roon overview library stats](../images/roon_overview_library_stats.png)
 
-So I followed the recommendations in the Knowledge Base: [ROCK For Small to Medium Sized Libraries](https://help.roonlabs.com/portal/en/kb/articles/roon-optimized-core-kit#ROCK_For_Small_to_Medium-Sized_Libraries) (actually it's an Intel NUC 10 in the "old" Knowledge Base).
+So I followed the recommendations in the Knowledge Base: [ROCK For Small to Medium Sized Libraries](https://help.roonlabs.com/portal/en/kb/articles/roon-optimized-core-kit#ROCK_For_Small_to_Medium-Sized_Libraries) (actually it's an Intel NUC 10).
 
-1. NUC8i3BEH
-2. 8 GB RAM
-3. 128GB M.2 SSD
-4. Additionally a 1TB SSD-drive for the music files
+1. Intel NUC Kit: NUC8i3BEH Mainboard (28 W, 32 GB, 38,4 GB/s, 32768 MB, Intel® NUC Kits, Intel® NUC Kit with 8th Generation Intel® CoreTM Processors) 
+2. RAM: Crucial CT8G4SFS8266 8GB (DDR4, 2666 MT/s, PC4-21300, Single Rank x8, SODIMM, 260-Pin) 
+3. System SSD: Transcend 128GB PCIe Gen3 x4 M.2 SSD 2280
+4. Music SSD: Samsung MZ-76E1T0B/EU 860 EVO 1 TB SATA 2,5" internal
 
 <img src="../images/nuc_kit_boxed.jpg" height="100" /> <img src="../images/nuc_kit_unboxed.jpg" height="100" /> <img src="../images/nuc_kit_disassembled.jpg" height="100" /> <img src="../images/nuc_kit_disassembled_ram_hds.jpg" height="100" />
 
