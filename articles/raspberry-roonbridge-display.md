@@ -103,7 +103,7 @@ xset dpms 60 60 60 &
 # start full screen web app
 # change the URL if Roon Web Controller is running on a different system
 # set --user-data-dir to restore your login and Home Assistant settings
-/usr/bin/chromium-browser --kiosk --user-data-dir=/root/.config/chromium http://ip-or-hostname:8123
+/usr/bin/chromium-browser --kiosk --user-data-dir=/root/.config/chromium http://dietpi:8123
 ```
 
 7. Save and exit
