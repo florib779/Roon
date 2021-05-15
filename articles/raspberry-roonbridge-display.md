@@ -114,8 +114,9 @@ xset dpms 60 60 60 &
 [Source](https://github.com/pluggemi/roon-web-controller/wiki/Diet-Pi-Installation-Extension-Manager)
 
 ## ToDo
-* Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
-* Keep LEDs off
+- [ ] Change power supply to avoid undervolting
+- [ ] Automatic system upgrade via [cron-apt](https://wiki.ubuntuusers.de/cron-apt/)
+- [ ] Keep LEDs off
   * `nano /boot/config.txt`
     ```
     #--------Onboard LEDs--------
@@ -127,7 +128,8 @@ xset dpms 60 60 60 &
     dtparam=pwr_led_trigger=none
     dtparam=pwr_led_activelow=off
     ```
-* Add virtual keyboard
+- [ ] Automate installation process
+- [ ] Add virtual keyboard
 
 ## Links
 
