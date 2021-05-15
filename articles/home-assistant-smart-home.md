@@ -10,6 +10,618 @@ You can find some of my Home Assistant configuration files [here](https://github
 
 ![Home Assistant ROCK](../images/home-assistant_roon-rock.png)
 
+### Raw Source Code of the ROCK card
+
+```
+title: Home
+views:
+  - path: default_view
+    title: Home
+    panel: false
+    type: 'custom:masonry-layout'
+    layout:
+      max_cols: 3
+    icon: 'si:Home Assistant'
+    badges: []
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: grid
+            cards:
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: switch.kuchenlicht
+                icon: 'mdi:lightbulb'
+                show_name: false
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: switch.dunstabzugshaube
+                icon: 'mdi:stove'
+                show_name: false
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: switch.wohnzimmer
+                icon: 'mdi:fan'
+                show_name: false
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: switch.tv_licht
+                icon: 'mdi:television-ambient-light'
+                show_name: false
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: switch.hdmi_0
+                show_state: false
+                show_name: false
+              - type: button
+                tap_action:
+                  action: more-info
+                entity: binary_sensor.wohnzimmer_klein
+                icon: 'mdi:window-shutter'
+                show_name: false
+              - type: button
+                tap_action:
+                  action: more-info
+                entity: binary_sensor.wohnzimmer_balkontur
+                show_name: false
+            square: true
+            columns: 7
+          - type: entities
+            entities:
+              - entity: sensor.zuk_z1_akkufullstand
+                name: Handy
+              - entity: sensor.lenovo_tab_2_a10_70f_akkufullstand
+                name: Tablet
+            state_color: true
+          - type: 'custom:xiaomi-vacuum-card'
+            entity: vacuum.e0001103417610630506
+            name: false
+            vendor: deebot_slim
+            buttons:
+              locate: false
+              spot:
+                show: true
+            attributes:
+              side_brush:
+                label: 'Bürsten: '
+                unit: ' Std.'
+              filter:
+                label: 'Filter: '
+                unit: ' Std.'
+          - type: entities
+            entities:
+              - entity: sensor.time
+              - entity: timer.cooking_timer
+              - entity: input_number.timer_minutes
+              - entity: script.timer_start
+              - entity: script.timer_cancel
+      - type: entities
+        entities:
+          - type: 'custom:mini-media-player'
+            entity: media_player.wohnzimmer
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              controls: true
+              icon: true
+              info: true
+              mute: true
+              name: false
+              power: true
+              progress: true
+              source: true
+              volume_level: false
+            speaker_group:
+              platform: sonos
+              show_group_count: true
+              entities:
+                - entity_id: media_player.wohnzimmer
+                  name: Wohnzimmer
+                - entity_id: media_player.kuche
+                  name: Küche
+                - entity_id: media_player.buro
+                  name: Büro
+                - entity_id: media_player.bad
+                  name: Bad
+                - entity_id: media_player.schlafzimmer
+                  name: Schlafzimmer
+          - type: 'custom:mini-media-player'
+            entity: media_player.wohnzimmer_2
+            artwork: full-cover-fit
+            group: true
+            hide:
+              icon: true
+              mute: true
+              name: true
+              power: true
+              progress: true
+              volume: true
+              volume_level: false
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+          - type: 'custom:mini-media-player'
+            entity: media_player.kopfhorer
+            artwork: full-cover-fit
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              icon: true
+              mute: true
+              power: true
+              progress: true
+              volume: true
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+          - type: 'custom:mini-media-player'
+            entity: media_player.kuche_2
+            group: true
+            artwork: full-cover-fit
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              icon: true
+              mute: true
+              power: true
+              progress: true
+              volume_level: false
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+          - type: 'custom:mini-media-player'
+            entity: media_player.buro_2
+            artwork: full-cover-fit
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              icon: true
+              mute: true
+              power: true
+              progress: true
+              volume_level: false
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+          - type: 'custom:mini-media-player'
+            entity: media_player.bad_2
+            artwork: full-cover-fit
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              icon: true
+              mute: true
+              power: true
+              progress: true
+              volume_level: false
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+          - type: 'custom:mini-media-player'
+            entity: media_player.schlafzimmer_2
+            artwork: full-cover-fit
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              icon: true
+              mute: true
+              power: true
+              progress: true
+              volume_level: false
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+      - type: vertical-stack
+        cards:
+          - type: weather-forecast
+            entity: weather.home
+            secondary_info_attribute: humidity
+          - type: entities
+            entities:
+              - entity: sensor.kuche_temperature_sensor
+                name: 'Aktuell:'
+            show_header_toggle: false
+            state_color: false
+            title: Küche
+          - type: 'custom:simple-thermostat'
+            entity: climate.wohnzimmer
+            control: false
+            layout:
+              step: row
+              mode:
+                names: true
+                icons: true
+                headings: true
+            header:
+              toggle:
+                entity: switch.wohnzimmer
+                name: Ventilator
+            decimals: '1'
+            view_layout:
+              step: row
+              mode:
+                names: true
+                icons: true
+                headings: true
+          - type: 'custom:simple-thermostat'
+            entity: climate.bad
+            control: false
+            layout:
+              step: row
+            view_layout:
+              step: row
+          - type: 'custom:simple-thermostat'
+            entity: climate.schlafzimmer
+            control: false
+            layout:
+              step: row
+          - type: 'custom:simple-thermostat'
+            entity: climate.buro
+            control: false
+            layout:
+              step: row
+  - title: Remote
+    path: remote
+    type: 'custom:grid-layout'
+    icon: 'mdi:remote'
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: button
+            tap_action:
+              action: toggle
+            entity: switch.hdmi_0
+            show_state: false
+            show_name: false
+          - type: button
+            tap_action:
+              action: toggle
+            entity: switch.sonos_sub_state
+            show_name: false
+          - type: button
+            tap_action:
+              action: toggle
+            entity: switch.night_sound
+            show_name: false
+          - type: button
+            tap_action:
+              action: toggle
+            entity: switch.speech_enhance
+            show_name: false
+        columns: 4
+        square: false
+      - type: entities
+        entities:
+          - type: 'custom:mini-media-player'
+            entity: media_player.wohnzimmer_2
+            group: true
+            artwork: full-cover-fit
+            info: short
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              icon: true
+              mute: true
+              name: true
+              power: true
+              progress: true
+              volume_level: false
+          - type: 'custom:mini-media-player'
+            entity: media_player.android_tv_1
+            group: true
+            name: TV
+            hide:
+              icon: true
+              power: true
+              power_state: false
+              state_label: false
+              volume: true
+  - title: Wartung
+    path: fritzbox
+    icon: 'mdi:tools'
+    badges: []
+    cards:
+      - type: entities
+        entities:
+          - entity: binary_sensor.fritzbox_7490_connectivity
+          - entity: switch.fritzbox_7490_wifi
+          - entity: switch.fritzbox_7490_wifi_5ghz
+          - entity: switch.fritzbox_7490_guest_wifi
+        state_color: true
+        show_header_toggle: false
+        title: Fritz!Box
+      - type: picture
+        image: /local/img/fritz_guest_wifi.png
+        hold_action:
+          action: none
+        tap_action:
+          action: url
+          url_path: 'https://fritz.box/'
+      - type: glance
+        entities:
+          - entity: sensor.nuc_cpu_temperature
+          - entity: sensor.hacs
+          - entity: binary_sensor.updater
+          - entity: binary_sensor.check_home_assistant_configuration_update_available
+          - entity: sensor.check_home_assistant_configuration_version
+        show_name: true
+        state_color: true
+        show_state: true
+        title: NUC
+        columns: 3
+      - type: entities
+        entities:
+          - entity: sensor.wohnzimmer_battery
+          - entity: sensor.bad_battery
+          - entity: sensor.buro_battery
+          - entity: sensor.schlafzimmer_battery
+        state_color: true
+  - title: ROCK
+    type: 'custom:masonry-layout'
+    layout:
+      width: 300
+      max_cols: 3
+    theme: Caule Light Blue
+    icon: 'mdi:server'
+    badges: []
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: iframe
+            url: 'http://rock'
+            aspect_ratio: 350%
+      - type: vertical-stack
+        cards:
+          - type: markdown
+            content: >-
+              ### Intel NUC-Kit NUC8i3BEH
+
+
+              **RAM**
+
+              Crucial CT8G4SFS8266 8GB, DDR4, 2666 MT/s, PC4-21300, Single Rank
+              x8, SODIMM, 260-Pin
+
+
+              **System SSD**
+
+              Transcend 128GB PCIe Gen3 x4 M.2 SSD 2280
+
+
+              **Internal Music Storage**
+
+              Samsung MZ-76E1T0B/EU 860 EVO 1TB SATA 2,5"
+          - type: sensor
+            entity: sensor.rock_current_power
+            graph: line
+            name: Current Power Consumption
+            hours_to_show: 4
+          - type: sensor
+            entity: sensor.rock_temperature_sensor
+            graph: line
+            name: Ambient Temperature
+            hours_to_show: 4
+          - type: entity
+            entity: sensor.rock_total_consumption
+            name: Total Power Consumption (since 2021/05/10)
+      - type: vertical-stack
+        cards:
+          - type: entity
+            entity: sensor.florib
+            name: Now Playing
+            icon: 'si:Last.fm'
+          - type: entity
+            entity: sensor.florib
+            attribute: last_played
+            name: Last Played
+            icon: 'si:Last.fm'
+          - type: entity
+            entity: sensor.florib
+            attribute: play_count
+            unit: Tracks
+            name: Scrobbles
+            icon: 'si:Last.fm'
+      - type: history-graph
+        entities:
+          - entity: media_player.kopfhorer
+            name: Headphone
+          - entity: media_player.wohnzimmer_2
+            name: Living Room
+          - entity: media_player.kuche_2
+            name: Kitchen
+          - entity: media_player.buro_2
+            name: Office
+          - entity: media_player.bad_2
+            name: Bathroom
+          - entity: media_player.schlafzimmer_2
+            name: Bedroom
+        hours_to_show: 4
+        refresh_interval: 0
+        title: Player History
+  - title: Firefox
+    path: firefox
+    icon: 'si:firefox'
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: button
+            tap_action:
+              action: toggle
+            entity: switch.kuchenlicht
+            icon: 'mdi:lightbulb'
+            show_name: false
+          - type: button
+            tap_action:
+              action: toggle
+            entity: switch.dunstabzugshaube
+            icon: 'mdi:stove'
+            show_name: false
+          - type: button
+            tap_action:
+              action: toggle
+            entity: switch.wohnzimmer
+            icon: 'mdi:fan'
+            show_name: false
+          - type: button
+            tap_action:
+              action: toggle
+            entity: switch.tv_licht
+            icon: 'mdi:television-ambient-light'
+            show_name: false
+          - type: button
+            tap_action:
+              action: toggle
+            entity: switch.hdmi_0
+            show_state: false
+            show_name: false
+          - type: button
+            tap_action:
+              action: more-info
+            entity: binary_sensor.wohnzimmer_klein
+            icon: 'mdi:window-shutter'
+            show_name: false
+          - type: button
+            tap_action:
+              action: more-info
+            entity: binary_sensor.wohnzimmer_balkontur
+            show_name: false
+        square: true
+        columns: 7
+      - type: entities
+        entities:
+          - type: 'custom:mini-media-player'
+            entity: media_player.wohnzimmer
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              controls: true
+              icon: true
+              info: true
+              mute: true
+              name: false
+              power: true
+              progress: true
+              source: true
+              volume_level: false
+            speaker_group:
+              platform: sonos
+              show_group_count: true
+              entities:
+                - entity_id: media_player.wohnzimmer
+                  name: Wohnzimmer
+                - entity_id: media_player.kuche
+                  name: Küche
+                - entity_id: media_player.buro
+                  name: Büro
+                - entity_id: media_player.bad
+                  name: Bad
+                - entity_id: media_player.schlafzimmer
+                  name: Schlafzimmer
+          - type: 'custom:mini-media-player'
+            entity: media_player.wohnzimmer_2
+            group: true
+            hide:
+              mute: true
+              name: true
+              power: true
+              progress: true
+              volume: true
+              volume_level: false
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+          - type: 'custom:mini-media-player'
+            entity: media_player.kopfhorer
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              mute: true
+              power: true
+              progress: true
+              volume: true
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+          - type: 'custom:mini-media-player'
+            entity: media_player.kuche_2
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              mute: true
+              power: true
+              progress: true
+              volume_level: false
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+          - type: 'custom:mini-media-player'
+            entity: media_player.buro_2
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              mute: true
+              power: true
+              progress: true
+              volume_level: false
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+          - type: 'custom:mini-media-player'
+            entity: media_player.bad_2
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              mute: true
+              power: true
+              progress: true
+              volume_level: false
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+          - type: 'custom:mini-media-player'
+            entity: media_player.schlafzimmer_2
+            group: true
+            volume_stateless: true
+            volume_step: 1
+            hide:
+              mute: true
+              power: true
+              progress: true
+              volume_level: false
+            idle_view:
+              when_idle: true
+              when_paused: true
+              when_standby: true
+```
+
 ## Goal
 
 * Sonos
