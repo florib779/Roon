@@ -175,3 +175,4 @@ views:
  - [ ] Adjust font sizes to ROCK surface
  - [ ] Dark theme (iframe to match the ROCK surface)
  - [ ] Group related card elements
+ - [ ] Add speaker hardware information
