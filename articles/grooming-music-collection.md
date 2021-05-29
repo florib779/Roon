@@ -10,7 +10,7 @@ The first step is to search and compare at my prefered [sources for downloadable
    1. Sometimes it is better to wait a while before buying a newly released album. In some cases an album is offered in CD quality and later in a higher quality.
 2. Lowest Price
 3. Bonus Tracks
-4. Remastered (is not always better than the original)
+4. Remastered (is not always better than the original recording)
 
 Now it's time for tagging the music files. It's not really necessary, because Roon already has a very good detection mechanism. However, I made the experience that the manual tagging partly brings better results. There is also the possibility to add an album that is not yet in the Musicbrainz database, so that it can be identified by Roon. Of course there is also the possibility to automate the tagging with a software like [Beets](http://beets.io/), but I do not know if this gives someone the possibility to add an album to the [MusicBrainz](https://musicbrainz.org/) database. In addition, I think it's better if a person has spotted the data for an album.
 
@@ -42,3 +42,7 @@ After adding an album you have to wait one minute or maybe a bit longer and then
 During calculation, which can take some time, I search for [additional images and artwork](images-and-artwork.md). Most download providers offer at least the front cover. Because that does not satisfy me, I try to get more pictures and possibly pictures in a better quality. Sometimes you even get a booklet in the form of a PDF file.
 
 ### 6. Save
+
+## Links
+
+* [Adding albums to MusicBrainz the “relatively” easy way](https://community.roonlabs.com/t/adding-albums-to-musicbrainz-the-relatively-easy-way/90529)
