@@ -6,6 +6,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Add your Roon Outputs to Apple Homekit.
 * [neeo-roon-driver](https://github.com/docbobo/neeo-roon-driver)
   * NEEO driver to integrate Roon & NEEO.
+* [roon-ayrelink](https://github.com/synapse-md/roon-ayrelink)
+  * This is intended for owners of Ayre KX-5 and KX-R preamplifiers who wish to control volume levels and mute status through Roon.
 * [roon-cec-controller-extension](https://github.com/benjaminbellamy/roon-cec-controller-extension)
   * Roon CEC Controller Extension should allow you to control Roon Core (previous_track_button, rewind, arrow_forward, play_or_pause_button, pause_button, stop_button, fast_forward, next_track_button) from your audio amplifier remote control, having your amplifier connected to a Roon Bridge via HDMI using CEC protocol.
 * [roon-community-dj](https://github.com/nugget/roon-community-dj)
