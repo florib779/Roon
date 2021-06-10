@@ -1,6 +1,8 @@
-# Home Assistant Roon ROCK View
+# Home Assistant Roon ROCK Dashboard
 
-![Home Assistant Roon ROCK display](../images/home-assistant_roon-rock.png)
+![Home Assistant Roon ROCK display](../images/ha-roon-dashboard_1.png)
+
+![Home Assistant Roon ROCK display](../images/ha-roon-dashboard_2.png)
 
 ## Requirements
 * [card-mod](https://github.com/thomasloven/lovelace-card-mod) (Custom CSS)
