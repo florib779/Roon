@@ -8,7 +8,9 @@ You can find some of my Home Assistant configuration files [here](https://github
 
 ![Home Assistant Roon Web Display](../images/home-assistant_roon-display.png)
 
-![Home Assistant ROCK](../images/home-assistant_roon-rock.png)
+The modified version of this Roon Web Display can be found [here](roon-web-display.md).
+
+I have also created a [Home Assistant Roon ROCK Dashboard](home-assistant-roon-rock-view.md) specifically for Roon, which has its own page.
 
 ## Goal
 
