@@ -22,4 +22,4 @@
 
 ## Smart Home
 * [My Smart Home project with Home Assistant](home-assistant-smart-home.md)
-* [Home Assistant Roon ROCK view](home-assistant-roon-rock-view.md)
+* [Home Assistant Roon ROCK Dashboard](home-assistant-roon-rock-view.md)
