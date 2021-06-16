@@ -1,6 +1,6 @@
 # My Smart Home project with Home Assistant
 
-You can find some of my Home Assistant configuration files [here](https://github.com/florib779/homeassistant-config) (which are not always up to date yet).
+You can find some of my Home Assistant configuration files and possibilities [here](https://github.com/florib779/homeassistant-config).
 
 ## Home Assistant Dashboard
 
@@ -11,67 +11,6 @@ You can find some of my Home Assistant configuration files [here](https://github
 The modified version of this Roon Web Display can be found [here](roon-web-display.md).
 
 I have also created a [Home Assistant Roon ROCK Dashboard](home-assistant-roon-rock-view.md) specifically for Roon, which has its own page.
-
-## Goal
-
-* Sonos
-  - [x] Night mode (does not work when playing music via roon)
-  - [x] Speech enhancement (does not work when playing music via roon)
-  - [x] Speaker group management - [Mini Media Player](https://github.com/kalkih/mini-media-player) (Customizable media player card for Home Assistant Lovelace UI)
-  - [ ] Bass/Treble/Loudness
-  - [ ] Control subwoofer
-    - [x] On/Off
-    - [ ] Volume level
-    - [ ] Crossover frequency (possible, but not testet yet)
-    - [ ] Polarity (possible, but not testet yet)
-* Roon
-  - [x] Control/Show info
-    - [x] [RoonLabs music player](https://www.home-assistant.io/integrations/roon/) (Home Assistant integration)
-      - [ ] Transfer zones
-    - [x] [Mini Media Player](https://github.com/kalkih/mini-media-player) (Customizable media player card for Home Assistant Lovelace UI)
-    - [ ] Remote control with [roon-cec-controller-extension](https://github.com/benjaminbellamy/roon-cec-controller-extension)
-      - [x] Start/pause
-      - [ ] ~Forward~ (my remote control does not send a command for this)
-      - [ ] ~Backward~ (my remote control does not send a command for this)
-      - [ ] Fast forward (has to be modified)
-      - [x] Rewind
-      - [ ] Volume
-* TV
-  - [x] Turn TV on [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/)
-  - [x] Turn TV off [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/)
-  - [ ] Control TV
-    - ~[HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/) or~ (my TV only sends a little few CEC commands) [Android TV](https://www.home-assistant.io/integrations/androidtv/)
-  - [ ] [Notifications for Android TV / FireTV ](https://www.home-assistant.io/integrations/nfandroidtv/)
-* AVM FRITZ!Box
-  - [x] Sensor for internet connectivity (with external IP and uptime attributes) [FRITZ!Box Tools](https://github.com/mammuth/ha-fritzbox-tools)
-  - [x] Turn on/off wifi and guest wifi [FRITZ!Box Tools](https://github.com/mammuth/ha-fritzbox-tools)
-* AVM FRITZ!DECT devices
-  * Control
-    - [x] Comet DECT (radiator control)
-    - [x] FRITZ!DECT 200 (smart plug)
-    - [x] FRITZ!DECT 210 (smart plug)
-    - [x] FRITZ!DECT 300 (radiator control)
-    - [ ] FRITZ!DECT 500 (LED light)
-      - Actually not implemented in Home Assistant
-    - [ ] Rademacher RolloTron DECT 1213 (shutter)
-      - Actually not implemented in Home Assistant
-      - [ ] Close shutter when TV is turned on.
-      - [ ] Go to favorite position at a given time
-  * Show info
-    - [x] Comet DECT (radiator control)
-    - [x] Deutsche Telekom/Eurotronic 40318684 (door/window contact)
-    - [x] FRITZ!DECT 200 (smart plug)
-    - [x] FRITZ!DECT 210 (smart plug)
-    - [x] FRITZ!DECT 300 (radiator control)
-    - [x] FRITZ!DECT 440 (switch with temperature sensor)
-    - [x] Rademacher RolloTron DECT 1213 (shutter)
-* Ecovacs Deebot [lovelace-xiaomi-vacuum-card](https://github.com/benct/lovelace-xiaomi-vacuum-card)
-  - [x] Control
-  - [x] Show info
-- [x] Cooking Timer
-- [ ] Alarm Clock
-  * [Hass-Custom-Alarm](https://github.com/akasma74/hass-custom-alarm)
-- [ ] Report the amount of unread emails - [IMAP](https://www.home-assistant.io/integrations/imap/)
 
 ## Installation
 
