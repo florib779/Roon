@@ -16,7 +16,7 @@ With Roon-Server installed you can modify the file `/RoonServer/Appliance/webroo
 
 Because i use [ROCK](https://help.roonlabs.com/portal/en/kb/articles/roon-optimized-core-kit) it is not possible to modify this file.
 
-I'm using the browser extension [Stylus](https://github.com/openstyles/stylus/) where I can put [this CSS code](https://github.com/florib779/Modified-Roon-Web-Display/blob/main/Stylus.css) into without fiddling around with Roon server files.
+I'm using the browser extension [Stylus](https://github.com/openstyles/stylus/) where I can put [this CSS code](https://github.com/florib779/Modified-Roon-Web-Display/blob/main/Stylus.css) into without fiddling around with Roon server files, which are overwritten again when Roon is updated.
 
 ## Links
 
