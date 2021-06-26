@@ -2,19 +2,17 @@
 
 You can find some of my Home Assistant configuration files and possibilities [here](https://github.com/florib779/homeassistant-config).
 
-## Home Assistant Dashboard
+## Dashboards
 
-![Home Assistant Dashboard](../images/home-assistant-dashboard.png)
+Some details about some of my dashboards:
 
-![Home Assistant Roon Web Display](../images/home-assistant_roon-display.png)
-
-The modified version of this Roon Web Display can be found [here](roon-web-display.md).
-
-I have also created a [Home Assistant Roon ROCK Dashboard](home-assistant-roon-rock-view.md) specifically for Roon, which has its own page.
+* [Screenshots](https://github.com/florib779/homeassistant-config/tree/master/screenshots)
+* [Home Assistant Roon ROCK Dashboard](home-assistant-roon-rock-view.md)
+* [Modified version of the Roon Web Display](roon-web-display.md)
 
 ## Installation
 
-I am currently running Home Assistant Supervised on an Intel NUC with Manjaro. On the one hand to be able to use [HDMI-CEC](https://www.home-assistant.io/integrations/hdmi_cec/) to control Roon with my remote control (which is still in the works). On the other hand because the RaspberryPi 3 is a bit sluggish.
+I am currently running Home Assistant Supervised on an Intel NUC with Manjaro Linux, because my RaspberryPi 3 was a bit sluggish.
 
 1. `sudo usermod -aG docker user # Add our linux user to the Docker group`
 2. `docker --version # Check if Docker is running`
