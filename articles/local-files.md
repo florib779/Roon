@@ -5,6 +5,7 @@ Local Roon files have some special features over streamed content:
 * You have a nice looking waveform.
 * The dynamic range of an album will be shown.
 * You can add [lyrics](roon-lyrics.md).
+* You can expand meta data.
 * You can group tracks.
 * You can tag your tracks with `ROONRADIOBAN` (set to values 1 or true or yes), so the tracks will no longer be selected by Roon-Radio.
 * You can edit tracks.
