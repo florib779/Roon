@@ -10,8 +10,8 @@ It's recommended to use [Google DNS](https://developers.google.com/speed/public-
 
 ### Import "My Mix" from TIDAL
 
+Since Roon 1.8 (Build 806), "My Mixes" are integrated. Nevertheless, this procedure could be useful for other purposes.
+
 In TIDAL open My Collection --> My Mix > My Mix [Number] and Create new Playlist.
 
 After automatic or manual [playlist syncing](https://kb.roonlabs.com/Importing_playlists#TIDAL_Playlists) you will have your playlist inside Roon.
-
-The same procedure works with other playlists as well.
