@@ -53,6 +53,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Controlling Logitech Harmony from Roon.
 * [roon-extension-http-api](https://github.com/st0g1e/roon-extension-http-api)
   * These APIs are run by http calls. There is a list below with examples that calls these APIs.
+* [roon-extension-ikea-tradfri](https://github.com/HasseJohansen/roon-extension-ikea-tradfri)
+  * This is extension for roon to be able to switch Ikea Trådfri power switches ex. when using an external Power Amplifier or powered speakers which doesn't have a auto standby feature.
 * [roon-extension-iport-sm-buttons](https://github.com/RoonLabs/roon-extension-iport-sm-buttons)
   * This Roon Extension allows the [iPort Surface Mount with Buttons](http://iportproducts.com/surfacemountbuttons) to communicate with Roon.
 * [roon-extension-itroxs](https://github.com/bsc101/roon-extension-itroxs)
