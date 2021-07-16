@@ -1,4 +1,4 @@
-On this pages you'll find [Articles](/Roon/articles/) about Roon, "the music player for music lovers", by [Roon Labs](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link).
+On this pages you'll find [Articles](/Roon/articles/) about Roon, "the music player for music lovers", by [Roonlabs](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link).
 
 This pages contains a lot of technical and nerdy stuff. Nevertheless, I hope that it will also be useful for the less technically interested people.
 
