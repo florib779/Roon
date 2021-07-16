@@ -1,6 +1,6 @@
 # Audio Material
 
-By default, Roon plays the highest-quality version of albums/tracks in your library, but to get Tidal albums/tracks in your library you need to favor them in Tidal or add them to Roon.
+By default, Roon plays the highest-quality version of albums/tracks in your library, but to get Tidal albums/tracks in your library you need to favor them in Tidal or add them to [Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link).
 
 ## Sampling Rate
 
