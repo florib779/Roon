@@ -15,7 +15,7 @@ Login to your LibreElec instance with ssh.
 
 [https://hub.docker.com/r/steefdebruijn/docker-roonserver](https://hub.docker.com/r/steefdebruijn/docker-roonserver)
 
-It uses Docker volumes for the app, the data(base), the music and backups. The app volume is used to pull the Roon Server software from Roonlabs on first run if this volume is empty. This is useful if you use a scheme of recreating application containers on every restart. Selfupdates from Roonlabs work as expected. Adjust startup parameters (volume mappings) to your liking.
+It uses Docker volumes for the app, the data(base), the music and backups. The app volume is used to pull the Roon Server software from [Roonlabs](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link) on first run if this volume is empty. This is useful if you use a scheme of recreating application containers on every restart. Selfupdates from Roonlabs work as expected. Adjust startup parameters (volume mappings) to your liking.
 
 `chown -cR root:root /media/Backups` (my USB stick for backups)
 
