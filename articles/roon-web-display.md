@@ -1,6 +1,6 @@
 # Roon Web Display
 
-Since Roon Build 354 it's possible to [display Now Playing information and lyrics](https://help.roonlabs.com/portal/en/kb/articles/displays) in your webbrowser and Chromecast devices.
+Since [Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link) Build 354 it's possible to [display Now Playing information and lyrics](https://help.roonlabs.com/portal/en/kb/articles/displays) in your webbrowser and Chromecast devices.
 
 ## FireTV devices
 
