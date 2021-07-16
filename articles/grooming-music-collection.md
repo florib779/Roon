@@ -12,7 +12,13 @@ The first step is to search and compare at my prefered [sources for downloadable
 3. Bonus Tracks
 4. Remastered (is not always better than the original recording)
 
-Now it's time for tagging the music files. It's not really necessary, because Roon already has a very good detection mechanism. However, I made the experience that the manual tagging partly brings better results. There is also the possibility to add an album that is not yet in the Musicbrainz database, so that it can be identified by Roon. Of course there is also the possibility to automate the tagging with a software like [Beets](http://beets.io/), but I do not know if this gives someone the possibility to add an album to the [MusicBrainz](https://musicbrainz.org/) database. In addition, I think it's better if a person has spotted the data for an album.
+Now it's time for tagging the music files. It's not really necessary, because [Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link) already has a very good detection mechanism. However, I made the experience that the manual tagging partly brings better results. There is also the possibility to add an album that is not yet in the Musicbrainz database, so that it can be identified by Roon. Of course there is also the possibility to automate the tagging with a software like [Beets](http://beets.io/), but I do not know if this gives someone the possibility to add an album to the [MusicBrainz](https://musicbrainz.org/) database. In addition, I think it's better if a person has spotted the data for an album.
+
+Actually I am in the process of creating a [configuration file for Beets](https://github.com/florib779/beets-config) to simplify and automate the process before importing into Roon.
+
+I will probably continue to use [MusicBrainz Picard](https://picard.musicbrainz.org/) and [Songkong](http://www.jthink.net/songkong) for the time being to write additional information into the file tags that Beets can't currently provide, but we'll see.
+
+For this reason, the information below is out of date at the moment.
 
 ### 1. Open MusicBrainz Picard and "Add Folder" with the album you wish to identify.
 ### 2. Select the album.
