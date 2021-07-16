@@ -1,6 +1,6 @@
 # Images and Artwork in Roon
 
-In Roon, all the images embedded in the file tags, are stored next to the audio files or stored in a folder called `artwork` or `scans` next to the files are displayed. This includes all images that include `cover`, `front` or `folder`.
+In [Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link), all the images embedded in the file tags, are stored next to the audio files or stored in a folder called `artwork` or `scans` next to the files are displayed. This includes all images that include `cover`, `front` or `folder`.
 
 Related to [this post](https://community.roonlabs.com/t/has-liner-notes/55822/7) images will be showed in the following order on the album page:
 
