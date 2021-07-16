@@ -1,6 +1,6 @@
 # Lyrics in Roon
 
-It's now possible to read out unsynchronized as well as synchronized [lyrics](https://help.roonlabs.com/portal/en/kb/articles/lyrics) from file tags and display them in Roon. On the one hand in the graphical user interface of the software itself, and on the other hand via [display](https://help.roonlabs.com/portal/en/kb/articles/displays). By the way, I modified my web display a little bit. More details [here](roon-web-display.md).
+It's now possible to read out unsynchronized as well as synchronized [lyrics](https://help.roonlabs.com/portal/en/kb/articles/lyrics) from file tags and display them in [Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link). On the one hand in the graphical user interface of the software itself, and on the other hand via [display](https://help.roonlabs.com/portal/en/kb/articles/displays). By the way, I modified my web display a little bit. More details [here](roon-web-display.md).
 
 Although Roon already provides some lyrics (in my case about one third of my music collection), I add some from time to time, especially synchronized lyrics.
 
