@@ -2,16 +2,16 @@ Debian Netinstall
 
 ### Post-install
 
+sudo apt-get install ffmpeg cifs-utils curl autofs python3-pip sudo
+
 Login as root:
 
-1. apt-get install sudo
-2. usermod -aG sudo USERNAME
-3. reboot
+1. usermod -aG sudo USERNAME
+2. reboot
 
 https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mount+at+boot
 
 * Roon server
-  * sudo apt-get install ffmpeg cifs-utils curl autofs
   * http://download.roonlabs.com/builds/roonserver-installer-linuxx64.sh
   * chmod +x roonserver-installer-linuxx64.sh
   * sudo ./roonserver-installer-linuxx64.sh
