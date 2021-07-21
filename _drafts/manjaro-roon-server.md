@@ -1,9 +1,20 @@
-Manjaro Architect (not maintained anymore)
-* There is a shortcut for Architect on KDE / Gnome desktop of Live USB.
-* https://download.manjaro.org/kde/21.0.7/manjaro-kde-21.0.7-minimal-210614-linux510.iso
+Debian Netinstall
 
-* Roon server (AUR)
-  * sudo pacman -S roonserver
+### Post-install
+
+Login as root:
+
+1. apt-get install sudo
+2. usermod -aG sudo USERNAME
+3. reboot
+
+https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mount+at+boot
+
+* Roon server
+  * sudo apt-get install ffmpeg cifs-utils curl autofs
+  * http://download.roonlabs.com/builds/roonserver-installer-linuxx64.sh
+  * chmod +x roonserver-installer-linuxx64.sh
+  * sudo ./roonserver-installer-linuxx64.sh
 * [Roon-Extension-Manager](https://github.com/TheAppgineer/roon-extension-manager/wiki/Installation#linux)
 * Beets (pip)
 * Home Assistant
