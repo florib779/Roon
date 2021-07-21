@@ -3,12 +3,15 @@ Manjaro Architect (not maintained anymore)
 * https://download.manjaro.org/kde/21.0.7/manjaro-kde-21.0.7-minimal-210614-linux510.iso
 
 * Roon server (AUR)
+  * sudo pacman -S roonserver
 * [Roon-Extension-Manager](https://github.com/TheAppgineer/roon-extension-manager/wiki/Installation#linux)
 * Beets (pip)
 * Home Assistant
   * File editor
   * Grafana
-* (Webmin (AUR))
+* Dropbox
+* Webmin (AUR)
+  * sudo pacman -S webmin
   * Modules
     * Backup Configuration Files
     * Bandwidth Monitoring (3rd)
