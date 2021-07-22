@@ -6,7 +6,7 @@ Debian Buster Netinstall
 
 `sudo apt-get update`
 
-`sudo apt install sudo curl apt-transport-https ca-certificates curl gnupg lsb-release ffmpeg cifs-utils autofs python3-pip`
+`sudo apt install sudo curl apt-transport-https ca-certificates curl gnupg lsb-release ffmpeg cifs-utils autofs python3-pip python-rgain`
 
 `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
 
@@ -18,6 +18,14 @@ echo \
 `sudo apt-get update`
 
 `sudo apt-get install docker-ce docker-ce-cli containerd.io`
+
+#### [Debian-Multimedia](https://www.deb-multimedia.org/)
+
+`wget https://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb`
+
+`sudo dpkg -i deb-multimedia-keyring_2016.8.1_all.deb`
+
+`rm deb-multimedia-keyring_2016.8.1_all.deb`
 
 Login as root:
 
