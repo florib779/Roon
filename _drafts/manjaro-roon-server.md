@@ -1,29 +1,62 @@
-Debian Netinstall
+## Operation System
+
+Debian Buster Netinstall
 
 ### Post-install
 
-sudo apt-get install ffmpeg cifs-utils curl autofs python3-pip sudo
+`sudo apt-get update`
+
+`sudo apt install sudo curl apt-transport-https ca-certificates curl gnupg lsb-release ffmpeg cifs-utils autofs python3-pip`
+
+`curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
+
+```
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+`sudo apt-get update`
+
+`sudo apt-get install docker-ce docker-ce-cli containerd.io`
 
 Login as root:
 
-1. usermod -aG sudo USERNAME
-2. reboot
+1. `usermod -aG sudo USERNAME`
+2. `reboot`
 
 https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mount+at+boot
 
-* Roon server
-  * http://download.roonlabs.com/builds/roonserver-installer-linuxx64.sh
-  * chmod +x roonserver-installer-linuxx64.sh
-  * sudo ./roonserver-installer-linuxx64.sh
-* [Roon-Extension-Manager](https://github.com/TheAppgineer/roon-extension-manager/wiki/Installation#linux)
-* Beets (pip)
-* Home Assistant
-  * File editor
-  * Grafana
-* Dropbox
-* Webmin (AUR)
-  * sudo pacman -S webmin
-  * Modules
+## Roon server
+
+1. `curl http://download.roonlabs.com/builds/roonserver-installer-linuxx64.sh`
+2. `chmod +x roonserver-installer-linuxx64.sh`
+3. `sudo ./roonserver-installer-linuxx64.sh`
+4. `roonserver-installer-linuxx64.sh`
+
+## [Roon-Extension-Manager](https://github.com/TheAppgineer/roon-extension-manager/wiki/Installation#linux)
+
+1. `curl https://github.com/TheAppgineer/roon-extension-manager/raw/v1.x/rem-setup.sh`
+2. `chmod +x rem-setup.sh`
+3. `sudo ./rem-setup.sh`
+4. `rm rem-setup.sh`
+
+## Beets (pip)
+
+## Dropbox
+
+## Webmin
+
+1. If you like to install and update Webmin via APT, edit the /etc/apt/sources.list file on your system and add the line:
+  `deb https://download.webmin.com/download/repository buster contrib`
+2. `wget https://download.webmin.com/jcameron-key.asc`
+3. `sudo apt-key add jcameron-key.asc`
+4. `sudo apt update`
+5. `sudo apt install webmin`
+6. `rm jcameron-key.asc`
+
+https://rock.fritz.box:10000/
+
+### Modules
     * Backup Configuration Files
     * Bandwidth Monitoring (3rd)
     * Custom Commands
@@ -49,3 +82,10 @@ https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mo
     * System and Server Status
     * Upload and Download
     * Webmin Configuration
+    
+    ## ToDo
+    
+    - [ ] Optimize bootup speed
+      * Grub
+      * BIOS
+    - Change boot sequence in BIOS
