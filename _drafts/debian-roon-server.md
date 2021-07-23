@@ -65,31 +65,32 @@ https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mo
 https://rock.fritz.box:10000/
 
 ### Modules
-    * Backup Configuration Files
-    * Bandwidth Monitoring (3rd)
-    * Custom Commands
-    * Disk and Network Filesystems
-    * File Manager
-    * Filesystem Backup
-    * Initial System Bootup
-    * Log File Rotation
-    * MON Service Monitor
-    * NFS
-    * PostgreSQL Database Server
-    * Running Processes
-    * SMART Drive Status
-    * Samba Windows File Sharing
-    * Scheduled Commands
-    * Scheduled Cron Jobs
-    * Scheduled Webmin Functions
-    * Software Package Updates
-    * Software Packages
-    * System Logs
-    * System Status
-    * System Time
-    * System and Server Status
-    * Upload and Download
-    * Webmin Configuration
+- [ ] Backup Configuration Files
+- [x] Custom Commands
+  - [ ] Beets commands
+- [ ] Disk and Network Filesystems
+- [x] File Manager
+- [ ] Filesystem Backup
+- [ ] Initial System Bootup
+- [ ] Log File Rotation
+- [ ] MON Service Monitor
+- [ ] NFS
+- [ ] PostgreSQL Database Server
+  * Beets database?
+- [ ] Running Processes
+- [x] SMART Drive Status
+- [ ] Samba Windows File Sharing
+- [ ] Scheduled Commands
+- [ ] Scheduled Cron Jobs
+- [ ] Scheduled Webmin Functions
+  * beets update?
+- [x] Software Package Updates
+- [ ] Software Packages
+- [ ] System Logs
+- [ ] System Status
+- [ ] System Time
+- [ ] System and Server Status
+- [ ] Upload and Download
     
     ## ToDo
     
@@ -97,3 +98,4 @@ https://rock.fritz.box:10000/
       * Grub
       * BIOS
     - Change boot sequence in BIOS
+    - Get power consumption
