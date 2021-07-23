@@ -6,7 +6,7 @@ Debian Buster Netinstall
 
 `sudo apt-get update`
 
-`sudo apt install sudo curl apt-transport-https ca-certificates curl gnupg lsb-release ffmpeg cifs-utils autofs python3-pip python-rgain`
+`sudo apt install sudo curl apt-transport-https ca-certificates curl gnupg lsb-release ffmpeg cifs-utils autofs python3-pip python-rgain smartmontools lm-sensors`
 
 `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
 
