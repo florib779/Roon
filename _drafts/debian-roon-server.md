@@ -6,6 +6,10 @@ Debian Buster Netinstall
 
 `sudo apt-get update`
 
+`sudo apt-get install linux-image-rt-amd64`
+
+`sudo reboot`
+
 `sudo apt install sudo curl apt-transport-https ca-certificates curl gnupg lsb-release ffmpeg cifs-utils autofs python3-pip python-rgain smartmontools lm-sensors`
 
 `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
@@ -33,6 +37,14 @@ Login as root:
 2. `reboot`
 
 https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mount+at+boot
+
+`/etc/security/limits.conf`
+
+```
+@audio - rtprio 99
+@audio - memlock unlimited
+@audio - nice -10
+``` 
 
 ## Roon server
 
@@ -99,3 +111,7 @@ https://rock.fritz.box:10000/
       * BIOS
     - Change boot sequence in BIOS
     - Get power consumption
+
+## Links
+
+* [Intel NUC/Debian Linux based RoonServer success story](https://community.roonlabs.com/t/intel-nuc-debian-linux-based-roonserver-success-story/14074)
