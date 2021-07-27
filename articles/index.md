@@ -10,7 +10,6 @@
 * [Images and Artwork in Roon](images-and-artwork.md)
 * [Lyrics in Roon](roon-lyrics.md)
 * [Roon and Sonos](roon-sonos.md)
-* [RoonServer and roon-extension-manager on LibreElec (Kodi)](roon-server-extension-manager-libreelec.md)
 
 ## Music
 * [Audio Material](audio-material.md)
