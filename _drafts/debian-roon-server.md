@@ -60,6 +60,11 @@ https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mo
 3. `sudo ./rem-setup.sh`
 4. `rm rem-setup.sh`
 
+### Extensions
+
+- [x] [roon-extension-alarm-clock](https://github.com/TheAppgineer/roon-extension-alarm-clock)
+- [x] [roon-extension-cd-ripper](https://github.com/TheAppgineer/roon-extension-cd-ripper)
+
 ## Beets (pip)
 
 ## Dropbox
@@ -76,7 +81,7 @@ https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mo
 
 https://rock.fritz.box:10000/
 
-### Modules
+### Used modules
 - [ ] Backup Configuration Files
 - [x] Custom Commands
   - [ ] Beets commands
@@ -86,12 +91,10 @@ https://rock.fritz.box:10000/
 - [ ] Initial System Bootup
 - [ ] Log File Rotation
 - [ ] MON Service Monitor
-- [ ] NFS
 - [ ] PostgreSQL Database Server
   * Beets database?
 - [ ] Running Processes
 - [x] SMART Drive Status
-- [ ] Samba Windows File Sharing
 - [ ] Scheduled Commands
 - [ ] Scheduled Cron Jobs
 - [ ] Scheduled Webmin Functions
@@ -109,7 +112,6 @@ https://rock.fritz.box:10000/
     - [ ] Optimize bootup speed
       * Grub
       * BIOS
-    - Change boot sequence in BIOS
     - Get power consumption
 
 ## Links
