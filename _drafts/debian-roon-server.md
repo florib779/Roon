@@ -69,6 +69,10 @@ https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mo
 
 ## Dropbox
 
+1. `sudo wget -O /usr/local/bin/dropbox "https://www.dropbox.com/download?dl=packages/dropbox.py"`
+2. `sudo chmod +x /usr/local/bin/dropbox`
+3. `dropbox start -i`
+
 ## Webmin
 
 1. If you like to install and update Webmin via APT, edit the /etc/apt/sources.list file on your system and add the line:
