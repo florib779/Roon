@@ -73,51 +73,6 @@ https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mo
 2. `sudo chmod +x /usr/local/bin/dropbox`
 3. `dropbox start -i`
 
-## Webmin
-
-1. If you like to install and update Webmin via APT, edit the /etc/apt/sources.list file on your system and add the line:
-  `deb https://download.webmin.com/download/repository buster contrib`
-2. `wget https://download.webmin.com/jcameron-key.asc`
-3. `sudo apt-key add jcameron-key.asc`
-4. `sudo apt update`
-5. `sudo apt install webmin`
-6. `rm jcameron-key.asc`
-
-https://rock.fritz.box:10000/
-
-### Used modules
-- [ ] Backup Configuration Files
-- [x] Custom Commands
-  - [ ] Beets commands
-- [ ] Disk and Network Filesystems
-- [x] File Manager
-- [ ] Filesystem Backup
-- [ ] Initial System Bootup
-- [ ] Log File Rotation
-- [ ] MON Service Monitor
-- [ ] PostgreSQL Database Server
-  * Beets database?
-- [ ] Running Processes
-- [x] SMART Drive Status
-- [ ] Scheduled Commands
-- [ ] Scheduled Cron Jobs
-- [ ] Scheduled Webmin Functions
-  * beets update?
-- [x] Software Package Updates
-- [ ] Software Packages
-- [ ] System Logs
-- [ ] System Status
-- [ ] System Time
-- [ ] System and Server Status
-- [ ] Upload and Download
-    
-    ## ToDo
-    
-    - [ ] Optimize bootup speed
-      * Grub
-      * BIOS
-    - Get power consumption
-
 ## Links
 
 * [Intel NUC/Debian Linux based RoonServer success story](https://community.roonlabs.com/t/intel-nuc-debian-linux-based-roonserver-success-story/14074)
