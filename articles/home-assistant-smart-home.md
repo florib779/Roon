@@ -37,40 +37,26 @@ Choose "Yes".
 
 ### node-sonos-http-api
 
-All commands as `root`
-
-#### Install
-
-`wget https://github.com/jishi/node-sonos-http-api/archive/master.zip`
-
-`unzip master.zip`
-
-`cd node-sonos-http-api-master`
-
-`npm install --production`
-
-#### Autostart
-
-`nano /etc/systemd/system/sonosapi.service`
+1. ```mkdir node-sonos-http-api```
+2. ```cd node-sonos-http-api```
+3.``` mkdir clips```
+4. ```mkdir settings```
+5. ```mkdir cache```
+6. ```mkdir presets```
+7. ``` curl https://raw.githubusercontent.com/jishi/node-sonos-http-api/master/presets/example.json > presets/example.json echo {} > settings/settings.json```
 
 ```
-[Unit]
-Description=Sonos HTTP API Daemon
-After=syslog.target network.target
-
-[Service]
-Type=simple
-ExecStart=node /root/node-sonos-http-api-master/server.js
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
+docker run \
+  --net=host \
+  --name sonos \
+  --restart=always \
+  -d \
+  -v `pwd`/settings:/app/settings \
+  -v `pwd`/clips:/app/static/clips \
+  -v `pwd`/cache:/app/cache \
+  -v `pwd`/presets:/app/presets \
+  chrisns/docker-node-sonos-http-api
 ```
-
-`systemctl enable sonosapi.service`
-
-`systemctl start sonosapi.service`
 
 #### Links
 
