@@ -12,7 +12,7 @@ Some details about some of my dashboards:
 
 ## Installation
 
-I am currently running Home Assistant Supervised on an Intel NUC with Manjaro Linux, because my RaspberryPi 3 was a bit sluggish.
+I am currently running Home Assistant Supervised on an Intel NUC with [Debian Buster](https://www.debian.org/releases/buster/index.en.html), because my RaspberryPi 3 was a bit sluggish.
 
 1. `sudo usermod -aG docker user # Add our linux user to the Docker group`
 2. `docker --version # Check if Docker is running`
@@ -23,7 +23,7 @@ After a while, the script will ask the following question:
 
 `Do you want to proceed with overwriting the /etc/network/interfaces file? [N/y]`
 
-In my case I simply pressed return (No), although it's recommended to press "Yes".
+Choose "Yes".
 
 [Source](https://peyanski.com/how-to-install-home-assistant-supervised-official-way/#Home_Assistant_Supervised_method)
 
