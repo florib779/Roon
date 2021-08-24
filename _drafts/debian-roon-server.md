@@ -1,6 +1,6 @@
 ## Operation System
 
-Debian Buster Netinstall
+Debian Bullseye Netinstall
 
 ### Post-install
 
@@ -63,9 +63,12 @@ https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mo
 ### Extensions
 
 - [x] [roon-extension-alarm-clock](https://github.com/TheAppgineer/roon-extension-alarm-clock)
+  - [ ] Possible with Home Assistant
 - [x] [roon-extension-cd-ripper](https://github.com/TheAppgineer/roon-extension-cd-ripper)
 
 ## Beets (pip)
+
+## Home Assistant
 
 ## Dropbox
 
