@@ -4,41 +4,28 @@ Debian Bullseye Netinstall
 
 ### Post-install
 
-`sudo apt-get update`
+1. `su -`
+2. `apt update && apt install sudo -y`
+3. `adduser username sudo`
 
-`sudo apt-get install linux-image-rt-amd64`
+~`sudo apt install sudo curl apt-transport-https ca-certificates curl gnupg lsb-release ffmpeg cifs-utils autofs python3-pip python-rgain smartmontools lm-sensors`~
 
-`sudo reboot`
+#### Create mount points
 
-`sudo apt install sudo curl apt-transport-https ca-certificates curl gnupg lsb-release ffmpeg cifs-utils autofs python3-pip python-rgain smartmontools lm-sensors`
+`sudo apt install autofs`
 
-`curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
+## Roon server
 
-```
-echo \
-  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-```
-`sudo apt-get update`
+1. `wget http://download.roonlabs.com/builds/roonserver-installer-linuxx64.sh`
+2. `chmod +x roonserver-installer-linuxx64.sh`
+3. `sudo ./roonserver-installer-linuxx64.sh`
+4. `roonserver-installer-linuxx64.sh`
 
-`sudo apt-get install docker-ce docker-ce-cli containerd.io`
+### Audio tuning
 
-#### [Debian-Multimedia](https://www.deb-multimedia.org/)
+`sudo apt update && sudo apt install linux-image-rt-amd64`
 
-`wget https://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb`
-
-`sudo dpkg -i deb-multimedia-keyring_2016.8.1_all.deb`
-
-`rm deb-multimedia-keyring_2016.8.1_all.deb`
-
-Login as root:
-
-1. `usermod -aG sudo USERNAME`
-2. `reboot`
-
-https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mount+at+boot
-
-`/etc/security/limits.conf`
+`sudo nano /etc/security/limits.conf`
 
 ```
 @audio - rtprio 99
@@ -46,29 +33,21 @@ https://confluence.jaytaala.com/display/TKB/Mount+drive+in+linux+and+set+auto-mo
 @audio - nice -10
 ``` 
 
-## Roon server
-
-1. `curl http://download.roonlabs.com/builds/roonserver-installer-linuxx64.sh`
-2. `chmod +x roonserver-installer-linuxx64.sh`
-3. `sudo ./roonserver-installer-linuxx64.sh`
-4. `roonserver-installer-linuxx64.sh`
-
-## [Roon-Extension-Manager](https://github.com/TheAppgineer/roon-extension-manager/wiki/Installation#linux)
-
-1. `curl https://github.com/TheAppgineer/roon-extension-manager/raw/v1.x/rem-setup.sh`
-2. `chmod +x rem-setup.sh`
-3. `sudo ./rem-setup.sh`
-4. `rm rem-setup.sh`
-
-### Extensions
-
-- [x] [roon-extension-alarm-clock](https://github.com/TheAppgineer/roon-extension-alarm-clock)
-  - [ ] Possible with Home Assistant
-- [x] [roon-extension-cd-ripper](https://github.com/TheAppgineer/roon-extension-cd-ripper)
-
-## Beets (pip)
+## Beets
 
 ## Home Assistant
+
+### Docker
+
+`wget -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
+
+```
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+`sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io`
 
 ## Dropbox
 
