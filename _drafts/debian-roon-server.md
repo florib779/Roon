@@ -4,7 +4,28 @@ Debian Bullseye Netinstall
 
 ### Advanced
 
-`/etc/fstab` @ToDo
+```
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# systemd generates mount units based on this file, see systemd.mount(5).
+# Please run 'systemctl daemon-reload' after making changes here.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/nvme0n1p1 during installation
+UUID=0f26d3ed-dfaf-41d8-b814-26f1fbeb1a29 /                             ext4    errors=remount-ro       0       1
+# /mnt/external/roon-backups was on /dev/sdb1 during installation
+UUID=e00cd351-08fe-4094-9e8d-9f8c68ac5da4 /mnt/external/roon-backups    ext4    defaults                0       2
+# /mnt/external/work was on /dev/sdc1 after installation
+UUID=5d27fa62-e5c2-450f-b8cd-4b3d5ddd810b /mnt/external/work            ext4    defaults                0       2
+# /mnt/internal/music was on /dev/sda1 during installation
+UUID=bcfec288-aa6d-4c68-86cf-bc85203df7e6 /mnt/internal/music           ext4    defaults                0       2
+# swap was on /dev/nvme0n1p5 during installation
+UUID=df58f885-93af-4715-917c-9c9754499d5a none                          swap    sw                      0       0
+```
 
 ## Roon server
 
