@@ -36,10 +36,11 @@ Choose "Yes".
 
 ### node-sonos-http-api
 
-1. ```mkdir node-sonos-http-api```
-2. ```cd node-sonos-http-api```
-3. ``` mkdir cache clips presets settings```
-4. ``` curl https://raw.githubusercontent.com/jishi/node-sonos-http-api/master/presets/example.json > presets/example.json echo {} > settings/settings.json```
+1. `mkdir node-sonos-http-api`
+2. `cd node-sonos-http-api`
+3. ` mkdir cache clips presets settings`
+4. ` curl https://raw.githubusercontent.com/jishi/node-sonos-http-api/master/presets/example.json > presets/example.json echo {} > settings/settings.json`
+5. `sudo su`
 
 ```
 docker run \
