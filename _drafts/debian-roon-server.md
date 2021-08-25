@@ -2,13 +2,9 @@
 
 Debian Bullseye Netinstall
 
-Advanced
+### Advanced
 
 `/etc/fstab` @ToDo
-
-### Post-install
-
-~`sudo apt update && sudo apt install -y apt-transport-https ca-certificates gnupg lsb-release python3-pip python-rgain smartmontools lm-sensors`~
 
 ## Roon server
 
@@ -24,7 +20,7 @@ Advanced
 2. `sudo nano /etc/security/limits.conf`
 ```
 @audio - rtprio 99
-#@audio - memlock unlimited # This may be why the memory was always full.
+#@audio - memlock unlimited # ToDo: This may be why the memory was always full.
 @audio - nice -10
 ``` 
 3. `sudo reboot`
@@ -48,6 +44,8 @@ For Home Assistant and poss. roon-extension-manager.
 [See here.](https://github.com/florib779/beets-config)
 
 ## Dropbox
+
+@ToDo
 
 1. `sudo wget -O /usr/local/bin/dropbox "https://www.dropbox.com/download?dl=packages/dropbox.py"`
 2. `sudo chmod +x /usr/local/bin/dropbox`
