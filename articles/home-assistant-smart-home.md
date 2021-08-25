@@ -32,6 +32,8 @@ Choose "Yes".
 
 `wget -q -O - https://install.hacs.xyz | bash -`
 
+After that go go `Settings > Integrations > Add Integration` and enable it. Follow the instructions.
+
 [Source](https://hacs.xyz/docs/installation/installation/)
 
 ### node-sonos-http-api
