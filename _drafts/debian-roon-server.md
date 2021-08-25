@@ -2,52 +2,54 @@
 
 Debian Bullseye Netinstall
 
+Advanced
+
+`/etc/fstab`
+```
+@audio - rtprio 99
+#@audio - memlock unlimited # This may be why the memory was always full.
+@audio - nice -10
+
 ### Post-install
 
-1. `su -`
-2. `apt update && apt install sudo -y`
-3. `adduser username sudo`
-
-~`sudo apt install sudo curl apt-transport-https ca-certificates curl gnupg lsb-release ffmpeg cifs-utils autofs python3-pip python-rgain smartmontools lm-sensors`~
-
-#### Create mount points
-
-`sudo apt install autofs`
+~`sudo apt update && sudo apt install -y apt-transport-https ca-certificates gnupg lsb-release python3-pip python-rgain smartmontools lm-sensors`~
 
 ## Roon server
 
-1. `wget http://download.roonlabs.com/builds/roonserver-installer-linuxx64.sh`
-2. `chmod +x roonserver-installer-linuxx64.sh`
-3. `sudo ./roonserver-installer-linuxx64.sh`
-4. `roonserver-installer-linuxx64.sh`
+1. `sudo apt update && sudo apt install -y ffmpeg cifs-utils curl`
+2. `wget http://download.roonlabs.com/builds/roonserver-installer-linuxx64.sh`
+3. `chmod +x roonserver-installer-linuxx64.sh`
+4. `sudo ./roonserver-installer-linuxx64.sh`
+5. `rm roonserver-installer-linuxx64.sh`
 
 ### Audio tuning
 
-`sudo apt update && sudo apt install linux-image-rt-amd64`
-
-`sudo nano /etc/security/limits.conf`
-
+1. `sudo apt update && sudo apt install -y linux-image-rt-amd64`
+2. `sudo nano /etc/security/limits.conf`
 ```
 @audio - rtprio 99
-@audio - memlock unlimited
+#@audio - memlock unlimited # This may be why the memory was always full.
 @audio - nice -10
 ``` 
-
-## Beets
-
-## Home Assistant
+3. `sudo reboot`
+4. `uname -r # Check which kernel is running`
+5. `sudo apt remove linux-image-5.10.0-8-amd64
 
 ### Docker
 
-`wget -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
+For Home Assistant and poss. roon-extension-manager.
 
-```
-echo \
-  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-```
+1. `sudo apt install -y docker.io`
+2. `sudo usermod -aG docker user # Add our linux user to the Docker group`
+3. `docker --version # Check if Docker is running
 
-`sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io`
+## Home Assistant
+
+[See here.](https://github.com/florib779/Roon/blob/master/articles/home-assistant-smart-home.md)
+
+## Beets
+
+[See here.](https://github.com/florib779/beets-config)
 
 ## Dropbox
 
