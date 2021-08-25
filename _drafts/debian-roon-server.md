@@ -4,11 +4,7 @@ Debian Bullseye Netinstall
 
 Advanced
 
-`/etc/fstab`
-```
-@audio - rtprio 99
-#@audio - memlock unlimited # This may be why the memory was always full.
-@audio - nice -10
+`/etc/fstab` @ToDo
 
 ### Post-install
 
