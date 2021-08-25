@@ -12,12 +12,11 @@ Some details about some of my dashboards:
 
 ## Installation
 
-I am currently running Home Assistant Supervised on an Intel NUC with [Debian Buster](https://www.debian.org/releases/buster/index.en.html), because my RaspberryPi 3 was a bit sluggish.
+I am currently running Home Assistant Supervised on an Intel NUC with [Debian Bullseye](https://www.debian.org/releases/bullseye/index.en.html), because my RaspberryPi 3 was a bit sluggish.
 
-1. `sudo usermod -aG docker user # Add our linux user to the Docker group`
-2. `docker --version # Check if Docker is running`
-3. `sudo curl -Lo installer.sh https://raw.githubusercontent.com/home-assistant/supervised-installer/master/installer.sh`
-4. `sudo bash installer.sh --machine qemux86-64`
+1. `sudo apt install -y network-manager jq`
+2. `sudo curl -Lo installer.sh https://raw.githubusercontent.com/home-assistant/supervised-installer/master/installer.sh`
+3. `sudo bash installer.sh --machine qemux86-64`
 
 After a while, the script will ask the following question:
 
@@ -39,11 +38,8 @@ Choose "Yes".
 
 1. ```mkdir node-sonos-http-api```
 2. ```cd node-sonos-http-api```
-3.``` mkdir clips```
-4. ```mkdir settings```
-5. ```mkdir cache```
-6. ```mkdir presets```
-7. ``` curl https://raw.githubusercontent.com/jishi/node-sonos-http-api/master/presets/example.json > presets/example.json echo {} > settings/settings.json```
+3. ``` mkdir cache clips presets settings```
+4. ``` curl https://raw.githubusercontent.com/jishi/node-sonos-http-api/master/presets/example.json > presets/example.json echo {} > settings/settings.json```
 
 ```
 docker run \
