@@ -46,7 +46,7 @@ UUID=df58f885-93af-4715-917c-9c9754499d5a none                          swap    
 ``` 
 3. `sudo reboot`
 4. `uname -r # Check which kernel is running`
-5. `sudo apt remove linux-image-5.10.0-8-amd64
+5. `sudo apt remove linux-image-5.10.0-8-amd64`
 
 ### Docker
 
