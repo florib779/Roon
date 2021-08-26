@@ -24,6 +24,8 @@ After a while, the script will ask the following question:
 
 Choose "Yes".
 
+4. `sudo rm installer.sh`
+
 [Source](https://peyanski.com/how-to-install-home-assistant-supervised-official-way/#Home_Assistant_Supervised_method)
 
 ### Install HACS
