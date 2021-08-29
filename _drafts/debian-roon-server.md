@@ -1,8 +1,10 @@
 ## Operation System
 
-Debian Bullseye Netinstall
+[Debian Bullseye netinst](https://www.debian.org/releases/bullseye/debian-installer/index.en.html)
 
 ### Advanced
+
+#### /etc/fstab
 
 ```
 # /etc/fstab: static file system information.
@@ -26,6 +28,13 @@ UUID=bcfec288-aa6d-4c68-86cf-bc85203df7e6 /mnt/internal/music           ext4    
 # swap was on /dev/nvme0n1p5 during installation
 UUID=df58f885-93af-4715-917c-9c9754499d5a none                          swap    sw                      0       0
 ```
+#### Allow root login
+
+1. `sudo nano /etc/ssh/sshd_config`
+2. `PasswordAuthentication yes`
+3. `PermitRootLogin yes`
+4. `sudo service ssh restart`
+5. `sudo passwd root`
 
 ## Roon server
 
