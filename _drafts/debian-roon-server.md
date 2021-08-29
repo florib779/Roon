@@ -75,11 +75,20 @@ For Home Assistant and poss. roon-extension-manager.
 
 ## Dropbox
 
-@ToDo
+### Installation
 
-1. `sudo wget -O /usr/local/bin/dropbox "https://www.dropbox.com/download?dl=packages/dropbox.py"`
-2. `sudo chmod +x /usr/local/bin/dropbox`
-3. `dropbox start -i`
+1. `cd ~/Dropbox-Uploader`
+2. `sudo wget -O /usr/local/bin/dropbox "https://www.dropbox.com/download?dl=packages/dropbox.py"`
+3. `chmod +x dropbox_uploader.sh`
+4. `./dropbox_uploader.sh`
+
+### Commands
+
+* `~/Dropbox-Uploader/./dropbox_uploader.sh upload /mnt/internal/music/ Dropbox-Uploader
+
+### Links
+
+* https://github.com/andreafabrizi/Dropbox-Uploader
 
 ## Links
 
