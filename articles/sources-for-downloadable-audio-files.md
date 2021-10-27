@@ -11,7 +11,7 @@ It should be mentioned here only provider who offer at least CD-quality. Of cour
 
 * [7digital](https://de.7digital.com/)
 * [Bandcamp](https://bandcamp.com/)
-  An online music service and promotion platform specifically aimed at independent artists. Bandcamp artists have a modifiable microsite with the albums they upload. Many titles can be played for free on the website. Artists can specify whether music downloads are free or paid. Artists gets 80-90% of sales. Not all available HiRes-files are [tagged as HiRes](https://bandcamp.com/tag/hi-res) by far. I have been quite surprised sometimes that I get an album instead of CD-quality as a 24-bit version.
+  An online music service and promotion platform specifically aimed at independent artists. Bandcamp artists have a modifiable microsite with the albums they upload. Many titles can be played for free on the website. Artists can specify whether music downloads are free or paid. Artists gets 80-90% of sales. Not all available HiRes-files are tagged as [HiRes](https://bandcamp.com/tag/hi-res) or [24-bit](https://bandcamp.com/tag/24-bit) by far. Sometimes the resolution is also specified in the description. I have been quite surprised sometimes that I get an album instead of CD-quality as a 24-bit version.
   For some tracks/albums lyrics are provided.
 * [Burning Shed](https://burningshed.com/)
   Label of: Porcupine Tree, Anathema, Steven Wilson...
