@@ -17,12 +17,14 @@
 | Ctrl-M            | Toggle Mute.                                           | For the active playing zone.                   | **M**ute        |
 | Ctrl-B            | Add Bookmark.                                          |                                                | **B**ookmark    |
 | Ctrl-F            | Search.                                                |                                                | **F**ind        |
-| Ctrl-A            | Select All.                                            |                                                | **A**ll         |
-| Ctrl-D            | Deselect All.                                          |                                                | **D**eselect    |
+| Ctrl-A            | Select All.                                            | Not all views.                                 | **A**ll         |
+| Ctrl-D            | Deselect All.                                          | Not all views.                                 | **D**eselect    |
 | Ctrl-T            | Stop Music.                                            |                                                | S**T**op        |
 | / (slash)         | Filter.                                                | On music browsers.                             |                 |
 | Ctrl-G            | Toggle Focus.                                          | On music browsers.                             | To**GG**le      |
 | Fn-[Number] (1-9) | Switch between menu entries.                           |                                                |                 |
+| ESC               | Close current view.                                    | For pop up windows.                            |                 |
+| F11               | Toggle Fullscreen.                                     |                                                |                 |
 
 ## Source
 
