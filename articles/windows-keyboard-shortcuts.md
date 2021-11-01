@@ -1,4 +1,4 @@
-# Windows Keyboard Shortcuts (advanced)
+# Windows Keyboard Shortcuts (extended)
 
 | Key Command       | Action                                                 | Note                                           | Mnemonic bridge |
 | ----------------- | ------------------------------------------------------ | ---------------------------------------------- | --------------- |
