@@ -47,4 +47,4 @@ Echo 3-Band Equalizer
 
 * [Roon Knowledge Base](https://help.roonlabs.com/portal/en/kb/articles/sonos)
 * [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api)
-* https://freetime.mikeconnelly.com/archives/tag/sonos
+* [https://freetime.mikeconnelly.com/archives/tag/sonos](https://freetime.mikeconnelly.com/archives/tag/sonos)
