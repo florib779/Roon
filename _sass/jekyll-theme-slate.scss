@@ -129,6 +129,9 @@ a[href*="help.roonlabs.com"]::after  {
 a[href*="community.roonlabs.com"]::after  {
   content: " (Community)";
 }
+a[href*="github.com"]::after  {
+  content: " (GitHub)";
+}
 
 footer a {
   color: #F2F2F2;
