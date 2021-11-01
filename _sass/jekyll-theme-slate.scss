@@ -117,8 +117,14 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+a[href*="florib779.github.io"]::after  {
+  content: "";
+}
 a[href*="roonlabs.com"]::after  {
   content: " (Roon)";
+}
+a[href*="community.roonlabs.com"]::after  {
+  content: " (Community)";
 }
 a[href*="roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q"]::after  {
   content: " (Referral Link)";
@@ -126,8 +132,8 @@ a[href*="roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q"]::after  {
 a[href*="help.roonlabs.com"]::after  {
   content: " (Help Center)";
 }
-a[href*="community.roonlabs.com"]::after  {
-  content: " (Community)";
+a[href*="kb.roonlabs.com"]::after  {
+  content: " (Help Center)";
 }
 a[href*="github.com"]::after  {
   content: " (GitHub)";
