@@ -86,6 +86,15 @@ For Home Assistant and poss. roon-extension-manager.
 
 * `~/Dropbox-Uploader/./dropbox_uploader.sh upload /mnt/internal/music/ Dropbox-Uploader
 
+## Cockpit
+
+### Applications
+
+#### Navigator
+
+1. `wget https://github.com/45Drives/cockpit-navigator/releases/download/v0.5.5/cockpit-navigator_0.5.5-2focal_all.deb`
+2. `sudo apt install ./cockpit-navigator_0.5.5-2focal_all.deb`
+
 ### Links
 
 * https://github.com/andreafabrizi/Dropbox-Uploader
