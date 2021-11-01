@@ -2,7 +2,7 @@
 
 ![Roon on Wine screenshot](../images/roon1.8-wine-screenshot.png)
 
-[Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link) has no native Linux remote client yet, but I hope they will bring us one in the future. Nevertheless, there is a possibility to install it with the help of [Wine](https://www.winehq.org/) under Linux.
+[Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) has no native Linux remote client yet, but I hope they will bring us one in the future. Nevertheless, there is a possibility to install it with the help of [Wine](https://www.winehq.org/) under Linux.
 
 There are some advantages to installing the Windows version over installing it on portable Android or Apple devices:
 
