@@ -90,7 +90,7 @@ There's already an almost complete [List of available Roon Extensions](https://g
 * [roon-extension-random-radio](https://github.com/TheAppgineer/roon-extension-random-radio)
   * Roon Extension to play random tracks or albums.
 * [roon-extension-roonbridge-remote](https://github.com/danward79/roon-extension-roonbridge-remote)
-  * Infrared Remote Control Roon Bridge with Linux System Events. This extension is a modification/fork of the original [https://github.com/naepflin/roon-extension-linuxkeyboardremote](roon-extension-linuxkeyboardremote).
+  * Infrared Remote Control Roon Bridge with Linux System Events. This extension is a modification/fork of the original [roon-extension-linuxkeyboardremote](https://github.com/naepflin/roon-extension-linuxkeyboardremote).
 * [roon-extension-rotel](https://github.com/bsc101/roon-extension-rotel)
   * Control your Rotel amp from within Roon.
 * [roon-extension-sleep-timer](https://github.com/bancofan/roon-extension-sleep-timer)
