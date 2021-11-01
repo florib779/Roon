@@ -6,7 +6,7 @@
 | Ctrl-E            | Show Now Playing/Queue.                                |                                                |                 |
 | Ctrl-S            | Show Screensaver.                                      |                                                | **S**creensaver |
 | Ctrl-Y            | Show History.                                          |                                                | Histor**Y**     |
-| Ctrl-I            | Open Editor.                                           |                                                | Ed**I**tor      |
+| Ctrl-I            | Open Editor.                                           | Album View.                                    | Ed**I**tor      |
 | Ctrl-LEFT         | Go back to previous screen in your navigation history. |                                                |                 |
 | Ctrl-RIGHT        | Go forward to next screen in your navigation history.  |                                                |                 |
 | Spacebar          | Play/Pause.                                            | Like in many other Media Players.              |                 |
@@ -22,9 +22,9 @@
 | Ctrl-T            | Stop Music.                                            |                                                | S**T**op        |
 | / (slash)         | Filter.                                                | On music browsers.                             |                 |
 | Ctrl-G            | Toggle Focus.                                          | On music browsers.                             | To**GG**le      |
-| Fn-[Number] (1-9) | Switch between menu entries.                           |                                                |                 |
 | ESC               | Close current view.                                    | For pop up windows.                            |                 |
 | F11               | Toggle Fullscreen.                                     |                                                |                 |
+| Fn-[Number] (1-9) | Switch between menu entries.                           | The numbers differ depending on whether you use one or more streaming services. ||
 
 ## Source
 
