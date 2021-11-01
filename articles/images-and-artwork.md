@@ -1,6 +1,6 @@
 # Images and Artwork in Roon
 
-In [Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link), all the images embedded in the file tags, are stored next to the audio files or stored in a folder called `artwork` or `scans` next to the files are displayed. This includes all images that include `cover`, `front` or `folder`.
+In [Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q), all the images embedded in the file tags, are stored next to the audio files or stored in a folder called `artwork` or `scans` next to the files are displayed. This includes all images that include `cover`, `front` or `folder`.
 
 Related to [this post](https://community.roonlabs.com/t/has-liner-notes/55822/7) images will be showed in the following order on the album page:
 
@@ -32,7 +32,7 @@ Setpoints of the images to take advantage of the full width of the display:
   * [Fanart.tv](https://fanart.tv/)
     * Front-Cover, CD
     * There is a [Plugin for MusicBrainz Picard]() available. To use this an API key for Fanart.tv must be entered.
-  * [MusibBrainz](https://musicbrainz.org/)
+  * [MusicBrainz](https://musicbrainz.org/)
 ### Band/Artist-Fotos
   * [Fanart.tv](https://fanart.tv/)
     * [Roon contributes to them and use some of their data.](https://community.roonlabs.com/t/a-database-of-artists-pictures/83593/13)
