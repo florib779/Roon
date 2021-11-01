@@ -1,6 +1,6 @@
 # Local Files
 
-Local [Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) (Referral Link) files have some special features over streamed content:
+Local [Roon](https://roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q) files have some special features over streamed content:
 
 * You have a nice looking waveform.
 * The dynamic range of an album will be shown.
