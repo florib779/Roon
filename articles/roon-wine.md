@@ -13,7 +13,7 @@ There are some advantages to installing the Windows version over installing it o
 * Editing with keyboard and mouse (no tipping on touchscreen), which I think it’s more comfortable
 * Bigger Screen
 * Roon UI runs smoother in most ways
-* Of course it's possible to use [Windows Keyboard Shortcuts](https://help.roonlabs.com/portal/en/kb/articles/keyboard-shortcuts#Windows_Keyboard_Shortcuts)
+* Of course it's possible to use [Windows Keyboard Shortcuts](windows-keyboard-shortcuts.md)
 
 After the installation you should have a working Roon remote, server and endpoint. The main interest would be the remote (I think most Roon users will run a separate Roon core). Server and endpoint of the full version are not tested yet, but should also work.
 
