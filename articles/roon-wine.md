@@ -29,7 +29,7 @@ This process can take 30 minutes or longer (depending on your system).
 
 There was already the [idea to create a Snap or Flatpak file](https://community.roonlabs.com/t/roon-ui-on-wine-as-linux-snap/69425) to simplify the installation even more.
 
-Also take a look at this experimental flatpak file: https://github.com/RoPieee/roon-in-flatpak
+Also take a look at [this experimental flatpak file](https://github.com/RoPieee/roon-in-flatpak).
 
 ## Common Problems
 
