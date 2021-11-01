@@ -132,6 +132,9 @@ a[href*="community.roonlabs.com"]::after  {
 a[href*="github.com"]::after  {
   content: " (GitHub)";
 }
+a[href*="github.io"]::after  {
+  content: " (GitHub)";
+}
 
 footer a {
   color: #F2F2F2;
