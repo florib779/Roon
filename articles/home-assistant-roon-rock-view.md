@@ -2,9 +2,9 @@
 
 ## Screenshots
 
-![Home Assistant Roon ROCK display 1](https://github.com/florib779/homeassistant-config/blob/7e360416e20a81d5c4d254ffe268ec01e47c0de8/screenshots/ha_roon_rock_dashboard.png)
+![Home Assistant Roon ROCK display 1](https://github.com/florib779/homeassistant-config/raw/master/screenshots/ha_roon_rock_dashboard.png)
 
-![Home Assistant Roon ROCK display 2](https://github.com/florib779/homeassistant-config/blob/7e360416e20a81d5c4d254ffe268ec01e47c0de8/screenshots/ha_roon_rock_dashboard_2.png)
+![Home Assistant Roon ROCK display 2](https://github.com/florib779/homeassistant-config/raw/master/screenshots/ha_roon_rock_dashboard_2.png)
 
 ## Requirements
 * [card-mod](https://github.com/thomasloven/lovelace-card-mod) (Custom CSS)
@@ -14,14 +14,14 @@
 
 ## Code
 
-```
+```yaml
 title: Home
 views:
 ```
 
 [...]
 
-```
+```yaml
   - title: ROCK
     type: custom:masonry-layout
     layout:
