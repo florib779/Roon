@@ -4,6 +4,7 @@
 * [Roon Components](roon-components.md)
 * [Roon-Extensions](roon-extensions.md)
 * [Installing the Roon-Desktop-App on Linux with Wine](roon-wine.md)
+  * [Windows Keyboard Shortcuts](windows-keyboard-shortcuts.md) (extended)
 * [My Roon ROCK project](rock-project.md)
 * [RaspberryPi with Roon Bridge and display](raspberry-roonbridge-display.md)
 * [Roon Web Display](roon-web-display.md)
