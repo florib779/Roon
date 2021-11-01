@@ -117,6 +117,19 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+a[href*="roonlabs.com"]::after  {
+  content: " (Roon)";
+}
+a[href*="roonlabs.com/r/n6HeIaGsYUKKh60AONYs5Q"]::after  {
+  content: " (Referral Link)";
+}
+a[href*="help.roonlabs.com"]::after  {
+  content: " (Help Center)";
+}
+a[href*="community.roonlabs.com"]::after  {
+  content: " (Community)";
+}
+
 footer a {
   color: #F2F2F2;
   text-decoration: underline;
