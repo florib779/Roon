@@ -73,6 +73,48 @@ For Home Assistant and poss. roon-extension-manager.
 
 [See here.](https://github.com/florib779/beets-config)
 
+## Homebridge
+
+### Installation
+
+`docker run --net=host --name=homebridge -v $(pwd)/homebridge:/homebridge oznu/homebridge:ubuntu`
+
+### Start script
+
+`/etc/systemd/system/homebridge.service`:
+
+```
+[Unit]
+Description=Homebridge
+
+[Service]
+ExecStart=docker start homebridge
+
+[Install]
+WantedBy=multi-user.target
+```
+
+## Songkong Remote
+
+### Start script
+
+`/etc/systemd/system/songkong-remote.service`:
+
+```
+[Unit]
+Description=Songkong Remote
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/flori/songkong/
+ExecStart=/bin/bash songkongremote.sh
+User=flori
+
+[Install]
+WantedBy=multi-user.target
+``` 
+
 ## Dropbox
 
 ### Installation
@@ -83,7 +125,7 @@ For Home Assistant and poss. roon-extension-manager.
 
 ### Commands
 
-* `~/Dropbox-Uploader/./dropbox_uploader.sh upload /mnt/internal/music/ Dropbox-Uploader
+* dropbox_uploader.sh upload /mnt/internal/music/ Dropbox-Uploader
 
 ## Cockpit
 
