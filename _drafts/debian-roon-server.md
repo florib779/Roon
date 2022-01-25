@@ -115,30 +115,28 @@ User=flori
 WantedBy=multi-user.target
 ``` 
 
-## Dropbox
+## Backups (Dropbox)
 
 ### Installation
 
-1. `wget "https://raw.githubusercontent.com/andreafabrizi/Dropbox-Uploader/master/dropbox_uploader.sh" -o dropbox_uploader.sh`
-2. `chmod +x dropbox_uploader.sh`
-3. `./dropbox_uploader.sh`
+* `sudo apt install rclone`
 
 ### Commands
 
-* dropbox_uploader.sh upload /mnt/internal/music/ Dropbox-Uploader
+* `rclone copy -P /mnt/internal remote:Backups/Music`
+
+### Links
+
+https://github.com/rclone/rclone
 
 ## Cockpit
 
 ### Applications
 
-#### Navigator
+#### Navigator (File Manager)
 
 1. `wget https://github.com/45Drives/cockpit-navigator/releases/download/v0.5.5/cockpit-navigator_0.5.5-2focal_all.deb`
 2. `sudo apt install ./cockpit-navigator_0.5.5-2focal_all.deb`
-
-### Links
-
-* https://github.com/andreafabrizi/Dropbox-Uploader
 
 ## Links
 
