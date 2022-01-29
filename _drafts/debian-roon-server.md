@@ -127,7 +127,7 @@ WantedBy=multi-user.target
 
 #### Web-GUI
 
-* rclone rcd --rc-web-gui --rc-addr=rock:5572 --rc-user USER --rc-pass PASSWORD
+* `rclone rcd --rc-web-gui --rc-addr=IP:5572 --rc-user USER --rc-pass PASSWORD # Has to be the IP address, NOT the hostname`
 
 ### Links
 
