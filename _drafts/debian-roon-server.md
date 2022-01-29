@@ -125,6 +125,10 @@ WantedBy=multi-user.target
 
 * `rclone copy -P /mnt/internal remote:Backups/Music`
 
+#### Web-GUI
+
+* rclone rcd --rc-web-gui --rc-addr=rock:5572 --rc-user USER --rc-pass PASSWORD
+
 ### Links
 
 https://github.com/rclone/rclone
