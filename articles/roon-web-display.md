@@ -8,7 +8,9 @@ It's possible to display it on FireTV devices with Firefox and Silk.
 
 To prevent the screen from shutting off after a while, I use the app [Fully Kiosk Browser](https://www.fully-kiosk.com/) on my Android tablet and FireTV (there are different apks available).
 
-## My Modified Version
+## My Modified Version (obsolete)
+
+Since (Roon Build 923), the web display has been heavily revised. I am satisfied with this solution on the whole, so I see no need for me to manually adjust the corresponding files anymore.
 
 ![Modified Roon Web Display](../images/modified_roon_web_display.png)
 
