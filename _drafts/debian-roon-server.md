@@ -115,7 +115,7 @@ User=flori
 WantedBy=multi-user.target
 ``` 
 
-## Backups (Dropbox)
+## Backups (Music Files)
 
 ### Installation
 
@@ -123,7 +123,13 @@ WantedBy=multi-user.target
 
 ### Commands
 
-* `rclone copy -P /mnt/internal remote:Backups/Music`
+#### Remote (Dropbox)
+
+* `rclone copy -P /mnt/internal remote:Backups/Music -v --log-file=rclone.log`
+
+#### Local
+
+* `rclone copy -P /mnt/internal /mnt/external/work/backups -v --log-file=rclone.log`
 
 #### Web-GUI
 
