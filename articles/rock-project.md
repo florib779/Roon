@@ -80,6 +80,10 @@ I simply plugged this USB stick with the existing backups of my old Roon Core in
 
 If you want to import music, connect to Roon OS's `/Data/Storage` directory, and copy your music over. Then, you can set up your watched folder by following [these instructions](https://help.roonlabs.com/portal/en/kb/articles/local-files).
 
+### Mount storage locally
+
+`sudo mount -t cifs //rock/Data /mnt/ -o username=guest,password=guest,vers=1.0`
+
 [Fastest way to transfer music to Rock](https://community.roonlabs.com/t/fastest-way-to-transfer-music-to-rock/115035)
 
 ## Fanless case
