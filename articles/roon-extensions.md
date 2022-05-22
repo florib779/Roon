@@ -170,6 +170,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
 * [Roon-FLAC-restreamer](https://github.com/lfontanel/Roon-FLAC-restreamer)
   * Python script to stream any file at any URL to your Roon server.
 * [roon-ir-remote](https://github.com/smangels/roon-ir-remote)
+* [roon-kit](https://github.com/Stevenic/roon-kit)
+  * A collection of utility classes that simplify building extensions for Roon.
 * [roon-media-system-driver](https://github.com/ancient-geek/roon-media-system-driver)
   * Control driver for Morcom's Media System.
 * [roon-mouse](https://github.com/keesma/roon-mouse)
