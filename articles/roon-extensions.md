@@ -158,6 +158,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Integration to let Roon turn a power amp on/off as needed.
 * [roon-api-grpc-bridge](https://github.com/sbosley/roon-api-grpc-bridge)
   * Roon extension that exposes gRPC APIs for the core Roon APIs.
+* [roon_cad](https://github.com/jason-a69/roon_cad)
+  * Roon cover art display on various displays.
 * [Roon_Controller](https://github.com/autolog/Roon_Controller)
   * Adds support to Indigo Home Automation to control Roon music player.
 * [Roon-Display-tvOS](https://github.com/MattTW/Roon-Display-tvOS)
