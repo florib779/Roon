@@ -67,6 +67,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * Program your Linux keyboard to act as a Roon remote. It supports play / pause, volume control and convenience switch.
 * [roon-extension-loop-test](https://github.com/RoonLabs/roon-extension-loop-test)
   * This is a simple extension to force an output in Roon to always be playing.
+* [roon-extension-macroon](https://github.com/bsc101/roon-extension-macroon-readme)
+  * macro.on lets you define macros for your Roon music player.
 * [roon-extension-manager](https://github.com/TheAppgineer/roon-extension-manager)
   * Roon Extension for managing Roon Extensions.
     * [roon-extension-repository](https://github.com/TheAppgineer/roon-extension-repository)
