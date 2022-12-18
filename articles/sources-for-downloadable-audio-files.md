@@ -18,7 +18,3 @@ It should be mentioned here only provider who offer at least CD-quality. Of cour
 * [HIGHRESAUDIO](https://www.highresaudio.com/)
 * [Qobuz](https://www.qobuz.com/)
   * All the files purchased on Qobuz are guaranteed without DRM.
-* [TIDAL Store](https://store.tidal.com/)
-  * TIDAL also offers a store for downloading music as MP3 or FLAC files. No MQA or other formats.
-  In general, all albums and tracks that are available for streaming are also available as downloads, but not always.
-  Has mostly higher prices than other providers.
