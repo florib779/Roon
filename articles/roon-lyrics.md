@@ -41,6 +41,7 @@ You can find more screenshots at the link above. I would like to limit myself he
 ## Other Tools
 
 * [gImageReader](https://github.com/manisandro/gImageReader/) - A simple Gtk/Qt front-end to tesseract-ocr
+* [Lyrics Finder](https://www.mediahuman.com/lyrics-finder/) - MediaHuman Lyrics Finder is a free software application, which can help you find and add missing lyrics (song text) to all songs in your music library.
 
 ## Links
 
