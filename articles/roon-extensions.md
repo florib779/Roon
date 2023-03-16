@@ -194,6 +194,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * A headless Roon Core (roonserver) running on a virtual machine.
 * [thread-roon-remote](https://github.com/djthread/thread-roon-remote)
   * Roon Remote Experiment
+* [TurntableToROON](https://github.com/guussie/TurntableToROON/wiki)
+  * This Wiki explains one way to send an audio stream from a turntable to ROON.
 * [TVRemote](https://github.com/RussellValiant/TVRemote)
   * Apple TV Extension for Roon.
 * [Use-roon-with-Microsoft-Surface-Dial](https://github.com/DrCWO/Use-roon-with-Microsoft-Surface-Dial)
