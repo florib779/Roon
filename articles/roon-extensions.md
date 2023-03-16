@@ -136,6 +136,8 @@ There's already an almost complete [List of available Roon Extensions](https://g
   * The download for the iFi Bridge which allows MQA and Gapless on Roon over Network.
 * [itunes-file-mtimes](https://github.com/nugget/itunes-file-mtimes)
   * If you are using roon to play your music and you have your iTunes set up as a library location it can optionally use the file time to track when the file was added.
+* [MACtoRoon](https://github.com/guussie/MACtoRoon/wiki)
+  * This Wiki explains one way to send an audio stream from an Apple device (macOS, iOS, iPadOS) to ROON.
 * [mini-controller](https://github.com/wwwizzarrdry/mini-controller)
   * Mini controller for Roon, Sonos, Plex and LastFM Built using Electron and Material UIkit.
 * [node-homey-roon](https://github.com/mebrein/node-homey-roon)
