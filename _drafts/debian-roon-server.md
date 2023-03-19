@@ -4,7 +4,7 @@ https://dietpi.com/downloads/images/DietPi_NativePC-UEFI-x86_64-Bullseye_Install
 
 ## Beets
 
-[Configuration](https://github.com/florib779/beets-config)docker run -v /CONFIGFOLDER:/songkong -v /MUSICFOLDER:/music -p 4567:4567 songkong/songkong
+[Configuration](https://github.com/florib779/beets-config)
 
 ## Songkong Remote (Docker)
 
