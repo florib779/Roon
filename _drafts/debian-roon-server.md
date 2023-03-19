@@ -15,7 +15,7 @@ ToDo
 
 #### Remote (Dropbox)
 
-* `rclone copy -P /mnt/music Dropbox:Backups/Music -v --log-file=rclone.log`
+* `rclone copy -P /mnt/music Dropbox:Backups/Music/music -v --log-file=rclone.log`
 
 ~#### Local~
 
@@ -24,6 +24,10 @@ ToDo
 ~#### Web-GUI~
 
 ~* `rclone rcd --rc-web-gui --rc-addr=IP:5572 --rc-user USER --rc-pass PASSWORD # Has to be the IP address, NOT the hostname`~
+
+### ToDo
+
+* cron job
 
 ### Links
 
