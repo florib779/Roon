@@ -9,7 +9,7 @@ https://dietpi.com/downloads/images/DietPi_NativePC-UEFI-x86_64-Bullseye_Install
 ## Songkong Remote (Docker)
 
 1. `docker pull songkong/songkong`
-2. `docker run -v /mnt/dietpi_userdata:/songkong -v /mnt/music:/music -p 4567:4567 songkong/songkong`
+2. `docker run --restart unless-stopped -v /mnt/dietpi_userdata:/songkong -v /mnt/music:/music -p 4567:4567 songkong/songkong`
 
 ## Backups (Music Files)
 
