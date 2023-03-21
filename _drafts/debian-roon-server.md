@@ -29,11 +29,11 @@ https://dietpi.com/downloads/images/DietPi_NativePC-UEFI-x86_64-Bullseye_Install
 
 ### ToDo
 
-* cron job
+- [ ] cron job
 
 ### Links
 
-https://github.com/rclone/rclone
+[https://github.com/rclone/rclone](https://rclone.org/dropbox/)
 
 ## Links
 
